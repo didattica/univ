@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" manifest="../cache.manifest">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Fisica 1 - dinamica fluidi</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/sky.css" id="theme">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+<section>
+	<h2>Dinamica dei fluidi</h2>
+	<ul>
+		<li>Legge di Simon Stevin</li>
+		<li>Spinta di Archimide</li>
+		<li>Portata di un fluido</li>
+		<li>Teorema di Bernoulli</li>
+		<li>Teorema di Torricelli</li>
+	</ul>
+	<hr>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<hr>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+
+	<section>
+		<section>
+		<h2>Fluido</h2>
+		<ul>
+			<li>Si definisce fluido una sostanza (liquida o gassosa) che assume la forma del recipiente che la contiene.</li>
+			<li>Differenze tra liquidi e gas:
+			<ul>
+				<li>la densità dei liquidi è molto maggiore di quella dei gas. 
+	\[
+	\rho_{H_2O} = 10^3 \frac{kg}{m^3}, \quad \rho_{aria} = 1.3 \frac{kg}{m^3} 
+	\]</li>
+				<li>I liquidi sono incomprimibili, mentre un gas risulta comprimibile con facilità.</li>
+			</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Pressione</h2>
+		<ul>
+			<li>Si definisce pressione in un punto del fluido il rapporto tra la forza agente su una superficie infinitesima che circonda il punto e l'area della superficie stessa:
+\[
+P = \frac{dF}{dS}  \quad (\frac{N}{m^2}, Pascal)
+\]
+			</li>
+			<li>
+				Se S è una superficie finita nella quale la pressione è costante:
+\[
+P = \frac{F}{S}
+\]				
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Legge di Stevin</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/stevin.png">
+			<div class="media-body">
+				<ul>
+					<li>Preso un asse z orientato verso il basso, la pressione all'interno del fluido varia con la coordinata z  seconda la legge:
+\[
+p(z) = p_0 + \rho g h
+\]
+					</li>
+					<li>La legge di Stevin può essere ottenuta molto semplicemente calcolando il peso della colonna di liquido alta z:
+\[
+m * g= \rho * V * g = \rho * S * z * g
+\]
+\[
+\Rightarrow p = \frac{F}{S} = \rho * g * z
+\]
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h2>Principio di Pascal</h2>
+		<ul>
+			<li>Il principio di Pascal afferma che ogni cambiamento della pressione esterna dà luogo a un'eguale variazione di pressione nel fluido:
+	\[
+	p = p_0 + \Delta p
+	\]
+			</li>
+			<li>Attenzione: in un piccolo volume di gas, \(\Delta{p}\) è molto minore di \(p_0\) e quindi, con buona approssimazione, la pressione nel gas è ovunque costante e pari al valore della pressione esterna \(p_0\).</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Vasi comunicanti</h2>
+		<ul>
+			<li>Consideriamo un sistema di recipienti in comunicazione tra loro, riempiti dello stesso liquido e aperti nello stesso ambiente.</li>
+			<li>Il liquido nei vari recipienti assume lo stesso livello rispetto al suolo.</li>
+			<li>Questo risultato esprime il principio dei vasi comunicanti.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Manometro 1/2</h2>
+		<ul>
+			<li>Il manometro è uno strumento di misura della pressione dei fluidi costituito da un tubo a forma di U.</li>
+			<li>Se i due rami comunicano con ambienti a diverse pressioni si produce un dislivello tra le due superficie libere dato da:
+\[
+h = \frac{p_1 - p_2}{\rho g}, \quad \]
+in accordo con la legge di Stevin.
+
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Manometro 2/2</h2>
+		<div class="media">
+		  <img class="pull-right media-object" src="../src/images/manometro_U.png">
+		  <div class="media-body">
+			Se il tubo a U contiene due liquidi diversi non miscibili di densità \(\rho_1\) e \(\rho_2\) e le superficie libere sono a contatto con lo stesso ambiente (la linea tratteggiata è equipotenziale):
+\[
+\rho_1 * g * z_1 =  \rho_2 * g * z_1 \Rightarrow 
+\]
+\[
+\frac{\rho_1}{\rho_2} = \frac{z_2}{z_1} = 1 - \frac{h}{z_1}
+\]
+		  </div>
+		</div>
+	</section>
+
+	<section>
+		<h2>Barometro di Torricelli</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/barometro_torricelli.png">
+			<div class="media-body">
+				<ul>
+					<li>Considero il manometro a U con un ramo chiuso e un ramo aperto in un ambiente a pressione atmosferica.</li>
+					<li>Se il riempimento con mercurio è effettuato opportunamente, senza fare entrare aria nella parte chiusa, si osserva che il dislivello h tra le due superfici libere è di circa 76 cm.</li>
+				</ul>
+			</div>
+		</div>
+		<ul>
+			<li>Poichè nel ramo chiuso c'è il vuoto, il dislivello è dovuto solo alla pressione atmosferica che vale dunque \(\rho * g * h, \quad \rho_{Hg} = 13.59 \frac{g}{cm^3} \Rightarrow \ 1.013 * 10^5 Pa\)</li>
+		</ul>
+
+	</section>
+
+</section>
+
+
+<section>
+	<h2>Spinta di Archimede</h2>
+	<div class="media">
+		<img class="pull-right media-object" src="../src/images/spinta_archimede.png">
+		<div class='media-body'>
+			<ul>
+				<li>Un corpo immerso in un fluido riceve una spinta verso l'alto che è uguale e contraria alla forza peso della massa di fluido spostata.</li>
+				<li>Tale forza si chiama spinta di Archimede ed è applicata nel centro di massa del volume di fluido che era al posto del corpo.</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+
+<section>
+	<section>
+		<h2>Flusso di un campo vettoriale</h2>
+		<ul>
+			<li>In Matematica, il flusso di un campo vettoriale \(\vec{V}\) attraverso una superficie orientata S è definito come l'integrale di superficie del prodotto scalare del campo vettoriale \(\vec{V}\) con il versore normale della superficie, esteso su tutta la superficie stessa.
+\[
+\Phi = \int_S \vec{V} d\vec{S} = \int_S \vec{V} \vec{n}dS
+\]
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Portata di un fluido</h2>
+		<div class='media'>
+			<img class="pull-right media-object" src="../src/images/portata.png">
+			<div class="media-body">
+				<ul>
+					<li>Per un fluido in moto dentro un condotto, la portata Q è il volume di fluido 
+						che passa attraverso una sezione S del condotto nell'unità di tempo.</li>
+				</ul>
+			</div>
+			<ul>
+				<li>Se \(\vec{v}(x, y, z)\) è il campo delle velocità nella sezione S, e \(\vec{n}\) 
+				è il versore perpendicolare alla superficie, si dimostra che la portata è uguale al flusso del campo delle velocità integrato sulla superficie S:
+\[
+Q = \int_S \vec{v}(x, y, z) * \vec{n} \Rightarrow 
+\]
+\[
+\text{(se v è costante) } |Q| = S * v * \cos(\theta) 
+\]
+				</li>
+			</ul>
+		</div>
+	</section>
+</section>
+
+
+<section>
+	<h2>Fluido ideale</h2>
+	<ul>
+		<li>Si definisce viscosità una grandezza fisica che quantifica la resistenza dei fluidi allo scorrimento.</li>
+		<li>Si definisce fluido ideale un fluido incomprimibile e con viscosità nulla.</li>
+		<li>Nei liquidi la viscosità decresce all'aumentare della temperatura, nei gas invece cresce, considerando il volume invariato.</li>
+	</ul>
+</section>
+
+<section>
+	<section>
+		<h2>Teorema di Bernulli</h2>
+		<ul>	
+			<li>Quando un fluido ideale si muove in <em>regime stazionario</em> (le molecole del fluido si muovono con la stessa velocità in qualsiasi punto della sezione) lungo un condotto, vale il teorema di Bernulli:
+	\[
+	p + \frac{1}{2} \rho v^2 + \rho g h = costante
+	\]
+			</li>
+			<li>In ogni sezione del condotto la somma della pressione, dell'energia cinetica per unità di volume e dell'energia potenziale per unità di volume è costante.</li>
+		</ul>
+
+	</section>
+	<section>
+		<h2>Esempio: aneurisma</h2>
+		<img src="../src/images/aneurisma.png">
+		<ul>
+			<li>Un aneurisma è una dilatazione progressiva di un segmento vascolare.
+\[
+v_2 < v_1 \Rightarrow p_2 > p_1
+\]
+<br>
+\[
+p_1 - p_2 = \frac{1}{2}\rho(v_2^2 - v_1^2), \quad v_2 = \frac{S_1}{S_2}v_1
+\]
+			</li>
+		</ul>
+	</section>
+</section>
+
+
+<section>
+	<section>
+		<h2>Teorema di Torricelli</h2>
+		<ul>
+			<li>Se in un recipiente di sezione S, pieno di liquido, viene praticato un foro di sezione molto minore di S a una profondità h rispetto alla superficie libera del liquido, la velocità con cui il liquido esce dal foro è:
+	\[
+	v = \sqrt{2 g h}
+	\]
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Teorema di Torricelli, dimostrazione</h2>
+		<div class='media'>
+			<img class="pull-right media-object" src="../src/images/teorema_torricelli.png">
+			<div class="media-body">
+				<ul>
+					<li>Sulla superficie libera \(p = p_0\) e v = 0 e, assumendo il livello del foro come punto di riferimento, z = h</li>
+					<li>All'uscita del foro \(p = p_0\) e z = 0. Pertanto:</li>
+				</ul>
+			</div>
+		</div>
+		<ul>		
+\[
+p_0 + \rho * g * h = p_0 + \frac{1}{2} \rho v^2 \Rightarrow v = \sqrt{2gh}
+\]
+		</ul>
+	</section>
+</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+
+		<!-- Everything below this point is unrelated to the slideshow -->
+
+		<div class="share-reveal reveal-back"></div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

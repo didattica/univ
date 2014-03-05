@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" manifest="../cache.manifest">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Fisica 1 - Cinematica del punto materiale</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/default.css" id="beige">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+<section>
+	<h2>Cinematica del punto materiale</h2>
+	<ul>
+		<li>Punto materiale</li>
+		<li>Velocità e accelerazione</li>
+		<li>Moto rettilineo uniforme</li>
+		<li>Moto naturalmente accelerato</li>
+		<li>Moto parabolico</li>
+		<li>Moto armonico</li>
+	</ul>
+	<hr>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<hr>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+
+<section>
+	<section>
+		<h2>Punto materiale</h2>
+		<ul>
+			<li>In Fisica, si definisce punto materiale un corpo privo di dimensioni, o le cui dimensioni sono trascurabili rispetto a quelle della regione di spazio in cui può muoversi e degli altri oggetti con cui può interagire.
+</li>
+			<li>Esempio: se si vuole studiare il moto della Luna rispetto alla Terra, sia la Luna che la Terra possono essere approssimate a punti materiali, dato che le loro dimensioni sono molto più piccole rispetto alla loro distanza.</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+
+	<section>
+		<h2>Velocità 1/2</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/velocita.png" width="27%">
+			<div class="media-body">
+		<ul>
+			<li>Consideriamo un punto mobile P sopra una qualsiasi linea. </li>
+			<li>Se P si muove sulla curva al variare del tempo t, allora \(\vec{s}\) sarà funzione di t e si scriverà: \( \quad\quad \vec{s} = \vec{s}(t)\)</li>
+		</ul>
+			</div>
+		</div>
+		<ul><li>Se dopo un intervallo di tempo Δt, cioè all'istante t + 
+	Δt, il punto mobile si troverà in Q, lo spazio percorso a quell'istante sarà:
+	\[\vec{s}(t + Δt)
+	\]</li>
+			<li>Osserviamo dunque che all'incremento Δt della variabile tempo corrisponde, 
+	per lo spazio, l'incremento:
+	\[
+	\Delta \vec{s} = \vec{s}(t + \Delta t) - \vec{s}(t)
+	\]
+	che rappresenta lo spazio percorso da P nel tempo \(\Delta t\)
+	 </li>
+	</ul>
+	</section>
+	<section>
+		<h2>Velocità 2/2</h2>
+		<ul>
+		<li>Si definisce <u>velocità media</u> del punto mobile:
+	\[
+	\frac {\Delta \vec{s}}{\Delta t} = \frac{\vec{s}(t + \Delta t) - \vec{s}(t)}{\Delta t}
+	\]
+		</li>
+		<li>Facciamo tendere a zero l'incremento Δt del tempo:
+\[
+\lim_{\Delta t \to 0} \frac{\vec{s}(t + \Delta t) - \vec{s}(t)}{\Delta t}
+\]
+		</li>
+		<li>Si definisce <u>velocità istantanea</u> la derivata dello spazio rispetto al tempo:
+\[
+\vec{v} = \lim_{\Delta t \to 0} \frac{\Delta \vec{s}} {\Delta t} = \frac{d\vec{s}}{dt} = \vec{s}^{'}
+\]
+		</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Accelerazione 1/2</h2>
+		<ul>
+			<li>La velocità istantanea è una funzione del tempo t e quindi nell'intervallo \(\Delta t\) di tempo subirà la variazione:
+\[
+\Delta \vec{v} = \vec{v}(v + \Delta t) - \vec{v}(t)
+\]
+</li>
+<li>Si definisce <u>accelerazione media</u> del punto materiale:
+\[
+\frac {\Delta \vec{v}}{\Delta t} = \frac{\vec{v}(t + \Delta t) - \vec{v}(t)}{\Delta t}
+\]
+</li>
+<li>Si definisce <u>accelerazione istantanea</u> la derivata della velocità rispetto al tempo:
+\[
+\vec{a} = \lim_{\Delta t \to 0} \frac{\Delta \vec{v}} {\Delta t} = \frac{d\vec{v}}{dt} = \vec{v}^{'}
+\]
+		</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Accelerazione 2/2</h2>
+		<ul>
+		<li>
+			L'accelerazione istantanea è la derivata della velocità 
+rispetto al tempo e quindi è la derivata seconda dello spazio percorso rispetto al 
+tempo.
+		</li>
+\[
+\vec{a}(t) = \frac{d \vec{v}(t)}{dt} = \frac{d}{dt} \frac{d \vec{s}}{dt} = \frac{d^2 \vec{s}(t)}{dt^2} = \vec{s}^{''}(t)
+\]
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Moto rettilineo uniforme 1/2</h2>
+		<ul>
+			<li>Un corpo si muove di <u>moto rettilineo e uniforme</u> se mantiene una velocità costante in modulo, direzione e verso. </li>
+			<li><u>Legge oraria</u> del moto rettilineo e uniforme:
+\[
+\vec{v} = \frac{d\vec{s}}{dt} \Rightarrow d\vec{s} = \vec{v} dt \Rightarrow \int_{s_0}^s d\vec{s} = \int_{t_0}^t \vec{v} dt
+\]
+\[
+t_0 = 0 \Rightarrow \vec{s} - \vec{s_0} = \vec{v} * t \Rightarrow \vec{s} = \vec{s_0} + \vec{v} * t
+\]
+		</ul>
+	</section>
+	<section>
+		<h2>Moto rettilineo uniforme 2/2</h2>
+			<center>
+	        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="900" height="480">
+	          <param name="movie" value="../src/swf/constant_speed2.swf">
+	          <param name="quality" value="high">
+	          <embed src="../src/swf/constant_speed2.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="900" height="480"></embed>
+	        </object>
+	      </center>
+	</section>
+</section>
+
+<section>
+<section>
+	<h2>Moto rettilineo uniformemente accelerato 1/2</h2>
+	<ul>
+			<li>Un corpo si muove di <u>moto rettilineo uniformemente accelerato</u> se mantiene una accelerazione costante in modulo, direzione e verso.</li>
+			<li class="small"><u>Legge oraria</u> del moto rettilineo uniformemente accelerato:
+\[
+\vec{a} = \frac{d\vec{v}}{dt} \Rightarrow d\vec{v} = 
+\vec{a} \thinspace dt \Rightarrow \int_{v_0}^v d\vec{v} = 
+\int_{0}^t \vec{a} \thinspace dt \Rightarrow \vec{v} = 
+\vec{v_0} + \vec{a} \thinspace t
+\]
+\[
+\frac{d\vec{s}}{dt} = \vec{v_0} + \vec{a} \thinspace t
+\Rightarrow 
+d\vec{s} = \vec{v_0} dt + \vec{a} \thinspace t dt
+\Rightarrow 
+\]	
+\[
+\int_{s_0}^{s} \vec{s} \thinspace ds = \int_0^{t} \vec{v_0} dt + \int_{0}^{t} \vec{a} \thinspace t dt
+\Rightarrow 
+\vec{s} = \vec{s_0} + \vec{v_0} t + \frac{1}{2}\vec{a} t^2
+\]
+	</ul>
+</section>
+<section>
+	<h2>Moto rettilineo uniformemente accelerato 2/2</h2>
+		<center>
+	    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="900" height="480">
+	      <param name="movie" value="../src/swf/constant_acceleration2.swf">
+	      <param name="quality" value="high">
+	      <embed src="../src/swf/constant_acceleration2.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="900" height="480"></embed>
+	    </object>
+	  </center>
+</section>
+</section>
+
+<section>
+	<section>
+		<h2>Moto parabolico</h2>
+		<ul>
+			<li>Il moto parabolico è un tipo di moto bidimensionale esprimibile attraverso la combinazione di due moti rettilinei simultanei e indipendenti:
+	<ul>
+		<li>moto rettilineo uniforme</li>
+		<li>moto uniformemente accelerato.</li>
+	</ul>
+	<li>Si dimostra che la traiettoria del moto parabolico rappresenta una parabola.</li>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Traiettoria del moto parabolico</h2>
+		<ul>
+			<li>Si supponga che un corpo sia lanciato con velocità iniziale \(v_0\) e con un angolo \(\theta\) rispetto all'asse x orizzontale.</li>
+			<li>Il vettore velocità può essere scomposto lungo le due componenti x e y:
+\[
+\vec{v_0} = v_0 cos(\theta) \vec{i} + v_0 sen(\theta) \vec{j}
+\]
+			</li>
+			<li>Le leggi orarie dei moti lungo gli assi x e y sono:
+\[
+x(t) = v_0 cos(\theta), \quad y(t) = v_0 sin(\theta) t - \frac{1}{2} g t^2
+\]
+			</li>
+			<li>Esplicitando il parametro t dalla legge oraria x(t) e sostituendo in y(t) si ottiene una parabola con concavità rivolta verso il basso:
+\[
+y = x * tang\theta - \frac{g}{2v_0^2cos^2(\theta)} * x^2
+\]
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Animazione del moto parabolico</h2>
+			<center>
+		        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="900" height="580">
+		          <param name="movie" value="../src/swf/CompoundMotion.swf">
+		          <param name="quality" value="high">
+		          <embed src="../src/swf/CompoundMotion.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="900" height="580"></embed>
+		        </object>
+		    </center>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Moto circolare</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/moto_circolare.png" width="30%">
+			<div class="media-body">
+				<ul>
+					<li>Il moto circolare è il moto di un punto materiale lungo una circonferenza.</li>
+					<li>Lo spostamento lineare del punto sulla circonferenza \(d\vec{R}\) sarà legato allo spostamento angolare \(d{\theta}\):
+	\[
+	d\vec{R} = d\vec{\theta} \times \vec{R} 
+	\]
+					</li>
+				</ul>
+			</div>
+		</div>
+		<ul><li>La velocità angolare è definita come la derivata, rispetto al tempo, del vettore spostamento angolare:
+	\[
+	\vec{\omega} = \frac{d\vec{\theta}}{dt} [\frac{rad}{s}]
+	\Rightarrow \vec{v}(t) = \frac{d\vec{R}}{dt} = \vec{\omega} \times \vec{R}
+	\]
+		</li></ul>
+
+	</section>
+
+	<section>
+		<h2>Moto circolare uniforme</h2>
+		<ul>
+			<li>Un corpo si muove di moto circolare uniforme se mantiene una velocità angolare costante in modulo, direzione e verso.
+\[
+\vec{\omega} = \frac{d\vec{\theta}}{dt} = costante \Rightarrow  d\vec{\theta} = \vec{\omega} * dt
+\]
+\[
+\int_{\theta_0}^{\theta} d\vec{\theta} = \int_{o}^t \vec{\omega} * dt \Rightarrow
+\theta = \theta_0 +  \omega * t
+\]
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Moto circolare uniformemente accelerato</h2>
+		<ul>
+			<li>Un corpo si muove di moto circolare uniformemente accelerato se mantiene un' accelerazione angolare in modulo, direzione e verso costante.
+\[
+\vec{\alpha} = \frac{\vec{\omega}}{dt} = cost
+\]
+			</li>
+			<li>Integrando l'equazione differenziale \(\vec{\omega}(t) = \vec{\alpha} * dt\):
+\[
+\omega(t) = \omega_0 + \alpha * t
+\]
+\[
+\theta(t) = \theta_0 + \omega_0 * t + \frac{1}{2} \alpha * t^2
+\]
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Moto armonico - funzione periodica</h2>
+		<div class="media">
+		<img class="pull-right media-object" src="../src/images/funziona_perodica.png" width="30%">
+			<div class="media-body">
+				<ul>
+					<li>In Matematica una funzione si dice periodica se assume valori che si ripetono esattamente a intervalli regolari.
+					</li>
+				</ul>
+			</div>
+		</div>
+	\[
+	f : A -> B \text{ periodica di periodo T} \iff
+	\]
+	\[
+	 \forall x \in A : f(x) = f(x + T)
+	\]
+	<ul>
+		<li>Le funzioni trigonometriche seno e coseno sono periodiche di periodo 2\(\pi\).
+		</li>
+	</ul>
+	</section>
+
+	<section>
+		<h2>Moto Armonico 1/2</h2>
+		<ul>
+			<li>Si definisce moto armonico il moto di un punto materiale la cui legge oraria è una <u>funzione periodica</u> del tipo:
+\[
+x(t) = A sen(\omega t + \phi_0)
+\]
+dove A è l'ampiezza dell'oscillazione, \(\phi_0\) è la fase iniziale e \(\omega\) è la pulsazione
+			 </li>
+			 <li>Per un moto armonico così definito si dimostra che il periodo è:
+\[
+T = \frac{2\pi}{\omega}
+\]
+			 </li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Moto Armonico 2/2</h2>
+		<ul>
+			<li>La velocità e l'accelerazione sono rispettivamente la derivata prima e seconda della legge oraria, ovvero:
+\[
+v(t) = \frac{d x(t)}{dt} = \omega A cos (\omega t + \phi);
+\]
+\[
+d(t) = \frac{d v(t)}{dt} = -\omega^2 A sin (\omega t + \phi);
+\]
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Rappresentazione grafica del moto armonico 1/2</h2>
+			<center>
+	        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="900" height="480">
+	          <param name="movie" value="../src/swf/oscillations_forces_1.swf">
+	          <param name="quality" value="high">
+	          <embed src="../src/swf/oscillations_forces_1.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="900" height="480"></embed>
+	        </object>
+	      </center>
+	</section>
+	<section>
+		<h2>Rappresentazione grafica del moto armonico 2/2</h2>
+			<center>
+	        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="900" height="480">
+	          <param name="movie" value="../src/swf/kormozgas_EN.swf">
+	          <param name="quality" value="high">
+	          <embed src="../src/swf/kormozgas_EN.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="900" height="480"></embed>
+	        </object>
+	      </center>
+	</section>
+
+</section>
+
+			</div>
+
+		</div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+
+		<!-- Everything below this point is unrelated to the slideshow -->
+
+		<div class="share-reveal reveal-back"></div>
+
+<script>
+var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-44780602-1"]);_gaq.push(["_trackPageview"]);(function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=("https:"==document.location.protocol?"https://":"http://")+"stats.g.doubleclick.net/dc.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
+</script>
+	</body>
+</html>

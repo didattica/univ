@@ -1,0 +1,9 @@
+CACHE MANIFEST
+
+# Cache manifest version 2.21
+
+CACHE:
+#no cache
+
+NETWORK:
+*
