@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en" manifest="../cache.manifest">
+
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	    <meta http-equiv="Pragma" content="no-cache" />
+	    <meta http-equiv="Expires" content="0" />
+		<title>Esercizi di Fisica 1 meccanica</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/night.css" id="theme">
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+<!-- *********************** Dinamica del punto *********************** -->
+<section>
+	<h2>Fisica 1</h2>
+	<h3>Problemi sulla dinamica del punto</h3>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<hr>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori od altro potete scrivere un email a antonio.pierro[at]gmail.com</small></p>
+</section>
+
+<section>
+<section>
+	<h2>Esercizio 1</h2>
+	<p>Una massa m è sospesa, tramite una fune inestensibile di massa trascurabile e di lunghezza L, ad un punto fisso. L’angolo formato dal filo con la verticale è θ.<br> Determinare la velocità, in funzione dell’angolo θ, che deve essere impressa alla massa per farla muovere di moto circolare uniforme in un piano orizzontale.</p>
+</section>
+<section>
+	<h2>Soluzione Esercizio 1 (1/2)</h2>
+	<ul>
+		<li>Sono dati i seguenti dati:
+\[
+m, L, \theta
+\]
+		</li>
+		<li>Dobbiamo trovare la velocità in funzione dell'angolo:
+\[
+v_p(\theta)
+\]
+		</li>
+		<img src="../src/images/ex_1.png">
+	</ul>
+</section>
+<section>
+	<h2>Soluzione Esercizio 1 (2/2)</h2>
+	<ul>
+		<li>Scompongo le forze lungo i due assi z e r
+\begin{aligned}
+-T * \sin(\theta) = m * a_r \Rightarrow -T * \sin(\theta) = - m * \frac {v^2}{R}
+\end{aligned}
+\begin{aligned}
+-P + T\cos(\theta) = m * a_z \Rightarrow -P + T\cos(\theta) = 0
+\end{aligned}
+		</li>
+		<li>Il modulo di \(\vec v\) è sempre uguale ma cambia di direzione e verso:
+\begin{aligned}
+v = \sin(\theta)*\sqrt\frac{L*g}{\cos(\theta)}
+\end{aligned}
+		</li>
+	</ul>
+</section>
+</section>
+<section><h2>Esercizio 2</h2>
+Un blocco di massa m si trova fermo su un piano orizzontale. A un certo punto viene sottoposto ad una forza F con direzione e verso orizzontali e costanti e di modulo variabile nel tempo secondo la legge: F(t) = kt, con k costante.
+<ul>
+	<li>Quanto vale la velocità del blocco all’istante t*<!--  se il lavoro compiuto dalla forza -->? </li>
+	<li>Quanto vale il lavoro compiuto dalla forza nell’intervallo di tempo (0, t*)?</li>
+</ul>
+</section>
+<section>
+<section><h2>Esercizio 3</h2>
+<p>Un corpo di massa m è posto sulla sommità di un piano inclinato a un'altezza h dal suolo, con il quale forma un angolo θ. Il piano è scabro con coefficiente di attrito statico pari a \(\mu_s\) e dinamico pari a \(\mu_d\).
+<ul><li>Calcolare il valore massimo dell'angolo di inclinazione \(\theta_m\) tale che per ogni θ minore di \(\theta_m\) la massa m resti in equilibrio.</li>
+<li>Calcolare il modulo dell’accelerazione \(\vec a\) del corpo ed il tempo \(t_f\) necessario per raggiungere il suolo.</li>
+</ul>
+</p>
+</section>
+
+<section><h2>Souluzione Ex 3 (1/2)</h2>
+<p><img src="../src/images/ex_3_a.png"></p>
+</section>
+
+<section><h2>Souluzione Ex 3 (2/2)</h2>
+<p><img src="../src/images/ex_3_b.png"></p>
+</section>
+</section>
+
+<!-- <section>
+	<h2>Ex 4</h2>
+</section> -->
+
+
+<!--
+<section>
+	<section>
+		<h2>Ex 4: energia elastica</h2>
+		<p>
+			<img src="src/images/ex_4.png">
+		</p>
+	</section>
+
+	<section><h2>Ex 4: risolutione (1/)</h2></section>
+		<ul>
+			<li>Se può essere agevole, si divida il fenomeno in due momenti:
+			<ul>
+				<li>Nella fase 1, il corpo è stato dotato di energia cinetica.</li>
+				<li>Nella fase 2, 
+questa energia cinetica viene perduta perché durante l'urto con la molla essa si trasforma in lavoro di compressione.</li>
+			</ul>
+
+</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Ex 4: risolutione (2/)</h2>
+		<ul>
+			<li>Se la forza accelerante vale F = 1N, l'accelerazione uniforme vale, per la seconda legge delle dinamica:
+
+\[a = \frac{F}{m} = 0,5 \frac{m}{s^2}\]</li>
+		</ul>
+	</section>
+</section>
+-->
+<section>
+	<section>
+		<h2>Problem (Work, Energy) - Ex1</h2>
+		<ul>
+			<li>A body slides down a rough plane inclined to the horizontal at \(30^0\). 
+			<li>If 70% of the initial potential energy is dissipated during the descent, find the coefficient
+	of sliding friction. (0.404)
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Solution Ex1</h2>
+		<ul>
+			<li>Potential energy: \( mgh = m * g * s * sin(\theta) .\)</li>
+			<li>Friction: \(\mu * m * g cos (\theta) * s\)</li>
+			<li>\(\mu * m * g cos (\theta) * s\ = \frac {70}{100} * m * g * s * sin(\theta) .\)</li>
+			<li>\(\mu = 0.7\tan(\theta) = 0.7\tan(30^0) = 0.404\)</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Problem (Work, Energy) - Ex2</h2>
+		<ul>
+			<li>The potential energy of an object is given by
+\[
+U(x) = 5x^2 - 4x^3
+\]
+where U is in joules and x is in metres.
+			</li>
+			<li>What is the force, F(x), acting on the object?</li>
+			<li>Determine the positions where the object is in equilibrium</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Solution Ex 2</h2>
+		<ul>
+			<li>For the force:
+			<br>
+			\[F(x) = -\frac{dU}{dx} = -(10x -12x^2) = 12x - 10\]</li>
+			<li>For equilibrium F(x) = 0
+			\[x(12x−10)=0  \Rightarrow x = \frac{5}{6} , x = 0\]
+			</li>
+		</ul>
+	</section>
+
+</section>
+
+
+<section>
+	<section> 
+	<h2>Problem (Work, Energy) - Ex 3</h2>
+	<ul>
+		<li>A ramp in an amusement park is frictionless. A smooth object slides down the ramp and comes down through a height h. </li>
+		<li>What distance d is necessary to stop the object on the flat track if the coefficient of friction is μ. (Solution: \(\mu = \frac{h}{d}\))</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Solution - Ex 3</h2>
+	<ul>
+		<li>At the bottom of the ramp the kinetic energy K available is equal to the loss
+of potential energy, mgh:
+\[K = m * g * h\]</li>
+<li>On the flat track the entire kinetic energy is used up in the work done against friction
+\[W = f_a * d = \mu * m * g * d = m * g *h\]
+\[\mu = \frac{h}{d}\]
+</li>
+	</ul>
+</section>
+</section>
+
+<section>
+	<h2>Ex 4</h2>
+	<ul>
+		<li>Un tubo a U è riempito con un liquido e la lunghezza totale della colonna di liquido è h. 
+		Se da una parte il liquido viene leggermente spinto verso il basso, il livello del liquido inizierà a oscillare intorno alla posizione di equilibrio prima di raggiungere nuovamente la posizione di riposo.
+		</li>
+		<li>
+			Trovare l'intervallo di tempo di una singola oscillazione.
+		</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Piano inclinato Ex 1</h2>
+	<ul>
+		<li>A wedge of mass M is placed on a horizontal floor.  </li>
+		<li>Another mass m is placed on the incline of the wedge.</li>
+		<li>Assume that all surfaces are frictionless, and the incline makes an angle \(\theta\) with the horizontal.</li>
+		<li>The mass m is released from rest on mass M, which is also initially at rest. Find the accelerations of M and m.</li>
+	</ul>
+</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+
+		<div class="share-reveal reveal-back"></div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

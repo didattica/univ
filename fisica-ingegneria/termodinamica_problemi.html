@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Fisica 1 -Termodinamica problemi svolti</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/beige.css" id="beige">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+<section>
+	<h2>Fisica 1 -Termodinamica problemi svolti</h2>
+	<hr>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<hr>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+
+
+<section>
+	<section>
+		<h2>Urto e calore, Ex. 1</h2>
+		<ul>
+			<li>Un proiettile di piombo di massa \(m_1\) = 0.01 kg si muove con velocità \(v_1 = 200m/s\) e urta, in modo completamente anelastico, un corpo di alluminio di massa \(m_2=0.1kg\), inizialmente fermo.
+Le temperature dei corpi sono uguali alla temperatura ambiente \(T_a = 300K\).
+			</li>
+			<li>Si determini la temperatura del sistema, immediatamente dopo l'urto, trascurando gli scambi di calore con l'esterno. 
+			<li>Sia \(c_1 = 130 J/KgK\) il calore specifico del piombo e \(c_2 = 860J/KgK\) quello dell'alluminio.</li>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Ex. 1 - Soluzione 1/2</h2>
+		<ul>
+			<li>L'energia cinetica prima dell'urto vale:
+\[
+\frac{1}{2}m_1 v_1^2
+\]
+			</li>
+			<li>La velocità del sistema nell'istante successivo l'urto è:
+\[
+v_2 = \frac{m_1*v_1}{m_1+m_2}
+\]
+			</li>
+			<li>La perdita di energia cinetica sarà:
+\[
+\frac{1}{2}m_1 v_1^2 - \frac{1}{2}(m_1 + m_2) v_2^2 = \frac{1}{2}\frac{m_1*m_2}{m_1+m_2}v_1^2
+\]
+			</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Ex. 1 - Soluzione 2/2</h2>
+		<ul>
+			<li>Se l'energia cinetica si trasforma in calore posso scrivere la seguente relazione:
+\[
+\Delta{E_{cinetica}} = (m_1 c_1 + m_2 c_2) \Delta T
+\]
+			</li>
+			<li>Sostituendo i valori numerici:
+\[
+\Delta T = 2K
+\]
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Heat Transfer, Ex. 1</h2>
+		<ul>
+			<li>Find the radial flow of heat in a material of thermal conductivity placed between two concentric spheres of radii r1 and r2 (r1 < r2) which are maintained at temperatures T1 and T2 (T1 > T2).</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Heat Transfer, Ex. 1 - Soluzione</h2>
+\[
+\frac{dQ}{dt} = -k A \frac{dT}{dr} \Rightarrow dT = -\frac{1}{k}\frac{dQ}{dt}\frac{dr}{4\pi r^2}
+\]
+\[
+\int_{T_1}^{T_2}dT = \frac{1}{4 \pi k} \frac{r_2-r_1}{r_1 r_2} \frac{dQ}{dt}
+\]
+\[
+\frac{dQ}{dt} = 4\pi k \frac{r_1 r_2}{r_2-r_1}(T_2-T_1)
+\]
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Ex. 3</h2>
+		<ul>
+			<li>L'anidride carbonica è un gas, la cui equazione di stato per una mole di gas è rappresentata dall'equazione:
+\[
+(p + \frac{a}{V^2}) (V - b) = RT
+\]
+
+con \(a = 0.44Nm^4/(mole)^2\) e \(b = 0.52 * 10 ^{-4}\).</li>
+			<li>Calcolare il lavoro compiuto da una mole di gas in un'espansione isotermica reversibile dal volume iniziale \(V_1 = 10^{-2}m^3\) al volume finale V_2 = 2 * 10^{-2} m^3,
+alla temperatura T = 290K.</li>
+			<li>Si paragoni tale risultato con il lavoro calcolato per la stessa trasformazione, ma considerando l'anidride carbonica come gas ideale.</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Ex. 3 - Soluzione 1/2</h2>
+		<ul>
+			<li>Per calcolare il lavoro utilizzo l'espressione:
+\[
+W_1 = \int_{V_1}^{V_2}pdV \text{con } p = \frac{RT}{V-b}-\frac{a}{V^2}
+\]
+
+\[
+W_1 = RT\int_{V_1}^{V_2}\frac{dV}{V-b} - a\int_{V_1}^{V_2}\frac{dV}{V^2}
+\]
+\[
+= RT[ln(V_2 - b) - ln(V_1 - b)] + a(\frac{1}{V_2}-\frac{1}{V1})
+\]
+\[
+ RT * ln \frac{V_2 - b}{V_1 - b} + a (\frac{V_1 - V_2}{V_1*V_2})
+= 1655.5 Joule
+\] 
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Ex. 3 - Soluzione 2/2</h2>
+		<ul>
+			<li>Considerando l'anidride carbonica come gas ideale:
+			\[
+W_2 = RT ln \frac{V_2}{V_1} = 1671.2 Joule
+\]</li>
+			<li>La diminuizione di lavoro è di circa 0.9%</li>
+		</ul>
+	</section>
+</section>
+
+			</div>
+
+		</div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+
+		<!-- Everything below this point is unrelated to the slideshow -->
+
+		<div class="share-reveal reveal-back"></div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

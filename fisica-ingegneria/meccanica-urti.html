@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Fisica 1 meccanica - urti</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/night.css" id="theme">
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+<!-- *********************** Dinamica del punto *********************** -->
+<section>
+	<h2>Urti</h2>
+	<ul>
+		<li>Urti tra due punti materiali</li>
+		<li>Urto completamente anaelastico</li>
+		<li>Urto elastico</li>
+		<li>Urto anaelastico</li>
+	</ul>
+	<hr>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<hr>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+
+<section>
+	<section>
+		<h2>Urti tra due punti materiali</h2>
+		<ul>
+			<li>Si definisce urto tra due punti materiali un'interazione che avviene in un intervallo trascurabile rispetto al tempo di osservazione del sistema.</li>
+			<li>Le forze che si manifestano durante l'urto sono forze interne al sistema.</li>
+			<li>In assenza di forze esterne si verifica la conservazione della quantità di moto.</li>
+			<li>In assenza di momento di forze esterne si verifica la conservazione del momento angolare.</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Urto completamente anaelastico</h2>
+		<ul>
+			<li>Un urto si dice completamente anaelastico quando i due punti restano attaccati dopo l'urto formando un unico corpo puntiforme di massa \( m_1 + m_2\)<hr>
+<img src="../src/images/Inelastischer_sto.gif">
+			</li>
+			<li>se \(\vec{v_1}\) e \(\vec{v_2}\) sono le velocità dei due punti nell'istante prima dell'urto e \(\vec{v}^{'}\) la velocità comune immediatamente dopo l'urto, si ha:
+\[
+m_1 * \vec{v_1} + m_2 * \vec{v_2} = (m1 + m2) \vec{v}^{'} = (m1 + m2) \vec{v_{cm}}
+\]</li>
+<li>Subito dopo l'urto i punti si muovono con la stessa velocità che aveva il centro di massa.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Energia nell'urto completamente anaelastico</h2>
+		<ul>
+			<li>Calcoliamo l'energia cinetica prima e dopo l'urto applicando il teorema di könig:
+\[
+E_{cinetica, iniziale} = \frac{1}{2} * m v_1^2 + \frac{1}{2} * m v_2^2 = E_{k}^{'} + \frac{1}{2} (m_1 + m_2) * v_{cm}^2
+\]
+\[
+E_{cinetica, finale} = \frac{1}{2} (m_1 + m_2) * v_{cm}^2
+\]
+			</li>
+			<li>Nel'urto completamente anaelastico veiene assorbita l'energia \(E_{k}^{'}\) (l'energia cinetica rispetto al centro di massa prima dell'urto). Infatti, dopo l'urto non c'è moto rispetto al centro di massa.</li>
+		</ul>
+	</section>
+	
+</section>
+
+<section>
+	<h2>Urto elastico</h2>
+	<ul>
+		<li>Si definisce urto elastico un urto durante il quale si conserva l'energia interna del sistema.</li>
+		<li>Nell'urto elastico possiamo utilizzare le equazioni:
+\[
+\vec{P}_{iniziale} = \vec{P}_{finale}
+\]
+\[
+{E_{cientica,iniziale}} = {E_{cinetica,finale}}
+\]
+		</li>
+		<li>I due corpi che si urtano subiscono durante l'urto delle deformazioni elastiche, 
+riprendendo la configurazione iniziale subito dopo l'urto.<hr>
+<img src="../src/images/Elastischer_sto.gif">
+</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Urto anaelastico</h2>
+	<ul>
+		<li>Si definisce urto anaelastico un urto in cui:
+		<ul>
+			<li>dopo l'urto i punti restano separati</li>
+			<li>la quantità di moto del sistema si conserva</li>
+			<li>l'energie cinatica non si conserva</li>
+		</ul></li>
+	</ul>
+</section>
+
+<section>
+	
+
+
+	<section>
+		<h2>Introduzione ai problemi con gli urti: esempio di urto anaelastico</h2>
+		<ul>
+			<li>Un proiettile di massa (m1) 50 g e con velocità (v) 40 m/s si conficca in un blocco di massa (m2) 400 g.<br> Il proiettile si muove orizzontalmente e il blocco si trova inizialmente in quiete. 
+			<li>Determinare:
+			<ol>
+				<li>La velocità del sistema dopo l'urto (v')</li>
+				<li>La percentuale di energia dissipata dopo l'urto.</li>
+			</ol>
+			</li>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Soluzione</h2>
+		<ul>
+			<li>Imponiamo la conservazione della quantità di moto prima e dopo l'urto
+\[
+m_1 v = m_1 v^{'} +  m_2v^{'} = (m_1 + m_2) v^{'}
+\]
+\[
+v^{'} = \frac{m_1}{m_1+m_2} v = 4,44 m/s
+\]
+			</li>
+			<li>Calcoliamo ora la percentuale (P) di energia dissipata:
+\[
+P = \frac{T - T^{'}}{T}, \quad T^{'} = \frac{1}{2}(m_1 + m_2) v^{'2} \Rightarrow P = 0.88
+\]
+			</li>
+		</ul>
+	</section>
+
+</section>
+
+
+
+			</div>
+
+		</div>
+		<div class="share-reveal reveal-back" style="display: none; position: absolute; bottom: 14px; left: 50%; margin-left: -50px; z-index: 20;">
+			<button class="btn btn-mini back" type="button">Indice Lezioni</button>
+		</div>
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

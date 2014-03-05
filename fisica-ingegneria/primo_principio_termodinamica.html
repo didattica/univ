@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en" manifest="../cache.manifest">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Fisica 1 - Primo principio della Termodinamica</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/beige.css" id="beige">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+<section>
+	<h2>Primo principio della Termodinamica</h2>
+	<ul>
+		<li>Video introduzione</li>
+		<li>Equilibrio termico</li>
+		<li>Definizione di temperatura</li>
+		<li>Esperimento di Joule</li>
+		<li>Primo principio della Termodinamica</li>
+		<li>Trasmissione del calore</li>
+	</ul>
+	<hr>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<hr>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+
+<section>
+	<h2>Video Introduzione</h2>
+	<iframe width="860" height="580" src="//www.youtube.com/embed/05npvgFiznk" frameborder="0" allowfullscreen></iframe>
+</section>
+
+<section>
+	<section>
+		<h2>Sistema termodinamico e ambiente</h2>
+		<ul>
+			<li>Il <em>sistema termodinamico</em> è una porzione di spazio materiale che può essere costituita da una o più parti, per esempio il volume di un gas o un liquido in equilibrio con il suo vapore.</li>
+			<li>L'<em>ambiente</em> è quell'insieme con cui il sistema termodinamico può interagire, per esempio un fluido in cui è immerso il sistema.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Sistema aperto/chiuso</h2>
+		<ul>
+			<li>Se tra il sistema termodinamico e l'ambiente:
+			<ul>
+				<li>avvengono scambi di energia e di materia, il sistema è detto <em>aperto</em>.</li>
+				<li>avvengono solo scambi di energia, il sistema si dice <em>chiuso</em>.</li>
+				<li>non avvengo scambi di energia e di materia, il sistema si dice <em>isolato</em>.</li>
+			</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Variabili di stato</h2>
+		<ul>
+			<li>Per i sistemi a molte particelle non è possibile dare posizione e velocità di ogni particella contemporaneamente.</li>
+			<li>Si descrive il sistema mediante pochi parametri legati ai valori medi delle grandezze dinamiche:</li>
+			<ul>
+				<li><b>Volume</b> (\(m^3\))</li>
+				<li><b>Pressione</b> (Pascal o Pa): dovuta agli urti delle particelle sulle pareti.</li>
+				<li><b>Temperatura</b> (Kelvin o K): legata al valore medio delle energie cinetiche delle particelle.</li>
+			</ul>
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Equilibrio termodinamico</h2>
+		<ul>
+			<li>L'equilibrio termodinamico è il risultato di tre tipi di equilibrio:</li>
+			<ul>
+				<li>equilibrio meccanico: inteso come equilibrio di forze e momenti, secondo quanto studiato in Meccanica.</li>
+				<li>equilibrio chimico: quando non avvengono traformazioni chimiche.</li>
+				<li>equilibrio termico: quando la temperatura è costante ovunque.</li>
+			</ul>
+		</ul>
+	</section>
+	<section>
+		<h2>Equilibrio termico tra due sistemi</h2>
+		<ul>
+			<li>Dati due sistemi termodinamici A e B, aventi rispettivamente temperatura \(T_A\) e \(T_B\), si dicono in equilibrio termico se hanno la stessa temperatura:
+\[
+T_A = T_B
+\]
+			</li>
+			<li>Se il sistema A è in equilibrio termico con C e se il sistema B è in equilibrio termico con C, allora A è in equilibrio termico con B:
+\[
+T_A = T_C \text{ e } T_B = T_C \Rightarrow T_A = T_B
+\]
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Temperatura 1/3</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/punto_triplo.svg" width="50%">
+			<div class="media-body">
+				<ul>
+					<li>Il punto triplo dell'acqua è quel particolare stato in cui ghiacchio, acqua e vapore sono in equilibrio.</li>
+					<li>Al punto triplo dell'acqua assegniamo arbitrariamente la temperatura di 273 Kelvin.</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h2>Temperatura 2/3</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/dilatazione_lineare.png">
+			<div class="media-body">
+				<ul>
+					<li>Si osserva che un aumento di temperatura determina la dilatazione termica dei solidi e dei liquidi.</li>
+					<li>Dilatazione lineare:
+\[
+\Delta{L} = L_0 \alpha \Delta T 
+\]
+dove \(\alpha\) è il coefficiente di dilatazione lineare.<br>
+\(L_0\) è la lunghezza iniziale.<br>
+\(\Delta T \) è la variazione di temperatura.
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>	
+
+	<section>
+		<h2>Temperatura 3/3</h2>
+		<ul>
+			<li>Sia X una grandezza fisica che varia con la temperatura (volume, lunghezza, pressione, ecc.).</li>
+			<li>Il dispositivo che misura questa caratteristica X sarà chiamato termometro.</li>
+			<li>Per definizione un termometro che misura il punto triplo dell'acqua dà il valore \(X_{pt}\):
+\[
+\theta(X_{pt}) = \alpha X_{pt} = 273 K
+\]
+			</li>
+			<li>La temperatura T del sistema sarà quindi:
+\[
+T = 273 \frac{X}{X_{pt}} K
+\]
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Esperimento di Joule</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/mulinello_joule.jpg">
+			<div class="media-body">
+				<ul>
+					<li>Consideriamo un sistema termodinamico costituito da una certa quantità d'acqua e un mulinello racchiuso entro pareti <em>adiabatiche</em> (nessuno scambio di calore con l'esterno).</li>
+					<li>L'acqua, agitata dal mulinello, viene riscaldata per attrito.</li>
+					<li>Per l'energia potenziale possiamo scrivere la seguente relazione:
+	\[
+	\Delta{E_{p}} = -mgh = -W = \Delta{U}
+	\]
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2>Primo principio della Termodinamica 1/2</h2>
+		<ul>
+			<li>Dati due stati A e B, la variazione di energia interna \(\Delta U  = U(A) - U(B)\) è pari alla differenza del calore assorbito e dal lavoro compiuto.
+\[
+\Delta U = Q - W
+\]
+Questa relazione viene assunta come postulato basato sull'esperienza.
+
+			</li>
+			<li>Questa relazione contiene come caso particolare quello dell'esperimento di Joule.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Primo principio della Termodinamica 2/2</h2>
+		<ul>
+			<li>Il termine energia interna U indica l'energia legata a proprietà interne al sistema, come moto molecolare o forze intermolecolari che dipendono dalla temperatura del sistema.</li>
+			<li>Il primo principio della Termodinamica mette in evidenza l'esistenza di un meccanismo di scambio di energia che è riconducibile a fenomeni meccanici microscopici e a cui diamo il nome di calore.</li>
+			<li>Joule trovò il seguente risultato: 1 Caloria = 4.186 Joule</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Trasformazione ciclica o chiusa</h2>
+		<ul>
+			<li>Se un sistema termodinamico esegue una qualsiasi trasformazione che lo riporti allo stato iniziale (trasformazione ciclica o chiusa) si ha:
+\[
+\Delta U = 0 \Rightarrow Q = W
+\]
+			</li>
+			<li>Se nella trasformazione ciclica il sistema assorbe calore, esso fornisce lavoro (macchina termica):
+\[
+Q > 0 \text{ e } W > 0
+\]
+			</li>
+		<li>Se il sistema cede calore, esso deve subire un lavoro:
+\[
+Q < 0 \text{ e } W < 0
+\]	
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Trasformazioni infinitesime</h2>
+		<ul>
+			<li>Per risolvere un problema specifico può essere utile considerare trasformazioni termodinamiche nelle quali le variabili cambiano di quantità infinitesime:
+\[
+dQ = dU - dW
+\]
+			</li>
+			<li>Per una trasformazione finita, integrando, si ha:
+\[
+\Delta{U} = \int_A^B dU = U_B - U_A, \quad Q_{AB} = \int_A^B dQ
+\]
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Convenzione sui segni 1/2</h2>
+		<table class="table table-hover">
+			<thead>
+                <tr>
+                  <th><b>Flusso di energia</b></th>
+                  <th><b>Segno</b></th>
+                </tr>
+            </thead>
+			<tbody>
+                <tr>
+                  <td>Calore che entra in un sistema dall'esterno</td>
+                  <td>Q > 0</td>
+                </tr>
+                <tr>
+                  <td>Lavoro che è compiuto da un sistema sull'esterno</td>
+                  <td>L > 0</td>
+                </tr>
+                <tr>
+                  <td>Calore che esce da un sistema verso l'esterno</td>
+                  <td>Q < 0</td>
+                </tr>
+                <tr>
+                  <td>Lavoro che è compiuto sul sistema dall'esterno </td>
+                  <td>L < 0</td>
+                </tr>
+            </tbody>
+		</table>
+	</section>
+
+	<section>
+		<h2>Convenzione sui segni 2/2</h2>
+		<img src="../src/images/segni_lavoro_calore.jpg">
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Trasformazione reversibile</h2>
+		<ul>
+			<li>Una trasformazione si dice reversibile se in ogni punto i parametri di stato sono definiti.</li>
+			<li>Una trasformazione reversibile può essere arrestata in qualunque stato intermedio e, variando di poco le condizioni esterne, si può invertire il verso della trasformazione.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Trasformazione irreversibile</h2>
+		<ul>
+			<li>Una trasformazione si dice irreversibile quando i parametri di stato non sono definiti punto per punto.</li>
+			<li>Una trasformazione irreversibile può avvenire in una sola direzione e, una volta raggiunto lo stato finale, non è possibile tornare allo stato iniziale.</li>
+			<li>Sono presenti forze dissipative.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Trasformazione reversibile (esempio)</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/trasformazione_reversibile.png">
+			<div class="media-body">
+				<ul>
+					<li>La trasformazione A-B è reversibile se rimuoviamo una alla volta le sfere di piombo.</li>
+					<li>In questo caso il sistema è, istante per istante, in equilibrio con l'ambiente.</li>
+					<li>&Egrave; possibile ripercorrere la trasformazione all'indietro variando di un infinitesimo un parametro di stato.</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h2>Trasformazione irreversibile (esempio)</h2>
+			<ul>
+				<li>Un corpo con velocità iniziale \(\vec{v}\) viene frenato dall'attrito con il piano su cui si muove fino a fermarsi.</li>
+				<li>L'energia cinetica diminuisce e contemporaneamente si osserva un aumento di temperatura delle superfici a contatto.</li>
+				<li>Successivamente i corpi riscaldatisi cedono calore all'ambiente e alla fine la loro temperatura risulta essere pari alla temperatura ambiente.</li>
+				<li>Complessivamente sparisce l'energia cinetica, ma viene ceduto calore all'ambiente in quantità uguale.</li>
+			</ul>
+	</section>
+</section>
+
+<section>
+	<section><h2>Propagazione del calore</h2>
+		<ul>
+			<li>Il trasferimento del calore tra sistemi può avvenire nei seguenti modi:
+				<ul>
+					<li>Conduzione</li>
+					<li>Convezione</li>
+					<li>Irraggiamento</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Conduzione</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/conduzione.gif">
+			<div class="media-body">
+				<ul>
+					<li>Tra corpi a contatto si ha una trasmissione, per urti, di energia cinetica tra le molecole appartenenti alle superfici a contatto.</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h2>Conduzione, legge di Fourier 1/2</h2>
+		<ul>
+			<li>Il flusso di calore \(\frac{dQ}{dt}\)scambiato fra due pareti solide di confine a diversa temperatura può essere calcolato attraverso la legge di Fourier:
+\[
+d\Phi = \frac{dQ}{dt} = - k \thinspace \vec{\nabla} T \thinspace \thinspace \vec{dS} =
+
+- k \thinspace dS \thinspace \vec{\nabla} T \thinspace \thinspace \vec{n}
+\]
+dove \(\vec{n}\) è il versore normale all'area infinitesima dS, T è la temperatura e K la costante di conducibilità termica.
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Conduzione, legge di Fourier 2/2</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/legge_fourier.png">
+			<div class="media-body">
+			<ul>
+				<li>Si osserva che la quantità di calore Q trasmessa attraverso la barra nell'intervallo di tempo \(\Delta{t}\) è:</li>
+			</ul>
+			</div>
+		</div>
+		<ul>
+			<li><b>direttamente proporzionale</b> alla differenza di temperatura dT, all'area A della sezione trasversale e</li>
+			<li class="very-small"><b>inversamente proporzionale</b> alla lunghezza L:
+\[
+d\Phi_x = - k A \frac{dT}{dx} \Rightarrow \frac{\Phi_x}{A}\int_0^Ldx = - \int_{T_1}^{T_2}kdT \Rightarrow
+\Phi_x = \frac{A k}{L} (T_1 - T_2)
+\]
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Convezione</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/convezione.jpg">
+			<div class="media-body">
+				<ul>
+					<li>Aumentando di temperatura, il fluido a contatto con la fonte di calore si espande e diminuisce di densità, generando moti convettivi in cui il fluido caldo sale verso l'alto e quello freddo scende verso il basso.</li>
+					<li>Brezza di mare: 
+						<ul>
+							<li>durante il giorno dal mare verso la costa,</li>
+							<li>durante la notte dalla costa verso il mare.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<img src="../src/images/brezza.png">
+	</section>
+
+	<section>
+		<h2>Irraggiamento</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/irraggiamento.gif">
+			<div class="media-body">
+				<ul>
+					<li>Al contrario della conduzione e della convezione, non c'è contatto diretto e non necessita di un mezzo per propagarsi.</li>
+					<li>La trasmissione di energia avviene attraverso l'emissione e l'assorbimento di radiazione elettromagnetica.</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<h2>Irraggiamento - legge di Stefan-Boltzmann</h2>
+			<ul>
+			<li>Ogni corpo assorbe e irraggia onde elettromagnetiche, che si propagano anche nel vuoto, secondo la legge di Stefan-Boltzmann:
+\[
+\frac{dE}{dT} = \epsilon \sigma S T^4
+\]
+			</li>
+			<li>dove \(\frac{dE}{dt}\) è l’energia dissipata per unità di tempo, \(\epsilon\) è l'emissività del
+corpo, \(\sigma\) è la costante di Stefan ed S è l'area della superficie irraggiante.</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<h2>Diagramma P-V</h2>
+	<div class="media">
+		<img class="pull-right media-object" src="../src/images/diagramma_p_v.jpg">
+		<div class="media-body">
+			<ul>
+				<li>In Cinematica abbiamo definito il diagramma orario per rappresentare le caratteristiche principali del moto di un corpo.</li>
+				<li>In Termodinamica allo stesso scopo è usato il diagramma PV, 
+		uno spazio in cui sull'asse delle ascisse è posto il volume del
+		sistema e sull'asse delle ordinate la pressione.</li>
+			</ul>
+		</div>
+	</div>
+	<ul>
+		<li>Ciascuna delle curve mette in relazione il volume e la pressione a 
+temperatura costante ed è detta isoterma.</li>
+	</ul>
+</section>
+
+<section>
+	<section>
+		<h2>Gas ideale</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/gas_ideale.jpg">
+			<div class="media-body">
+				<ul>
+					<li>Un gas ideale o perfetto ha le seguenti caratteristiche:</li>
+					<ul>
+						<li>Le sue particelle hanno volume nullo,</li>
+						<li>Le forze attrattive tra le particelle sono nulle,</li>
+						<li>Le collisioni tra le particelle del gas o tra le particelle del gas e le pareti del recipiente sono perfettamente elastiche.</li>
+					</ul>	
+				</ul>
+			</div>
+		</div>
+		<ul>
+			<li>&Egrave; evidente che non esiste un gas perfetto nella realtà.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Legge dei gas perfetti o ideali</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/gas_perfetti.png">
+			<div class="media-body">
+				<ul>
+					<li>Un gas ideale rispetta la legge dei gas perfetti:
+		\[
+		p * V = n * R * T
+		\]
+					</li>
+					<li>
+						in cui p è la pressione,<br>V è il volume, <br>n è il numero di moli (\(n * N_A\) è il numero di molecole presenti), <br>R è la costante dei gas perfetti (circa 8,314 J/K·mol), <br>T è la temperatura in gradi Kelvin.
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</section>
+	<section>
+		<h2>Le tre leggi empiriche della Chimica</h2>
+		<ul>
+			La legge dei gas perfetti riassume le tre leggi empiriche della Chimica:
+			<table class="table table-hover">
+			<tbody>
+			   <tr>
+			      <td>Legge di Boyle</td>
+			      <td>\(V \propto \frac{1}{P}\)</td>
+			      <td>n e T costanti</td>
+			   </tr>
+			   <tr>
+			      <td>Legge di Gay-Lussac</td>
+			      <td>\(V \propto T\)</td>
+			      <td>n e P costanti</td>
+			   </tr>
+			   <tr>
+			      <td>Legge d'Avogadro</td>
+			      <td>\(V \propto n\)</td>
+			      <td>T e P costanti</td>
+			   </tr>
+			</tbody>
+			</table>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Equazione di van der Waals</h2>
+
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/van_der_waals_curve.gif">
+			<div class="media-body">
+				<ul>
+					<li>&Egrave; una buona approssimazione per i gas reali:
+		\[
+		(V - b) (P + \frac{a}{V^2}) = RT
+		\]
+		dove a e b sono due costanti caratteristiche che dipendono dal gas in
+		esame.
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Scambio di calore</h2>
+		<ul>
+			<li>Il calore dQ, che si deve fornire o sottrarre per variare di una quantità dT la temperatura 
+di una sostanza di massa m, è pari a
+\[
+dQ = c * m * dT \Rightarrow Q = m \int_{T_A}^{T_B} c dT
+\]
+</li>
+<li>Il calore specifico di una sostanza, <b>c</b>, è definito come la quantità di calore necessaria per aumentare (o diminuire) la temperatura di una unità di massa di 1 K (o equivalentemente di 1ºC).</li>
+<li>Il prodotto C = m * c è detto capacità termica del corpo.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Calore specifico</h2>
+		<ul>
+			<li>Il calore specifico di una sostanza dipende dalla trasformazione fisica a cui tale sostanza è sottoposta, e in particolare dalla grandezza fisica x conservata nella trasformazione.</li>
+			<li>Nel caso di un sistema gassoso si definiscono i calori specifici a volume o a pressione costante:
+\[
+c_v = \frac{1}{n}(\frac{dQ}{dT})_{V=costante}, \quad c_p = \frac{1}{n}(\frac{dQ}{dT})_{P=costante}
+\]
+e integrando:
+\[
+Q = n \int_{T_A}^{T_B} c_v dT, \quad Q = n \int_{T_A}^{T_B} c_p dT
+\]
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Calore specifico per un gas ideale</h2>
+		<ul>
+			<li>In un gas ideale i calori specifici o sono costanti o dipendono soltanto dalla temperatura; vale per essi la relazione di Mayer:
+\[
+c_p - c_v = R
+\]
+			</li>
+			<li>
+				Per i calori specifici dei gas ideali, si trovano sperimentalmente i seguenti risultati:
+<table class="table table-hover">
+<tbody>
+   <tr>
+      <td>gas monoatomici</td>
+      <td>\(c_v = \frac{3}{2}R\)</td>
+      <td>\(c_p = \frac{5}{2}R\)</td>
+   </tr>
+   <tr>
+      <td>gas biatomici</td>
+      <td>\(c_v = \frac{5}{2}R\)</td>
+      <td>\(c_p = \frac{7}{2}R\)</td>
+   </tr>
+</tbody>
+</table>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Dimostrazione della relazione di Mayer 1/2</h2>
+		<ul>
+			<li>Per il primo principio della Termodinamica:
+\[
+dQ = dU +dW \Rightarrow dQ = nC_V dT + P dV
+\]
+			</li>
+			<li>Differenziamo l'equazione dei gas perfetti:
+\[
+PV = nRT \Rightarrow P * dV + V * dP = n * R * T
+\]
+			</li>
+			<li>Sostituendo:
+\[
+nC_V dT + n * R * T - V * dP = dQ 
+\]
+\[
+\Rightarrow n(C_V + R)dT - V dP = dQ
+\]
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Dimostrazione della relazione di Mayer 2/2</h2>
+		<ul>
+			<li>Si consideri una trasformazione isobara (pressione costante):
+\[
+n(C_V + R)dT = dQ 
+\]
+			</li>
+			<li>Si consideri il calore specifico a pressione costante:
+\[
+n * C_P = (\frac{dQ}{dT})_{P=cost}
+\]
+			</li>
+			<li>
+				Avendo fatto una trasformazione isobara:
+\[
+n(C_V + R)dT = dQ \Rightarrow n(C_V + R) = \frac{dQ}{dt} = n * C_P
+\]
+\[
+C_V + R = C_P \Rightarrow  C_P - C_V = R
+\]
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Cambiamenti di fase</h2>
+		<ul>
+			<li>Il cambiamento di fase è un processo isotermico in cui il sistema cambia fase (per esempio dalla fase solida alla fase liquida).</li>
+			<li>Questi cambiamenti avvengono con scambio di calore tra sistema e ambiente, data dalla formula:
+\[
+Q = m \lambda
+\]
+			</li>
+			<li>
+				m è la massa che cambia di fase e \(\lambda\) è il calore latente dello specifico cambiamento di fase, pari al calore che occorre cedere o sottrarre all'unità di massa della sostanza per farle cambiare di fase.
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Il lavoro in Termodinamica 1/2</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/lavoro_termodinamica.png" width="50%">
+			<div class="media-body">
+				<ul>
+					<li>Si consideria un sistema gassoso contenuto in un cilindro di sezione S delimitato da un pistone mobile, come mostrato in figura.</li>
+				</ul>
+			</div>
+		</div>
+		<ul>
+			<li class="small">Se P è la pressione esercitata dal gas sul pistone allora:
+		\[
+		dW = F * dh = P * S * dh; \quad dV = S * dh \Rightarrow dW = P * dV
+		\]
+			</li>
+			<li>Si noti che se il lavoro viene fatto dall'esterno (cioè spostando il pistone verso il basso), allora dV < 0 e quindi il lavoro dW è negativo.</li>
+		</ul>
+
+	</section>
+
+	<section>
+		<h2>Il lavoro in Termodinamica 2/2</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/lavoro-Trasformazione.png">
+			<div class="media-body">
+				<ul>
+					<li>Possiamo scrivere il primo principio come:
+\[
+dQ = dU + dW \Rightarrow
+\]
+\[
+dQ = dU + P * dV
+\]
+					</li>
+					<li>Per una trasformazione finita:
+\[
+dW = P * dV \Rightarrow
+\]
+\[
+L = \int_{\Gamma} P * dV
+\]
+					</li>
+				</ul>
+			</div>
+		</div>
+		<ul>
+			<li>Si noti che il lavoro compiuto durante la trasformazione \(\Gamma\) è dato dall'area della figura tratteggiata e che in generale dipende dalla trasformazione.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Il lavoro in una trasformazione ciclica</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/lavoro_Trasformazione_ciclica.png">
+			<div class="media-body">
+			<ul>
+				<li>Si calcoli ora il lavoro compiuto durante una trasformazione ciclica \(\Gamma\).</li>
+				<li>Sia la trasformazione ciclica composta di due trasformazioni \(\Gamma_1\) e \(\Gamma_2\) che congiungono gli stati \(\Psi_0\) e \(\Psi_1\)</li>
+			</ul>
+			</div>
+		</div>
+		<ul>
+			<li class="very-small">Il lavoro compiuto dal sistema durante la trasformazione ciclica è dunque:
+\[
+W_{\Gamma} = \int_{\Gamma_1} P * dV + \int_{-\Gamma_2} P * dV = \int_{\Gamma_1} P * dV - \int_{\Gamma_2} P * dV
+\]
+che rappresenta l'area grigio chiaro del disegno.
+			</li>
+		</ul>
+	</section>
+
+</section>
+
+<section>
+	<section>
+		<h2>Trasformazioni di un gas</h2>
+		<table class="table table-hover">
+			<thead>
+                <tr>
+                  <th><b>Trasformazione</b></th>
+                  <th><b>Grandezza costante</b></th>
+                </tr>
+            </thead>
+			<tbody>
+                <tr>
+                  <td>Isobara</td>
+                  <td>Pressione</td>
+                </tr>
+                <tr>
+                  <td>Isocara</td>
+                  <td>Volume</td>
+                </tr>
+                <tr>
+                  <td>Isoterma</td>
+                  <td>Temperatura</td>
+                </tr>
+                <tr>
+                  <td>Adiabatica</td>
+                  <td>Calore</td>
+                </tr>
+            </tbody>
+		</table>
+	</section>
+
+	<section>
+		<h2>Trasformazione isobara (gas ideale)</h2>
+\[
+P = \text{costante} \Rightarrow \frac{V_1}{V_2} = \frac{T_1}{T_2}
+\]
+	</section>
+
+	<section>
+		<h2>Trasformazione isocora (gas ideale)</h2>
+\[
+V = \text{costante} \Rightarrow \frac{P_1}{P_2} = \frac{T_1}{T_2}
+\]
+	</section>
+
+	<section>
+		<h2>Trasformazione isoterma (gas ideale)</h2>
+\[
+T = \text{costante} \Rightarrow P * V = \text{costante}
+\]
+	</section>
+
+	<section>
+		<h2>Trasformazione adiabatica (gas ideale)</h2>
+		<ul>
+			<li class="small">Per il primo principio della Termodinamica:
+\[
+dU = dQ - dW, \quad dQ = 0 \Rightarrow dU = -dW \Rightarrow C_{V}dT = p dV 
+\]
+			</li>
+			<li>Si dimostra che per un gas ideale vale la seguente relazione:
+\[
+P * V^{\gamma} = \text{costante}, \quad \gamma = \frac{C_P}{C_V}
+\]	
+			</li>
+		</ul>
+	</section>
+</section>
+
+
+
+			</div>
+
+		</div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+
+		<!-- Everything below this point is unrelated to the slideshow -->
+
+		<div class="share-reveal reveal-back"></div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" manifest="../cache.manifest">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Calcolo vettoriale</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/sky.css" id="theme">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+<!-- *********************** Grandezze scalari e vettoriali *********************** -->
+<section>
+<section>
+	<h2>Grandezze scalari e vettoriali</h2>
+	<ul>
+		<li>Le grandezze per la cui rappresentazione basta un solo numero, 
+costante o funzione delle coordinate ed eventualmente anche del tempo, si dicono grandezze scalari: 
+le operazioni che si eseguono su di esse obbediscono alle solite regole dell'algebra.</li>
+<li>Esistono grandezze che per essere specificate hanno bisogno di un numero, il modulo, che ne dà il valore assoluto, di una direzione e di un verso. Il vettore è l'ente matematico adatto alla rappresentazione di queste grandezze che si chiamano appunto vettoriali e per le quali vale un'algebra che non è identica all'algebra vettoriale.</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Operazioni sui vettori</h2>
+	<ul>
+		<li>Prodotto di un vettore per uno scalare</li>
+		<li>Somma di vettori</li>
+		<li>Prodotto tra vettori:<ul><li>Prodotto scalare</li>
+		<li>Prodotto vetttoriale</li></ul></li>
+
+	</ul>
+</section>
+
+
+<section>
+	<h2>Prodotto scalare</h2>
+	<ul>
+		<li>Dati due vettori \(\vec{a}\) e \(\vec{b}\), si definisce prodotto scalare la quantità
+		\[s = \vec{a} \cdot \vec{b} = a * b * \cos{\theta}\]
+		indicando con \(\theta\) l'angolo formato dai due vettori.</li>
+		<li>Il prodotto scalare gode della seguente proprietà:
+		<ul>
+			<li>è nullo non solo se uno dei due vettori è nullo, ma anche se i due vettori formono un angolo di \(90^o\)</li>
+		</ul></li>
+	</ul>
+</section>
+
+<section>
+	<h2>Prodotto vettoriale</h2>
+	<ul>
+		<li>Dati due vettori \( \vec{a}\) e \(\vec{b}\) si definisce prodotto vettoriale il vettore \(\vec{c}\) che si indica con il simbolo:
+		\[
+		\vec{c} = \vec{a} \times \vec{b}
+		\]</li>
+		e che ha le seguenti caratteristiche:
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/Right_hand_rule_cross_product.svg" width="32%">
+			<div class="media-body">
+			<ul>
+				<li>la direzione di \(\vec{c}\) è perpendicolare al piano individuato da \( \vec{a}\) e \(\vec{b}\)</li>
+				<li>il verso è quello di una normale vite destrogira, cioè ruotando da \( \vec{a}\) a \(\vec{b}\) nel verso della vite, il verso di \(\vec{c}\) è indicato dalla punta della vite.</li>
+				<li>il modulo è \(c = a * b * \sin(\theta)\)</li>	
+			</ul>
+			</div>
+		</div>
+
+		</li>
+	</ul>
+</section>
+
+
+<section>
+	<h2>Momento di un vettore rispetto ad un punto</h2>
+	<div class="container">
+		<div class='cols2' style="float: left">
+		<img src="../src/images/momento_vect.png">
+		</div>
+		<div class="right" style="float: right; width: 60%">
+		<ul>
+			<li>Sia \(\vec{v}\) un vettore applicato nel punto P e O un altro generico punto. 
+			Si definisce momento del vettore \(\vec{v}\) rispetto al punto O, chiamato polo,
+			il vettore 
+			\[
+			\vec{M_o} = \vec{OP} \times \vec{v}
+			\]
+			ortogonale al piano individuato da \(\vec{OP}\) e \(\vec{v}\)</li>
+		</ul>
+		</div>
+	</div>
+
+</section>
+
+</section>
+
+<section>
+	<h2>Operatore differenziale</h2>
+	<ul>
+		<li>Derivata. Una notazione comune è:
+\[
+\frac{d}{dx} \text{ o } D_x \text{ o } D
+\]
+		</li>
+		<li>Per le derivate successive si usa rispettivamente:
+\[
+\frac{d^n}{dx^n} \text{ o } D_x^n \text{ o } D^n
+\]
+		</li>
+		<li>Il gradiente di una funzione scalare f(x,y,z) è una funzione vettoriale:
+\[
+\vec{\nabla} f = \frac{\partial f}{\partial x} \vec{i} +
+\frac{\partial f}{\partial y} \vec{j} +
+\frac{\partial f}{\partial z} \vec{k}
+\]
+		 </li>
+
+	</ul>
+</section>
+
+<section>
+	<h2>Definizione di differenziale</h2>
+	<ul>
+		<li>Il differenziale di una funzione, in un punto in cui la funzione è derivabile, è il prodotto della derivata in quel punto per l'incremento della variabile indipendente</li>
+		<li>Esempio:
+\[
+y = x^2 + sen(x) \Rightarrow dy = (2x+ cos(x))dx
+\]
+		</li>
+	</ul>
+</section>
+<!-- 
+<section>
+	<section>
+		<h2>Combinazione lineare</h2>
+		<ul>
+			<li>Sia V uno spazio vettoriale su un campo K. Siano \(v_1, .. v_n\) vettori di V.</li>
+			<li>Una combinazione lineari di questi è il vettore individuato dalla seguente scrittura:
+\[
+a_1 \vec{v_1} + . . . . . + a_n \vec{v_n}
+\]
+\[
+a_1, .... a_n \elem K
+\]
+			</li>
+	</section>
+	<section>
+		<h2>Principio di sovrapposizione</h2>
+		<ul>
+			<li>Dato un sistema di equazioni lineari, se esistono più soluzioni, ogni combinazione lineare di queste soluzioni è ancora una soluzione del sistema. Cioè: le soluzioni di un sistema lineare si possono moltiplicare per costanti arbitrarie, e sommare algebricamente tra loro, e ciò che si ottieme è ancora una soluzione dello stesso sistema.
+In fisica</li>
+		</ul>
+	</section>
+</section> -->
+
+<section>
+	<h2>Formula di Eulero</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/Eulero_formula.svg" width="52%">
+			<div class="media-body">
+				<ul>
+					<li>La formula di Eulero afferma che, per ogni numero reale x si ha:
+			\[
+			e^{ix} = cos x + i sen x
+			\]
+			dove e è la base dei logaritmi naturali, i è l'unità immaginaria e seno e coseno sono funzioni trigonometriche.
+					</li>
+				</ul>
+			</div>
+		</div>
+</section>
+
+<section>
+	<h2>Formule Trigonometriche</h2>
+	<ul>
+		<li>Formule di prostaferesi:
+\[
+sin(\alpha) + sin(\beta) = 2 sin(\frac{\alpha + \beta}{2}) cos(\frac{\alpha - \beta}{2})
+\]
+		</li>
+		<li>Formule della somma degli angoli:
+		\[
+sin(\alpha + \beta) = sin(\alpha) cos(\beta) + cos(\alpha) sin(\beta)
+		\]
+
+		</li>
+	</ul>
+</section>
+
+
+
+			</div>
+
+		</div>
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+
+		<!-- Everything below this point is unrelated to the slideshow -->
+
+		<div class="share-reveal reveal-back"></div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>
