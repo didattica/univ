@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML beginner</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/sky.css" id="theme">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/lib/css/zenburn.css">
+
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+<section>
+	<h2>HTML beginner</h2>
+<!-- 	<ul>
+		<li>E-Learning.</li>
+		<li>Oggetti Didattici.</li>
+		<li>Standard.</li>
+	</ul> -->
+	<hr>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<hr>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+
+<section>
+	<section>
+		<h2>Getting Started</h2>
+		<ul>
+			<li>To start writing in HTML, you need a simple text editor.</li>
+			<li>Create a folder called "html" and save a file as "myFirstPage.html".</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Tags</h2>
+		<ul>
+			<li>The basic structure of an HTML document includes tags, which surround content and apply meaning to it.</li>
+			<li>Change your document so that it looks like this:
+			<pre><code>&lt;!DOCTYPE html>
+&lt;html>
+  &lt;body>
+    This is my first web page
+  &lt;/body>
+&lt;/html></code></pre></li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>TAGS Comments</h2>
+		<ul>
+			<li><b>&lt;!DOCTYPE html></b> is a document type declaration and it lets the browser know which flavor of HTML you’re using (HTML5, in this case).</li>
+			<li>The HTML <b>&lt;html></b> element represents the root of an HTML document. All other elements must be descendants of this element.</li>
+			<li>The HTML <b>&lt;body></b> element represents the content of an HTML document. There is only one <body> element in a document.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Headings - Page Titles</h2>
+		<ul>
+			<li>To add a title to your page, change your code so that it looks like this:
+			<pre><code>&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>My first web page&lt;/title>
+  &lt;/head>
+  &lt;body>
+    This is my first web page
+  &lt;/body>
+&lt;/html></code></pre></li>
+		<li>The head element contains information about the page.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Paragraphs</h2>
+		<ul>
+			<li>Add a new line in your body so that they look like this:<pre><code>&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>My first web page&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;p>This is my first web page&lt;/p>
+    &lt;p>How exciting&lt;/p>
+  &lt;/body>
+&lt;/html></code></pre></li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Line breaks</h2>
+		<ul>
+			<li>The HTML &lt;br> element produces a line break in text.
+				<pre><code>&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>My first web page&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;p>This is my first web page&lt;/p>
+    &lt;p>How exciting&lt;/p>
+    &lt;p>first line&lt;br>second line&lt;/p>
+  &lt;/body>
+&lt;/html></code></pre>
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Lists</h2>
+		<ul>
+			<li>A list can be unsordered or ordered. The former is used for non-sequential lists and the latter is for sequential lists.</li>
+			<li>Unsorted list:
+				<pre><code>&lt;ul>
+  &lt;li>To learn HTML&lt;/li>
+  &lt;li>To show off&lt;/li>
+&lt;/ul></code></pre>
+			</li>
+			<li>Sorted list:
+				<pre><code>&lt;ol>
+  &lt;li>To learn HTML&lt;/li>
+  &lt;li>To show off&lt;/li>
+&lt;/ol></code></pre>
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Heading elements</h2>
+		<ul>
+			<li>Heading elements implement six levels of document heading</li>
+			<li>&lt;h1> is the most important. </li>
+			<li>&lt;h6> is the less important. </li>
+			<li>A heading element briefly describes the topic of the section it introduces.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Heading elements examples</h2>
+		<ul>
+			<li>The following code shows all the heading levels, in use.
+				<pre><code>&lt;h1>Heading level 1&lt;/h1>
+&lt;h2>Heading level 2&lt;/h2>
+&lt;h3>Heading level 3&lt;/h3>
+&lt;h4>Heading level 4&lt;/h4>
+&lt;h5>Heading level 5&lt;/h5>
+&lt;h6>Heading level 6&lt;/h6></code></pre>
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Anchor</h2>
+		<ul>
+			<li>The HTML &lt;a> Element defines a hyperlink, the named target destination for a hyperlink, or both.</li>
+			<li>Attributes: <ul>
+				<li>download: this attribute, if present, indicates that the author intends the hyperlink to be used for downloading a resource </li>
+				<li>href: it indicates the link target, either a URL or a URL fragment.</li>
+			</ul></li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Anchor example</h2>
+		<ul>
+			<li>Example: linking to an external location or file:
+				<pre><code>&lt;a href="http://www.mozilla.com/">External Link&lt;/a></code></pre>
+			</li>
+			<li>Example: creating an email link <pre><code>&lt;a href="mailto:nowhere@mozilla.org">Send email&lt;/a></code></pre></li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>The HTML &lt;img> element</h2>
+		<ul>
+			<li>The HTML &lt;img> element represents an image of the document.</li>
+			<li>This element includes the following attributes:
+				<ul>
+					<li>alt: this attribute defines the alternative text describing the image.</li>
+					<li>src: image URL, this attribute is obligatory for the <img> element.</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>The HTML &lt;img> element example</h2>
+		<ul>
+			<li>Example 1: image linking to an external location or file
+				<pre><code>&lt;img src="http://some-image.png" alt="my image" /></code></pre>
+			</li>
+			<li>Example 2: Image link 
+				<pre><code>&lt;a href="http://some-page.html"> 
+    &lt;img src="http://some-image.png" alt="some image" /> 
+&lt;/a></code></pre>
+			</li>
+		</ul>
+	</section>
+</section>
+
+
+<section>
+	<h2>Acronymous</h2>
+	<ul>
+		<li>URL: uniform resource locator. It is also known as web address.</li>
+	</ul>
+</section>
+
+<section id="reference">
+	<h2>References</h2>
+	<ol>
+		<li><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element">HTML element reference</a></li>
+	</ol>
+
+</section>
+			</div>
+
+		</div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+		<div class="share-reveal reveal-back"></div>
+		<script src="../app/bower_components/reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+$(document).ready(function() {
+  $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+});
+		</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>
