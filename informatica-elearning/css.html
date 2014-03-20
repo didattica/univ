@@ -124,11 +124,44 @@ p {
 	</section>
 </section>
 
+<section>
+	<section>
+		<h2>How to position text around an image</h2>
+		<ul>
+			<li>The "float" property is used for positioning and layout on web pages.</li>
+			<li>Here is an example of that:<img src="http://css-tricks.com/wp-content/csstricks-uploads/print-layout.png"></li>
+		</ul>
+	</section>
+	
+	<section>
+		<h2>HTML code</h2>
+		<pre><code>&lt;body>
+  &lt;img src="sunset.gif" class="float-left">
+  &lt;p>The images are contained with...&lt;/p>
+
+  &lt;img src="sunset.gif" class="float-right">
+  &lt;p>This second paragraph has an...&lt;/p>
+&lt;/body></code></pre>
+	</section>
+
+	<section>
+		<h2>CSS code</h2>
+		<pre><code>.float-left { 
+    float: left; 
+    margin: 4px; 
+}
+.float-right { 
+    float: right; 
+    margin: 4px; 
+}</code></pre>
+	</section>
+</section>
+
 
 <section>
 	<h2>Acronymous</h2>
 	<ul>
-
+		<li>CSS: Cascading Style Sheets</li>
 	</ul>
 </section>
 
@@ -136,6 +169,7 @@ p {
 	<h2>References</h2>
 	<ol>
 		<li><a href="http://www.w3.org/TR/CSS21/syndata.html#q10">W3C CSS2.1 specification for rule sets, declaration blocks, and selectors.</a></li>
+		<li><a href="http://css-tricks.com/almanac/properties/f/float/">CSS-TRICKS float</a></li>
 	</ol>
 
 </section>
