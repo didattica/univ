@@ -50,7 +50,13 @@
         <h2>Elenco degli studenti del corso di Informatica e E-Learning</h2> 
         <h3>CdL Scienze Pedagogiche e di Servizi Educativi</h3>
         <div class="well">
-        <table class="footable table">
+        <!-- TODO fix this code and style-->
+        <fieldset style="height: 32px; font-size: 14px; margin-bottom: 10px">
+          <label>Search: </label>
+          <input id="filter" type="text" class="input-small" placeholder="Type somthing">
+        </fieldset>
+
+        <table class="footable table" data-filter="#filter">
           <thead>
             <tr>
               <th class="footable-sortable">First Name</th>
@@ -239,6 +245,7 @@
     <script src="../app/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../vendors/footable/js/footable.js"></script>
     <script src="../vendors/footable/js/footable.sort.js" type="text/javascript"></script>
+    <script src="../vendors/footable/js/footable.filter.js" type="text/javascript"></script>
 
     <script>
       $(function () {
