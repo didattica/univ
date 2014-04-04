@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>JavaScript beginner</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/sky.css" id="theme">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/lib/css/zenburn.css">
+
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+<section>
+	<h2>JavaScript beginner</h2>
+<!-- 	<ul>
+		<li>E-Learning.</li>
+		<li>Oggetti Didattici.</li>
+		<li>Standard.</li>
+	</ul> -->
+	<hr>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<hr>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+
+<section>
+	<section>
+		<h2>What is JavaScript?</h2>
+		<ul>
+			<li>JavaScript (often shortened to JS) is a cross-platform programming language for Web pages.</li>
+			<li>The JavaScript standard is ECMAScript.</li>
+			<li>All modern browsers fully support ECMAScript 5.1</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>JavaScript values</h2>
+		<ul>
+			<li>JavaScript recognizes the five following types of primitive values:</li>
+		</ul>
+		<table class="table table-hover table-js">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Examples of typed values / Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Numbers</td>
+                  <td>42, 3.14159</td>
+                </tr>
+                <tr>
+                  <td>Logical</td>
+                  <td>true / false</td>
+                </tr>
+                <tr>
+                  <td>Strings</td>
+                  <td>"I am a string"</td>
+                </tr>
+                <tr>
+                  <td>null</td>
+                  <td>a special keyword denoting a null value; null is also a primitive value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant</td>
+                </tr>
+                <tr>
+                	<td>undefined</td>
+                	<td>a top-level property whose value is undefined; undefined is also a primitive value.</td>
+                </tr>
+              </tbody>
+            </table>
+	</section>
+
+	<section>
+		<h2>JavaScript Variables</h2>
+		<ul>
+			<li>You use variables as symbolic names for values in your application.</li>
+			<li>You can declare a variable in this way:
+				<ul>
+					<li>With the keyword "var". For example, <pre><code>var x = 42;</code></pre></li>
+					<li>A variable declared using the var statement with no initial value specified has the value undefined.<pre><code>var x;
+console.log(x); // undefined</code></pre>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>JavaScript Operators</h2>
+		<ul>
+			<li>JavaScript has both binary and unary operators, and one special ternary operator, the conditional operator. </li>
+			<li>A binary operator requires two operands, one before the operator and one after the operator:<pre><code>x * y;</code></pre></li>
+			<li>A unary operator requires a single operand, either before or after the operator:<pre><code>x++;</code></pre></li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Comparison operators</h2>
+		<table class="table table-hover table-js">
+              <thead>
+                <tr>
+                  <th>Operator</th>
+                  <th>Description</th>
+                  <th>Examples</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Equal (==)</td>
+                  <td>Returns true if the operands are equal.</td>
+                  <td>3 == 3</td>
+                </tr>
+                <tr>
+                  <td>Not equal (!=)</td>
+                  <td>Returns true if the operands are not equal.</td>
+                  <td>3 != 2</td>
+                </tr>
+                <tr>
+                  <td>Greater than (&gt;)</td>
+                  <td>Returns true if the left operand is greater than the right operand.</td>
+                  <td>3 > 2</td>
+                </tr>
+                <tr>
+                  <td>Less than (&lt;)</td>
+                  <td>Returns true if the left operand is less than the right operand.</td>
+                  <td>2 &lt; 1</td>
+                </tr>
+              </tbody>
+            </table>
+	</section>
+
+</section>
+
+<section>
+	<section>
+		<h2>JavaScript functions</h2>
+		<ul>
+			<li>A function definition consists of the "function" keyword, followed by
+				<ul>
+					<li>the name of the function</li>
+					<li>a list of arguments to the function, enclosed in parentheses and separated by commas</li>
+					<li>the JavaScript statements that define the function, enclosed in curly braces, "{ }".</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>JavaScript function example</h2>
+		<pre><code>function square(number) {
+  return number * number;
+}
+
+function sum(x, y) {
+  return x + y;
+}
+</code></pre>
+	</section>
+
+	<section>
+		<h2>Calling functions</h2>
+		<ul>
+			<li>Defining a function does not execute it. </li>
+			<li>Calling the function actually performs the specified actions with the indicated parameters.</li>
+			<li>For example, if you define the function square, you could call it as follows:<pre><code>square(5);</code></pre></li>
+		</ul>
+	</section>
+</section>
+
+<section>
+
+	<section>
+		<h2>What is jQuery?</h2>
+		<ul>
+			<li>jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML</li>
+			<li>jQuery is the most popular JavaScript library in use today.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Including the library</h2>
+		<ul>
+			<li>The jQuery library is a single JavaScript file</li>
+			<li>It is  possible to include jQuery directly from content delivery networks:
+<pre><code>&lt;script src="http://code.jquery.com/jquery-1.11.min.js"&gt;</script></code></pre>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Usage style</h2>
+		<ul>
+			<li>You can use jQuery via the "$"" function.</li>
+			<li>Examples: <pre><code>$('body').append('ciao2');
+
+$('body').html('ciao');
+
+$('img').attr('src', 'image.jpg')
+</code></pre></li>
+		</ul>
+	</section>
+
+</section>
+
+<section>
+	<section>
+		<h2>jQuery Ajax</h2>
+		<ul>
+			<li>The jQuery library has a full suite of Ajax capabilities.</li>
+			<li>The functions and methods allow us to load data from the server without a browser page refresh.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>jQuery Ajax example</h2>
+		<pre><code>$.ajax({
+  url: "test.html"
+}).done(function(content) {
+  $('body').html(content);
+});</code></pre>
+	</section>
+</section>
+
+
+
+<section>
+	<h2>Acronymous</h2>
+	<ul>
+		<li>URL: uniform resource locator. It is also known as web address.</li>
+	</ul>
+</section>
+
+<section id="reference">
+	<h2>References</h2>
+	<ol>
+		<li><a href="https://developer.mozilla.org/en/docs/Web/JavaScript">JavaScript | MDN</a></li>
+	</ol>
+
+</section>
+			</div>
+
+		</div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+		<div class="share-reveal reveal-back"></div>
+		<script src="../app/bower_components/reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+$(document).ready(function() {
+  $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+});
+		</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>
