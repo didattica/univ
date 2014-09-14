@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:ns="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="685" height="630" id="svg2" sodipodi:version="0.32" inkscape:version="0.45.1" version="1.0" sodipodi:docname="Diagramma_di_fase_acqua.svg" inkscape:output_extension="org.inkscape.output.svg.inkscape" sodipodi:docbase="/home/gian/Desktop/insetti">
+  <defs id="defs4">
+    <linearGradient inkscape:collect="always" id="linearGradient3263">
+      <stop style="stop-color: rgb(255, 255, 255); stop-opacity: 1;" offset="0" id="stop3265"/>
+      <stop style="stop-color: rgb(255, 255, 255); stop-opacity: 0;" offset="1" id="stop3267"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3227">
+      <stop style="stop-color: rgb(87, 209, 225); stop-opacity: 1;" offset="0" id="stop3237"/>
+      <stop id="stop3233" offset="1" style="stop-color: rgb(255, 255, 255); stop-opacity: 1;"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3201">
+      <stop style="stop-color: rgb(127, 127, 127); stop-opacity: 1;" offset="0" id="stop3203"/>
+      <stop id="stop3209" offset="0.5" style="stop-color: rgb(205, 205, 205); stop-opacity: 1;"/>
+      <stop style="stop-color: rgb(255, 255, 255); stop-opacity: 0;" offset="1" id="stop3205"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3189">
+      <stop style="stop-color: rgb(20, 0, 198); stop-opacity: 1;" offset="0" id="stop3191"/>
+      <stop style="stop-color: rgb(127, 169, 255); stop-opacity: 1;" offset="1" id="stop3193"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3177">
+      <stop style="stop-color: rgb(255, 23, 23); stop-opacity: 1;" offset="0" id="stop3179"/>
+      <stop style="stop-color: rgb(247, 8, 8); stop-opacity: 0;" offset="1" id="stop3181"/>
+    </linearGradient>
+    <inkscape:perspective sodipodi:type="inkscape:persp3d" inkscape:vp_x="0 : 526.18109 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="744.09448 : 526.18109 : 1" inkscape:persp3d-origin="372.04724 : 350.78739 : 1" id="perspective10"/>
+    <inkscape:perspective id="perspective2390" inkscape:persp3d-origin="372.04724 : 350.78739 : 1" inkscape:vp_z="744.09448 : 526.18109 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 526.18109 : 1" sodipodi:type="inkscape:persp3d"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient3177" id="linearGradient3183" x1="176.093" y1="284.58835" x2="552.65625" y2="284.58835" gradientUnits="userSpaceOnUse"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient3189" id="linearGradient3195" x1="219.5" y1="271.29074" x2="437.64285" y2="271.29074" gradientUnits="userSpaceOnUse"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient3201" id="linearGradient3207" x1="176.64285" y1="426.29074" x2="676.21429" y2="426.29074" gradientUnits="userSpaceOnUse" gradientTransform="translate(-0.714286, 0.714285)"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient3227" id="linearGradient3241" gradientUnits="userSpaceOnUse" x1="435.92856" y1="186.24973" x2="676.95184" y2="186.24973" gradientTransform="matrix(1.01765, 0, 0, 1.00259, -11.9614, -0.124867)" spreadMethod="pad"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient3263" id="linearGradient3269" x1="175.093" y1="284.58835" x2="553.65625" y2="284.58835" gradientUnits="userSpaceOnUse"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient3177" id="linearGradient3439" gradientUnits="userSpaceOnUse" x1="176.093" y1="284.58835" x2="552.65625" y2="284.58835"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient3263" id="linearGradient3441" gradientUnits="userSpaceOnUse" x1="175.093" y1="284.58835" x2="553.65625" y2="284.58835"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient3189" id="linearGradient3443" gradientUnits="userSpaceOnUse" x1="219.5" y1="271.29074" x2="437.64285" y2="271.29074"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient3201" id="linearGradient3445" gradientUnits="userSpaceOnUse" gradientTransform="translate(-0.714286, 0.714285)" x1="176.64285" y1="426.29074" x2="676.21429" y2="426.29074"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient3227" id="linearGradient3447" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.01765, 0, 0, 1.00259, -11.9614, -0.124867)" spreadMethod="pad" x1="435.92856" y1="186.24973" x2="676.95184" y2="186.24973"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient3177" id="linearGradient3494" gradientUnits="userSpaceOnUse" x1="176.093" y1="284.58835" x2="552.65625" y2="284.58835"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient3263" id="linearGradient3496" gradientUnits="userSpaceOnUse" x1="175.093" y1="284.58835" x2="553.65625" y2="284.58835"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient3189" id="linearGradient3498" gradientUnits="userSpaceOnUse" x1="219.5" y1="271.29074" x2="437.64285" y2="271.29074"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient3201" id="linearGradient3500" gradientUnits="userSpaceOnUse" gradientTransform="translate(-0.714286, 0.714285)" x1="176.64285" y1="426.29074" x2="676.21429" y2="426.29074"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient3227" id="linearGradient3502" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.01765, 0, 0, 1.00259, -11.9614, -0.124867)" spreadMethod="pad" x1="435.92856" y1="186.24973" x2="676.95184" y2="186.24973"/>
+    <inkscape:perspective id="perspective2532" inkscape:persp3d-origin="372.04724 : 350.78739 : 1" inkscape:vp_z="744.09448 : 526.18109 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 526.18109 : 1" sodipodi:type="inkscape:persp3d"/>
+    <inkscape:perspective id="perspective3487" inkscape:persp3d-origin="280 : 186.66667 : 1" inkscape:vp_z="560 : 280 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 280 : 1" sodipodi:type="inkscape:persp3d"/>
+    <inkscape:perspective id="perspective3523" inkscape:persp3d-origin="280 : 186.66667 : 1" inkscape:vp_z="560 : 280 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 280 : 1" sodipodi:type="inkscape:persp3d"/>
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" gridtolerance="10000" guidetolerance="10" objecttolerance="10" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="1" inkscape:cx="309.37318" inkscape:cy="414.36038" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" inkscape:window-width="1242" inkscape:window-height="898" inkscape:window-x="32" inkscape:window-y="48" inkscape:showpageshadow="false"/>
+  <metadata id="metadata7">
+    <rdf:RDF>
+      <ns:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      </ns:Work>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(-42.2483, -228.911)" style="display: inline;">
+    <g id="g4179">
+      <path transform="translate(42.2483, 228.911)" sodipodi:nodetypes="cccccc" id="path2230" d="M 131.08387,166.10664 L 198.32574,165.35111 L 298.05527,447.16255 C 285.32083,490.5055 265.47815,530.95695 194.12453,550.45481 L 130.70611,549.91417 L 131.08387,166.10664 z " style="fill: rgb(255, 199, 199); fill-rule: evenodd; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; fill-opacity: 1;"/>
+      <path transform="translate(42.2483, 228.911)" sodipodi:nodetypes="ccccc" id="path3203" d="M 198.70351,165.72888 L 586.66644,165.35111 L 587.14431,198.3188 C 549.55725,329.01007 487.82305,440.00236 298.81079,447.16255 L 198.70351,165.72888 z " style="fill: rgb(199, 238, 255); fill-rule: evenodd; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; fill-opacity: 1;"/>
+      <path transform="translate(42.2483, 228.911)" sodipodi:nodetypes="ccccccc" id="path3205" d="M 194.66151,590.32905 L 194.65875,550.02482 C 248.16846,531.94999 288.74928,502.70932 298.43302,446.78479 C 492.47699,439.7056 551.06794,327.65031 587.06061,198.08136 L 634.90968,198.32932 L 635.11104,590.84617 L 194.66151,590.32905 z " style="fill: rgb(255, 255, 185); fill-rule: evenodd; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; fill-opacity: 1;"/>
+      <path id="path2602" d="M 173.06184,245.70091 L 173.06184,819.90116 L 689.82644,819.90116" style="fill: none; fill-opacity: 1; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"/>
+      <path id="path3381" d="M 236.52608,779.1027 C 287.19334,764.30144 326.27705,735.34249 340.78876,676.35109 L 241.05924,393.78413" style="fill: none; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 1.5; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"/>
+      <path id="path3379" d="M 241.27231,393.46785 L 337.76665,250.23407" style="fill: none; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 1.5; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: 12, 12; stroke-dashoffset: 0pt; stroke-opacity: 1;"/>
+      <path id="path3374" d="M 241.05924,393.78413 L 241.27231,393.46785" style="fill: none; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;"/>
+      <path sodipodi:nodetypes="cc" id="path3383" d="M 340.88041,675.73306 C 500.92038,673.48437 590.2547,581.67519 629.49159,426.40926" style="fill: none; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 1.5; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"/>
+      <path id="path3385" d="M 173.28421,495.11311 L 676.23675,495.11311" style="fill: none; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 1; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: 4, 4; stroke-dashoffset: 0pt; stroke-opacity: 1;"/>
+      <path id="path3389" d="M 173.06184,675.59557 L 340.03323,675.59557 L 340.03323,819.90116" style="fill: none; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 1; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: 4, 4; stroke-dashoffset: 0pt; stroke-opacity: 1;"/>
+      <path id="path3391" d="M 276.56899,495.0247 L 276.56899,819.90116" style="fill: none; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 1; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: 4, 4; stroke-dashoffset: 0pt; stroke-opacity: 1;"/>
+      <path id="path3393" d="M 607.48966,495.0247 L 607.48966,819.90116" style="fill: none; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 1; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: 4, 4; stroke-dashoffset: 0pt; stroke-opacity: 1;"/>
+      <text id="text3403" y="464.804" x="378.565" style="font-size: 40px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: Bitstream Vera Sans;" xml:space="preserve"><tspan y="464.804" x="378.565" id="tspan3405" sodipodi:role="line">liquido</tspan></text>
+      <text id="text3407" y="741.326" x="410.297" style="font-size: 40px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: Bitstream Vera Sans;" xml:space="preserve"><tspan y="741.326" x="410.297" id="tspan3409" sodipodi:role="line">vapore</tspan></text>
+      <text id="text3411" y="404.361" x="256.17" style="font-size: 22px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: Bitstream Vera Sans;" xml:space="preserve"><tspan y="404.361" x="256.17" id="tspan3413" sodipodi:role="line">2000 atm</tspan></text>
+      <text id="text3415" y="275.922" x="55.1997" style="font-size: 22px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: Bitstream Vera Sans;" xml:space="preserve"><tspan y="275.922" x="55.1997" id="tspan3417" sodipodi:role="line">P (mmHg)</tspan></text>
+      <text id="text3427" y="504.091" x="123.606" style="font-size: 22px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: Bitstream Vera Sans;" xml:space="preserve"><tspan y="504.091" x="123.606" id="tspan3429" sodipodi:role="line">760</tspan></text>
+      <text id="text3431" y="683.906" x="112.326" style="font-size: 24px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: Bitstream Vera Sans;" xml:space="preserve"><tspan y="683.906" x="112.326" id="tspan3433" sodipodi:role="line">4,58</tspan></text>
+      <text id="text3435" y="846.735" x="250.126" style="font-size: 22px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: Bitstream Vera Sans;" xml:space="preserve"><tspan y="846.735" x="250.126" id="tspan3437" sodipodi:role="line">0,00</tspan></text>
+      <text id="text3439" y="846.735" x="315.101" style="font-size: 22px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: Bitstream Vera Sans;" xml:space="preserve"><tspan y="846.735" x="315.101" id="tspan3441" sodipodi:role="line">0,01</tspan></text>
+      <text id="text3443" y="846.735" x="584.068" style="font-size: 22px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: Bitstream Vera Sans;" xml:space="preserve"><tspan y="846.735" x="584.068" id="tspan3445" sodipodi:role="line">100</tspan></text>
+      <text id="text3447" y="665.774" x="348.344" style="font-size: 22px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: Bitstream Vera Sans;" xml:space="preserve"><tspan y="665.774" x="348.344" id="tspan3449" sodipodi:role="line">T</tspan></text>
+      <text id="text3451" y="847.1" x="650.066" style="font-size: 22px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: Bitstream Vera Sans;" xml:space="preserve"><tspan y="847.1" x="650.066" id="tspan3453" sodipodi:role="line">T (°C)</tspan></text>
+      <path style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1; stroke-miterlimit: 4; stroke-opacity: 1;" d="M 178.60026,250.54328 L 167.53106,250.54328 L 173.06566,239.48822 L 178.60026,250.54328 z " id="path3526" sodipodi:nodetypes="cccc"/>
+      <path style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1; stroke-miterlimit: 4; stroke-opacity: 1;" d="M 684.34422,825.3257 L 684.34422,814.25644 L 695.39929,819.79107 L 684.34422,825.3257 z " id="rect1316" sodipodi:nodetypes="cccc"/>
+      <text id="text2489" y="646.31" x="189.064" style="font-size: 40px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: Bitstream Vera Sans;" xml:space="preserve"><tspan y="646.31" x="189.064" id="tspan2491" sodipodi:role="line">solido</tspan></text>
+      <path transform="translate(42.2483, 228.911)" id="path2495" d="M 131.46164,590.71261 L 196.43693,548.40312 L 193.41482,549.91418" style="fill: none; fill-rule: evenodd; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;"/>
+    </g>
+  </g>
+</svg>

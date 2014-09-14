@@ -1,0 +1,50 @@
+div.formula-centered {
+	text-align:center;
+}
+
+div.formula-centered > span {
+	margin-left: 40px;
+}
+
+img {
+	border: 0px!important;
+}
+
+img.center {
+    margin: 0 auto;
+}
+
+sup.reference {
+	vertical-align: 0;
+	top: -0.3em;
+}
+
+ul.list-sub, ol.list-sub{
+	font-size: 80%;
+}
+
+.btn.back {
+    cursor: pointer;
+}
+.reveal h2, .reveal h3 {
+	text-transform: none;
+}
+
+.share-reveal.reveal-back {
+	display: block; 
+	position: absolute; 
+	bottom: 14px; 
+	left: 50%; 
+	margin-left: -125px; 
+	z-index: 20;
+}
+
+.small .MathJax_Display {
+	font-size: 33px;
+	text-align: left!important;
+}
+
+.very-small .MathJax_Display {
+	font-size: 30px;
+	text-align: left!important;
+}
