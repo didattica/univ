@@ -64,8 +64,7 @@
 			});
 
 			$('.print').on('click', function () {
-				
-	
+
 				location.replace(location.href.replace(/#\//,'?print-pdf#/'));
 			});
 
