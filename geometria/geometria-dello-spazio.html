@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Geometria dello spazio</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/beige.css" id="beige">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+	<section>
+		<h2>Geometria dello spazio</h2>
+		<ul>
+			<li>...</li>
+		</ul>
+		<hr>
+		<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+		<hr>
+		<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+	</section>
+
+<section>
+	<section>
+		<h2>Relazioni fra rette nello spazio 1/2</h2>
+		<ul>
+			<li>Due rette nello spazio possono essere:
+				<ul>
+					<li>Complanari: cioè giacciono su uno stesso piano</li>
+					<li>Sghembe: cioè non giacciono sullo stesso piano</li>
+				</ul>
+			</li>
+			<li>In figura la retta rossa e la retta blu sono tra loro sghembe.</li>
+		</ul>
+		<img src="../src/images/geometria-rette-sghembe.png">
+	</section>
+	<section>
+		<h2>Relazioni fra rette nello spazio 2/2</h2>
+        <div class="media">
+            <img class="pull-right media-object" src="../src/images/geometria-rette-spazio.png">
+            <div class="media-body">
+				<ul>
+					<li>Una retta nello spazio rispetto ad un piano può essere:
+						<ul>
+							<li>Secante: in tal caso ha un solo punto in comune con il piano</li>
+							<li>Parallela ad una retta del piano: in tal caso non ha nessun punto in comune con il piano</li>
+							<li>Giacente sul piano: in tal caso ha tutti i punti in comune con il piano.</li>
+						</ul>
+					</li>
+					<li>Nella figura: la retta "a" giace sul piano, la retta "b" è secante il piano, la retta "c" è sopra il piano e parallela alla retta "a"</li>
+				</ul>
+            </div>
+        </div>
+	</section>
+</section>
+
+<section>
+
+	<section>
+		<h2>Angoloidi</h2>
+	        <div class="media">
+	            <img class="pull-right media-object" src="../src/images/geometria-angoloide.png">
+	            <div class="media-body">
+					<ul>
+						<li>Consideriamo un poligono ed un punto esterno al piano su cui giace il poligono:</li>
+						<li>Definiremo Angoloide lo spazio limitato da tutte le semirette uscenti dal punto dato e passanti per i punti del poligono (perimetro del poligono)</li>
+						<li>Il punto P è chiamato vertice dell'angoloide.</li>
+					</ul>
+	            </div>
+	        </div>
+	</section>
+
+	<section>
+		<h2>Triedri</h2>
+	        <div class="media">
+	            <img class="pull-right media-object" src="../src/images/geometria-triedri.png">
+	            <div class="media-body">
+					<ul>
+						<li>Se il poligono "generatore" è un triangolo otteniamo l'angoloide più semplice che chiameremo Triedro</li>
+						<li>Il triedro è lo spazio limitato da tutte le semirette uscenti dal punto dato, non giacente sul piano di un triangolo, e passanti per i punti dei lati del triangolo</li>
+						<li>Il punto P è chiamato vertice del triedro</li>
+					</ul>
+	            </div>
+	        </div>
+	</section>
+
+</section>
+
+<section>
+	<section>
+		<h2>Poliedro</h2>
+	        <div class="media">
+	            <img class="pull-right media-object" src="../src/images/geometria-poliedro.png">
+	            <div class="media-body">
+					<ul>
+						<li>Il poliedro è la parte di spazio limitata da un numero finito di poligoni, giacenti su piani diversi ed aventi, due a due, un lato in comune</li>
+						<li>Ogni poligono si chiama Faccia</li>
+						<li>L'insieme delle facce si chiama Superficie poliedrica</li>
+					</ul>
+	            </div>
+	        </div>
+		<ul>
+
+			<li>La parte di spazio limitata dalla superficie poliedrica si chiama Volume del poliedro</li>
+			<li>I lati dei poligoni si chiamano Spigoli del poliedro</li>
+			<li>I vertici dei poligoni si chiamano Vertici del poliedro</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Tipo di poliedro</h2>
+		<ul>
+			<li>Il tipo di poliedro è individuato dal numero di facce della superficie poliedrica:
+				<ul>
+					<li>Tetraedro: poliedro con 4 facce</li>
+					<li>Pentaedro: poliedro con 5 facce</li>
+					<li>Esaedro: poliedro con 6 facce</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Prisma indefinito</h2>
+	        <div class="media">
+	            <img class="pull-right media-object" src="../src/images/geometria-prisma-indefinito.png">
+	            <div class="media-body">
+					<ul>
+						<li>Consideriamo un poligono qualunque sul piano \(\alpha\) e consideriamo un poligono congruente ad esso sul un altro piano \(\beta\) parallelo ad \(\alpha\)</li>
+						<li>Consideriamo poi le congiungenti i punti corrispondenti dei perimetri dei due poligoni congruenti: in tal modo l'insieme di tali rette definiscono una "superficie prismatica" indefinita.</li>
+						<li>La parte di spazio circondata dalla superficie prismatica è chiamata "prisma indefinito"</li>
+					</ul>
+	            </div>
+	        </div>
+	</section>
+
+	<section>
+		<h2>Prisma 1/2</h2>
+	        <div class="media">
+	            <img class="pull-right media-object" src="../src/images/geometria-prisma.png">
+	            <div class="media-body">
+					<ul>
+						<li>Si dice prisma la parte di spazio racchiusa da un prisma indefinito compresa fra due sezioni parallele.</li>
+						<li>Le sezioni parallele sono chiamate "basi del prisma".</li>
+						<li>Le altre facce diverse dalle basi sono chiamate "facce laterali" (sono sempre parallelogrammi).</li>
+						<li>Se gli spigoli laterali sono perpendicolari alle basi avremo un prisma retto; il prisma in figura, invece, è obliquo.</li>
+					</ul>
+	            </div>
+	        </div>
+	</section>
+
+	<section>
+		<h2>Prisma 2/2</h2>
+			<ul>
+				<li>Se i poligoni di base del "prisma retto" sono poligoni regolari diremo che il prisma è "regolare"</li>
+			</ul>
+			<img src="../src/images/geometria-regolare.png">
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Concetto di volume</h2>
+		<ul>
+			<li>Il volume è inteso come spazio racchiuso entro la superficie di un solido.</li>
+			<li>Siccome per misurare dobbiamo usare una unità che sia dello stesso tipo dell'oggetto misurato useremo uno dei solidi più semplici: il cubo.</li>
+			<li>Come unità di misura nello spazio useremo il cubo unitario, cioè il cubo con lato l'unità di misura lineare.</li>
+		</ul>
+	</section>
+</section>
+
+
+<section>
+	<h2>Conclusione</h2>
+	<ul>
+		<li>....li>
+	</ul>
+</section>
+			</div>
+
+		</div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+		<div class="share-reveal reveal-back"></div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>
