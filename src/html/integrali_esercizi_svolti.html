@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Integrali - problemi svolti</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../../app/bower_components/reveal.js/css/theme/beige.css" id="beige">
+		<link href="../../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="../../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+<section>
+	<h2>Integrali - problemi svolti</h2>
+	<hr>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<hr>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+
+<section>
+	<section>
+		<h3>\(\int x^{2}\sin x dx\)</h3>
+		<ul>
+			<li>Chiamiamo: \(f\left(x\right)=x^{2}
+, \quad
+g'\left(x\right)=\sin x\)</li>
+<li>
+	di conseguenza \(f'\left(x\right)=2x
+, \quad
+g\left(x\right)=-\cos x\)
+</li>
+		</ul>
+
+
+
+Ora applichiamo la formula di integrazione per parti
+
+\[
+\int f\left(x\right)g'\left(x\right)dx=f\left(x\right)g\left(x\right)-\int f'\left(x\right)g\left(x\right)dx
+\]
+
+
+e otteniamo:
+
+\[
+\int x^{2}\sin xdx=-x^{2}\cos x-\int-2x\cos xdx
+\]
+
+
+\[
+\int x^{2}\sin xdx=-x^{2}\cos x+\int2x\cos xdx
+\]
+
+	</section>
+
+	<section>
+		<h2></h2>
+
+Ponendo
+
+\[
+f\left(x\right)=2x, \quad g'\left(x\right)=\cos x
+\]
+
+
+e quindi
+
+\[
+f'\left(x\right)=2, \quad g\left(x\right)=\sin x
+\]
+
+
+ri-applichiamo la formula di integrazione per parti e otteniamo:
+
+\[
+\int x^{2}\sin xdx=
+\]
+
+
+\[
+=-x^{2}\cos x+2x\sin x-\int2\sin xdx=
+\]
+
+
+\[
+=-x^{2}\cos x+2x\sin x+2\cos x+C
+\]
+	</section>
+	<section>
+Ponendo
+
+\[
+f(x) = 2x, \quad g^'(x)=\cos x
+\]
+
+
+e quindi
+
+\[
+f^{'}\left(x\right)=2
+, \quad
+g\left(x\right)=\sin x
+\]
+
+
+ri-applichiamo la formula di integrazione per parti e otteniamo:
+
+\[
+\int x^{2}\sin xdx = -x^{2}\cos x+2x\sin x-\int2\sin xdx=
+\]
+
+
+\[
+=-x^{2}\cos x+2x\sin x+2\cos x+C
+\]
+
+	</section>
+</section>
+			</div>
+		</div>
+
+		<script src="../../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../../src/js/reveal.conf.js"></script>
+
+		<!-- Everything below this point is unrelated to the slideshow -->
+
+		<div class="share-reveal reveal-back" style="display: none; position: absolute; bottom: 14px; left: 50%; margin-left: -50px; z-index: 20;">
+			<button class="btn btn-mini back" type="button" data-app="../../" data-back="../../">Indice Lezioni</button>
+		</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

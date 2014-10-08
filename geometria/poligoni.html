@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Geometria - Poligoni</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/beige.css" id="beige">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+<section>
+	<h2>Poligoni</h2>
+	<ul>
+		<li>....</li>
+	</ul>
+	<hr>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<hr>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+
+<section>
+	<section>
+		<h2>Definizione di Poligono.</h2>
+        <div class="media">
+            <img class="pull-right media-object" src="../src/images/geometria-poligono.png">
+            <div class="media-body">
+            <ul>
+                <li>Una figura piana è detta poligono quando è intersezione di semipiani.</li>
+                <li>Tra i punti di intersezione delle rette che delimitano tali semipiani, quelli che appartengono al poligono si dicono VERTICI del poligono.</li>
+                <li>I segmenti di tali rette che congiungono due vertici si dicono lati del poligono.</li>
+            </ul>
+            </div>
+        </div>
+	</section>
+	<section>
+		<h2>Lati/vertici consecutivi</h2>
+		<ul>
+			<li>In un poligono, si dicono lati consecutivi due lati che hanno un vertice in comune</li>
+			<li>In un poligono, si dicono vertici consecutivi due estremi di uno stesso lato</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Perimetro</h2>
+		<ul>
+			<li>Si chiama perimetro di un poligono la somma delle lunghezze dei suoi lati.</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Diagonale</h2>
+		<ul>
+			<li>Si dice DIAGONALE di un poligono, ogni SEGMENTO che UNISCE DUE dei suoi VERTICI NON CONSECUTIVI.</li>
+		</ul>
+		<img src="../src/images/geometria-poligoni-diagonale.png">
+	</section>
+	<section>
+		<h2>Teorema 1</h2>
+		<ul>
+			<li>Un poligono con n lati ha \(\frac{n(n-3)}{2}\) diagonali</li>
+			<li>La somma degli angoli di un poligono misura 180(n-2) gradi</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Teorema 2 - criterio di congruenza</h2>
+		<ul>
+			<li>Due poligoni sono congruenti se e solo se hanno angoli e lati ordinatamente congruenti</li>
+		</ul>
+		<img src="../src/images/geometria-criterio-congruenza.png">
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Definizione - Poligoni simili</h2>
+		<ul>
+			<li>Due poligoni sono simili quando hanno (ordinatamente) angoli congruenti e lati proporzionali.</li>
+		</ul>
+		<img src="../src/images/geometria-poligoni-simili.png">
+	</section>
+
+	<section>
+		<h2>Definizione - Poligoni regolari</h2>
+		<ul>
+			<li>Un poligono si dice regolare quando ha lati ed angoli tutti congruenti tra loro.</li>
+			<li>Tutti i poligoni regolari con lo stesso numero di lati sono simili.</li>
+			<li>Due poligoni regolari con lo stesso numero di lati sono congruenti se e solo se hanno la stessa area</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>AREA dei POLIGONI</h2>
+		<ul>
+			<li>Per misurare l'estensione della superficie di un poligono dobbiamo confrontare tale superficie con un'altra superficie scelta come UNITA' DI MISURA in modo da stabilire quante volte quest'ultima è contenuta nella prima.</li>
+			<li>Il numero di volte che l'UNITA' DI MISURA è contenuta nella superficie data si dice MISURA o AREA della superficie considerata.</li>
+			<li>L'unità di misura delle superfici è il METRO QUADRATO, il cui simbolo è m2, con i suoi multipli e sottomultipli.</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Area del rettangolo 1/2</h2>
+		<ul>
+			<li>Disegniamo il RETTANGOLO ABCD la cui base AB misura 6 m e e la cui altezza AD misura 4m</li>
+			<li>Ora DIVIDIAMO la BASE e l'ALTEZZA del rettangolo in PARTI UGUALI, ciascuna di un metro di lunghezza</li>
+			<li>Iniziamo a tracciare le rette parallele ai lati, passanti per i punti di divisione appena individuati</li>
+		</ul>
+		<img src="../src/images/geometria-rettangolo-area1.png">
+	</section>
+	<section>
+		<h2>Area del rettangolo 2/2</h2>
+		<ul>
+			<li>Il rettangolo risulta diviso in 24 quadratini, ognuno dei quali ha il lato di un metro.</li>
+			<li>Se ciascuno di questi quadratini ha il lato di 1 m, la sua superficie misura 1 m^2</li>
+			<li>L'AREA del nostro rettangolo misura 24 m^2.</li>
+			<li>Quindi possiamo affermare che l'AREA del RETTANGOLO è uguale al PRODOTTO della BASE per l'ALTEZZA.</li>
+		</ul>
+		<img src="../src/images/geometria-rettangolo-area2.png">
+	</section>
+
+	<section>
+		<h2>AREA del PARALLELOGRAMMA</h2>
+		<ul>
+			<li>Consideriamo il PARALLELOGRAMMA ABCD</li>
+			<li>Tracciamo  l'altezza DH rispetto alla base AB</li>
+			<li>Ritagliamo il triangolo DHA e posizioniamo in modo diverso il triangolo appena ritagliato</li>
+			<li>Per calcolare l'area del parallelogramma è sufficiente trovare l'area del rettangolo ad esso equivalente.</li>
+		</ul>
+		<img src="../src/images/geometria-parallelogramma-area.png">
+	</section>
+
+	<section>
+		<h2>AREA del TRIANGOLO 1/2</h2>
+		<ul>
+			<li>Considero un qualsiasi TRIANGOLO ABC</li>
+			<li>Partendo dal vertice C traccio la parallela al lato AB</li>
+			<li>Partendo dal vertice B traccio la parallela al lato AC</li>
+			<li>Sia la lettera D il punto di intersezione tra le due rette disegnate</li>
+			<li>La figura che abbiamo ottenuto è quella di un PARALLELOGRAMMA</li>
+		</ul>
+		<img src="../src/images/geometria-triangolo-area.png">
+	</section>
+	<section>
+		<h2>AREA del TRIANGOLO 2/2</h2>
+		<ul>
+			<li>Un TRIANGOLO è EQUIVALENTE alla MET&Agrave; di un PARALLELOGRAMMA che ha la STESSA BASE  e la STESSA ALTEZZA.</li>
+			<li>L'AREA del TRIANGOLO si ottiene MOLTIPLICANDO la misura della BASE per quella dell'ALTEZZA ad essa relativa e DIVIDENDO il prodotto ottenuto PER DUE.</li>
+			<li>La formula, quindi, è la seguente: A = (b x h)/2</li>
+		</ul>
+		<img src="../src/images/geometria-triangolo-area2.png">
+	</section>
+
+
+</section>
+
+<section>
+	<section>
+		<h2>AREA del TRAPEZIO 1/3</h2>
+		<ul>
+			<li>Disegniamo un TRAPEZIO ABCD</li>
+			<li>Disegniamo un trapezio ad esso congruente che chiamiamo A'B'C'D'</li>
+		</ul>
+		<img src="../src/images/geometria-area-trapezio1.png">
+	</section>
+	<section>
+		<h2>AREA del TRAPEZIO 2/3</h2>
+		<ul>
+			<li>Ritagliamo i due trapezi e li posizioniamo uno accanto all'altro nel modo seguente</li>
+			<li>Abbiamo ottenuto un PARALLELOGRAMMA.</li>
+			<li>Il nostro PARALLELOGRAMMA quindi ha per altezza la STESSA ALTEZZA del trapezio e per base la SOMMA delle BASI del trapezio.</li>
+		</ul>
+		<img src="../src/images/geometria-area-trapezio2.png">
+	</section>
+	<section>
+		<h2>AREA del TRAPEZIO 3/3</h2>
+		<ul>
+			<li>Un TRAPEZIO è EQUIVALENTE alla META' di un PARALLELOGRAMMA che ha per altezza la STESSA ALTEZZA del trapezio e per base la SOMMA DELLE BASI del trapezio.</li>
+			<li>Quindi, l'AREA del TRAPEZIO si ottiene MOLTIPLICANDO la SOMMA delle misure delle BASI per la misura dell'ALTEZZA e DIVIDENDO il prodotto ottenuto per 2.</li>
+		</ul>
+\[
+A = \frac{(b_1 + b_2) * h}{2}
+\]
+	</section>
+</section>
+
+<section>
+	<h2>Conclusione</h2>
+	<ul>
+		<li></li>
+	</ul>
+</section>
+			</div>
+
+		</div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+		<div class="share-reveal reveal-back"></div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

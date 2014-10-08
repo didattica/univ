@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Introduzione alla Geometria</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/beige.css" id="beige">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+<section>
+	<h2>Punti, rette e piani</h2>
+	<ul>
+		<li>Punti, rette e piani</li>
+		<li>Segmenti</li>
+		<li>Semiretta</li>
+		<li>Semipiano</li>
+		<li>Postulati di Euclide</li>
+	</ul>
+	<hr>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<hr>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+
+<section>
+	<section>
+		<h2>Punti, rette e piani 1/2</h2>
+		<ul>
+			<li>Gli enti che assumiamo come primitivi, e mediante i quali definiremo gli altri oggetti geometrici sono i <b>punti</b>, le <b>rette</b> e i <b>piani</b>.</li>
+			<li>Si usa indicare:
+				<ul>
+					<li>i punti con lettere maiuscole: A, B, C, ... ;</li>
+					<li>le rette con lettere minuscole: a, b, c, ... ;</li>
+					<li>i piani con lettere minuscole greche: \(\alpha\), \(\beta\), \(\gamma\) ... .</li>
+				</ul>
+			</li>
+
+		</ul>
+	</section>
+
+	<section>
+		<h2>Punti, rette e piani 2/2</h2>
+        <div class="media">
+                <img class="pull-right media-object" src="../src/images/geometria-punti-rette-piani.png">
+                <div class="media-body">
+                <ul>
+	                <li>il punto A appartiene alla retta r;</li>
+	                <li>la retta r passa per il punto A;</li>
+	                <li>i punti A e B appartengono al piano \(\alpha\)</li>
+	                <li>la retta r giace sul piano \(\alpha\)</li>
+	                <li>le rette s e t si intersecano nel punto C.</li>
+                </ul>
+                </div>
+        </div>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Segmento</h2>
+        <ul>
+            <li>Data una retta r, fissiamo su di essa due punti A e B.</li>
+            <li>Si chiama <b>segmento</b> AB il sottoinsieme della retta r costituito
+da tutti i punti P compresi fra A e B.</li>
+			<li>I punti A e B si chiamano estremi del segmento AB.</li>
+        </ul>
+        <img src="../src/images/geometria-segmento.png">
+		<aside class="notes">
+			Utilizzando gli enti primitivi, definiamo i principali concetti geometrici:
+		</aside>
+	</section>
+
+	<section>
+		<h2>Segmenti consecutivi</h2>
+		<ul>
+			<li>Si dice che due segmenti AB e BC sono consecutivi se hanno in comune soltanto un estremo, che, nel nostro caso, è B</li>
+		</ul>
+		<img src="../src/images/geometria-segmenti-consecutivi.png">
+	</section>
+
+	<section>
+		<h2>Segmenti adiacenti</h2>
+		<ul>
+			<li>Si dice che due segmenti LM e MN sono adiacenti se sono consecutivi e
+appartengono alla stessa retta</li>
+		</ul>
+		<img src="../src/images/geometria-segmenti-adiacenti.png">
+	</section>
+
+	<section>
+		<h2>Semiretta</h2>
+		<ul>
+			<li>Diciamo semiretta ciascuna delle due parti in cui una retta è divisa da un suo
+punto, a sua volta detto origine delle due semirette. </li>
+			<li>Nella figura, il punto O divide la retta r nelle due semirette OA e OB.</li>
+			<li>La semiretta è infinita, ha un inizio ma non una fine, e ha una sola dimensione: la lunghezza.</li>
+		</ul>
+		<img src="../src/images/geometria-semiretta.png">
+	</section>
+</section>
+
+<section>
+	<h2>Semipiano</h2>
+	<ul>
+		<li>Diciamo semipiano ciascuna delle due parti in cui un piano risulta diviso da una retta che giace sul piano stesso. </li>
+		<li>La retta è detta origine dei due semipiani.</li>
+	</ul>
+	<img src="../src/images/geometria-semipiano.png">
+</section>
+
+<section>
+	<section>
+		<h2>Rette parallele</h2>
+		<ul>
+			<li>Due rette r ed s contenute nello stesso piano si dicono parallele se non hanno alcun punto in comune</li>
+			<li>con linguaggio insiemistico: \(r \bigcap s = \varnothing \)</li>
+			<li>Per indicare che r ed s sono parallele si scrive: \(r \parallel s\)</li>
+		</ul>
+		<img src="../src/images/geometria-rette-parallele.png">
+	</section>
+	<section>
+		<h2>Rette incidenti</h2>
+		<div class="media">
+	        <img class="pull-right media-object" src="../src/images/geometria-rette-incidenti.png">
+	        <div class="media-body">
+				<ul>
+					<li>Se le rette r ed s hanno un punto in comune, vengono dette rette incidenti.</li>
+					<li>Il punto \( I = r \cap s \) è detto punto di intersezione tra r ed s.</li>
+				</ul>
+	        </div>
+	    </div>
+	</section>
+	<section>
+		<h2>Rette ortogonali o normali</h2>
+		<div class="media">
+	        <img class="pull-right media-object" src="../src/images/geometria-rette-otogonali.png">
+	        <div class="media-body">
+				<ul>
+					<li>Due rette incidenti si dicono perpendicolari (o ortogonali, o normali) se, intersecandosi, dividono il piano in quattro angoli uguali.</li>
+					<li>Osserviamo che ciascuno di tali angoli sarà 1⁄4 dell'angolo giro, e quindi sarà un angolo retto.</li>
+					<li>Per indicare che le rette r ed s sono perpendicolari, si scrive: \(r \perp s \)</li>
+				</ul>
+	        </div>
+	    </div>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Geometria euclidea</h2>
+		<ul>
+			<li>La geometria euclidea è la geometria che si basa sui cinque postulati di Euclide e in particolar modo sul postulato delle parallele.</li>
+			<li>Le geometrie che si basano su postulati diversi da quelli elencati da Euclide sono dette geometrie non euclidee.</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Postulati di Euclide</h2>
+		<ol>
+			<li>Tra due punti qualsiasi è possibile tracciare una ed una sola retta;</li>
+			<li>Si può prolungare un segmento oltre i due punti indefinitamente;</li>
+			<li><strike>Dato un punto e una lunghezza, è possibile descrivere un cerchio;</strike></li>
+			<li><strike>Tutti gli angoli retti sono congruenti tra loro;</strike></li>
+		</ol>
+	</section>
+	<section>
+		<h2>Postulato delle parallele o quinto postulato di Euclide</h2>
+		<ul>
+			<li>Data una retta r, e dato un punto P non appartenente ad r, esiste una ed una sola retta s passante per P e parallela ad r.</li>
+		</ul>
+		<img src="../src/images/geometria-rette-parallele-postulato.png">
+	</section>
+	<section>
+		<h2>Geometrie alternative</h2>
+		<ul>
+			<li>accettando il postulato delle parallele come l'abbiamo enunciato si ottene la
+geometria euclidea.</li>
+			<li>Possiamo rifiutare il postulato precedente e ammettere che:
+				<ul>
+					<li>Data una retta r, e dato un punto P non appartenente ad r, non esiste nessuna retta s passante per P e parallela ad r (geometria non euclidea detta di Riemann.
+)</li>
+					<li>Data una retta r, e dato un punto P non appartenente ad r, esistono infinite rette s passanti per P e parallele ad r (geometria non euclidea detta di Lobacevskij)</li>
+				</ul>
+			</li>
+
+		</ul>
+		<img src="../src/images/geometria-alternative.png">
+	</section>
+</section>
+
+<section>
+	<h2>Conclusione</h2>
+	<ul>
+		<li>Concetti primitivi: punti, rette e piani</li>
+		<li>Definizioni: segmento, semiretta, semipiano</li>
+		<li>Geometria Euclidea (postulati di Euclide)</li>
+	</ul>
+</section>
+			</div>
+
+		</div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+		<div class="share-reveal reveal-back"></div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>
