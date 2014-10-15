@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Fisica 1 meccanica del punto materiale</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/night.css" id="theme">
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+<!-- *********************** Dinamica del punto *********************** -->
+<section>
+	<h2>Meccanica del punto materiale</h2>
+	<hr>
+	<ul>
+		<li>Princìpi della dinamica.</li>
+		<li>Forze.</li>
+		<li>Momento angolare.</li>
+	</ul>
+	<hr>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+
+<section><h2>Primo principio della dinamica</h2><ul>
+     <li>Un corpo non soggetto a forze permane nel suo stato di quiete o di moto rettilineo uniforme. 
+	<li>La proprietà dei corpi di mantenere il loro stato di quiete o di moto rettilineo uniforme è chiamata inerzia.</li>
+	<li>Un sistema di riferimento inerziale è un sistema di riferimento in cui è valido il primo principio della dinamica. </li>
+</li>
+</ul></section>
+
+<section>
+<h2>Seconda legge della dinamica</h2>
+<ul>
+<li>Si osserva che l'accelerazione impressa a un corpo di massa nota m è inversamente proporzionale alla sua massa e direttamente proporzionale all'intensità dell'azione a cui viene sottoposto: 
+			\[\begin{aligned}
+			\vec a = \frac{\vec F}{m}
+			\end{aligned} \]
+</li>
+<li>La legge di Newton contiene, come caso particolare, il primo principio della dinamica.
+	<li>Tale legge è verificata solo nei sistemi di riferimento inerziali (altrimenti compaiono altri termini correttivi, le forze apparenti).</li>
+</li>
+</ul>
+</section>
+
+<section>
+	<h2>Terza legge della dinamica</h2>
+	<ul>
+		<li>Quando due corpi interagiscono, <br>la forza \(\vec{F}_{i->j}\), che il primo corpo (i) esercita sul secondo corpo (j)<br> è uguale e opposta alla<br>forza \(\vec{F}_{j->i}\) che il secoondo corpo (j) esercita sul primo corpo (i)</li>
+	</ul>
+</section>
+<section>
+	<section>
+	<h2>Quantità di moto</h2>
+	<ul>
+		<li>Si definisce quantità di moto di un punto materiale che si muove con velocità \(\vec{v}\):
+				\[\begin{aligned}
+				\vec p = m * \vec v
+				\end{aligned} \]
+		</li>
+		<li>Se la massa è costante: 
+				\[\begin{aligned}
+				\vec F = \frac{d\vec p}{dt}
+				\end{aligned} \]
+		</li>
+	</ul>
+	</section>
+</section>
+
+<section><h2>Risultante delle forze</h2>
+<ul>
+<li>Per convenzione, si indica con il simbolo \(\vec{R}\) la risultante (somma) delle forza applicate su un punto materiale.</li>
+	<li>Affermare che la forza agente su un punto è nulla, spesso indica che la somma delle forze agenti su di esso, cioè la risultante, è nulla:
+				\[\begin{aligned}
+				\vec R = \sum_{i=1}^n \vec F_i = \vec F_1 + \vec F_2 + .... + \vec F_n = 0
+				\end{aligned} \]
+</li></ul>
+</section>
+
+<section><h2>Reazioni vincolari</h2>
+
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/reazione_normale.png" width="35%">
+			<div class="media-body">
+<ul><li>Se un corpo soggetto all’azione di una forza rimane fermo, dobbiamo dedurre  la presenza di una forza uguale e contraria applicata al corpo in modo tale che esso rimanga in quiete.
+</li>
+<li>Questa forza sarà chiamata reazione vincolare e sarà indicata con il seguente simbolo \(\vec{N}\)
+</li></ul>
+			</div>
+		</div>
+</section>
+
+<section><h2>Forza peso</h2>
+<ul><li>In prossimità della superficie terrestre tutti i corpi assumono - se lasciati liberi - la stessa accelerazione (detta di gravità) diretta lungo la verticale e il cui modulo in media è:
+				\[\begin{aligned}
+				\vec g = 9,8 \frac{m}{s^2}
+				\end{aligned} \]
+</li>
+<li>Dalla seconda legge di Newton risulta:
+				\[\begin{aligned}
+				\vec P = m * \vec g
+				\end{aligned} \] 
+</li>
+<li>In assenza di altre forze il moto del corpo sarà uniformemente accelerato.
+</li></ul>
+</section>
+<section>
+	<section>
+	<h2>Forza di attrito radente</h2>
+		<ul><li>Supponiamo di applicare una forza orizzontale su un corpo poggiato su un piano: si osserva che il corpo non entra in movimento finché la forza non supera un valore pari a:<br>
+			<div class="formula-centered">
+						\(
+						\vec F_{as} = \mu_s * \vec N 
+						\) <span>(forza di attrito statico)</span>
+			</div>
+		</li><li>Quando il corpo entra in movimento si osserva una forza costante che si oppone al moto pari a:
+			<div class="formula-centered">
+						\(
+						\vec F_{ad} = \mu_d * \vec N
+						\) <span>(forza di attrito dinamico)</span>
+			</div>
+		</li><li>Si verifica che la forza di attrito radente statico è sempre maggiore della forza di attrito radente dinamico, cioè:
+		 				\[\begin{aligned}
+						\mu_{s} > \mu_{d}
+						\end{aligned} \] 
+		</li></ul>
+	</section>
+ 	<section>
+		<center>
+		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="900" height="615">
+        <param name="movie" value="../src/swf/frottement_statique_et_cintique.swf">
+        <param name="quality" value="high">
+        <embed src="../src/swf/frottement_statique_et_cintique.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="900" height="615"></embed>
+	      </object>
+		</center>
+	</section>
+</section>
+
+
+<section>
+	<section>
+		<h2>Legge di Hooke</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/hooke.png">
+			<div class="media-body">
+				<ul>
+					<li>Robert Hooke, 1675, <em>Ut tensio sic vis</em> (Come l'estensione, così la forza).</li>
+					<li>L'allungamento subìto da un corpo elastico è direttamente proporzionale alla forza ad esso applicata. </li>
+
+				</ul>
+			</div>
+		</div>
+		<ul>
+			<li>La costante di proporzionalità viene detta costante elastica e dipende dalla natura del materiale stesso.
+\[
+\vec{F} = - K \Delta{x}
+\]
+			</li>
+		</ul>
+
+	</section>
+	<section>
+		<h2>Forza elastica</h2>
+		<ul><li>Si definisce forza elastica una forza di:
+			<ul>
+			<li>direzione costante
+				</li><li>verso rivolto sempre ad un punto O
+				</li><li>Modulo direttamente proporzionale alla distanza da O
+								\[\begin{aligned}
+								\vec F = -k * x * \vec i
+								\end{aligned} \]
+				</li>
+				<li>Si dimostra che il moto di un punto soggetto ad una forza elastica è un moto armonico semplice:
+									\[\begin{aligned}
+									x = A \cos {(\omega * t + \phi)}
+									\end{aligned} \]
+									con pulsazione:
+									\[\begin{aligned}
+									\omega = \sqrt \frac{k}{m}
+									\end{aligned} \]
+				</li>
+			</ul>
+		</li></ul>
+	</section>
+		<section>
+			<h2>Legge oraria di un corpo soggetto alla forza elastica</h2>
+			<ul>
+				<li><strike>Per trovare la legge oraria basta risolvere questa equazione differenziale:</strike>
+\[
+\frac{d^2x(t)}{dt^2} = -\frac{k}{m}x(t) = -\omega^2 x(t), \quad \text{ con } \omega = \sqrt{\frac{k}{m}}
+\]
+</li>
+<li>Si dimostra che l'equazione:
+\[
+x = A \cos {(\omega * t + \phi)} 
+\]
+è soluzione dell'equazione differenziale \(\frac{d^2x(t)}{dt^2} = -\omega^2 x(t)\).
+</li>
+			</ul>
+		</section>
+
+
+</section>
+
+
+
+<section>
+	<h3>Forza di attrito viscoso</h3>
+	<p>
+		<ul>
+			<li>La forza di attrito viscoso è una forza che si oppone al moto ed è proporzionale alla velocità del corpo soggetto a tale forza:
+			\[\begin{aligned}
+			\vec F_v = -b\vec v
+			\end{aligned} \]
+			</li>
+			<li>Esempio: corpo che viene lasciato cadere in un fluido. <strike>Si dimostra che la sua velocità in funzione del tempo vale:</strike>
+			\[\begin{aligned}
+			v(t) = \frac{m * g}{b} * (1-e^{\frac{-b * t}{m}})
+			\end{aligned} \]
+			</li>
+		</ul>
+	</p>
+</section>
+
+<section>
+	<h3>Forza centripeta </h3>
+	<p>
+		<ul>
+			<li>La risultante delle forze che agiscono su un punto materiale che si muove lungo una circonferenza può essere scomposta in due:
+				<ol>
+					<li><strong>Forza tangente</strong>: responsabile della variazione del modulo della velocità tangente.</li>
+					<li><strong>Forza centripeta</strong>: responsabile della variazione di direzione della velocità tangente.
+						\[\begin{aligned}
+						F_c = m * \frac{v^2}{R}
+						\end{aligned} \]
+					</li>
+				</ol>
+			</li>
+			<li>Se la forza tangente è nulla si ha il moto circolare uniforme</li>
+
+		</ul>
+	</p>
+</section>
+<section>
+	<h3>Tensione</h3>
+	<p>
+		<img style="float:right"  src="../src/images/tensione.png">
+		<ul style="display: block">
+			<li>La tensione è la forza di trazione esercitata da una corda, un cavo, una catena, o un analogo oggetto solido su un altro oggetto.
+			</li>
+			<li>Si osserva in figura che la forza peso della sfera viene bilanciata dalla tensione del filo.</li>
+			<li>Un filo può esercitare solo forze che hanno la direzione del filo stesso, cioè non può sopportare una sollecitazione ortogonale.</li>
+
+		</ul>
+	</p>
+</section>
+<section>
+	<section>
+	<h2>Pendolo semplice</h2>
+	<p>
+		<ul>
+			<li>Il <strong>pendolo semplice</strong> è costituito da un punto materiale <cite>P</cite> appeso tramite un filo inestensibile di lunghezza L e di massa trascurabile.
+			</li>
+			<li>Le forze agenti sul punto P sono il peso \(\vec P\) e la tensione del filo \(\vec T\),<br> quindi la seconda legge della dinamica sarà:
+						\[\begin{aligned}
+						\vec R = \vec P + \vec T = m * \vec a
+						\end{aligned} \]
+			</li>
+			<li>Si può dimostrare che per piccole oscillazioni il periodo di una oscillazione completa vale:
+						\[\begin{aligned}
+						T = 2 * \pi * \sqrt{\frac{L}{g}}
+						\end{aligned} \]
+			</li>
+
+		</ul>
+	</p>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Momento angolare</h2>
+		<p>
+			<ul>
+				<li>Si definisce come momento angolare il momento del vettore quantità di moto:
+				\[
+				\vec L = \vec r \times \vec p = \vec r \times m * \vec v
+				\]
+				</li>
+				<img src="../src/images/momento_angolare.png">
+				<li>Il punto O è il polo rispetto a cui è calcolato \(\vec L\)</li>
+			</ul>
+		</p>
+	</section>
+	<section>
+		<h2>Momento della forza</h2>
+		<ul>
+			<li>Il momento della forza, rispetto a un determinato punto O detto polo, è definito come:
+			\[\vec{M_o}\ = \vec{r} x \vec{F}\]</li>
+			<img src="../src/images/torque_animation.gif" width="80%" class='center'>
+		</ul>
+	</section>
+</section>
+
+<section>
+		<section>
+		<h2>Teorema del momento angolare 1/3</h2>
+		<ul>
+			<li>Se calcoliamo la variazione del momento angolare di un punto materiale P in movimento abbiamo:
+			\[
+			\frac{d\vec{L}}{dt} = \frac{d\vec{r}}{dt} \times m * \vec{v} + \vec{r} \times m * \frac{d\vec{v}}{dt}
+			\]
+			dove \(\vec{r}\) è il raggio vettore che conginge P al polo O.</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Teorema del momento angolare 2/3</h2>
+		<ul>
+			<li>Supponiamo che il polo O sia fermo (nel sistema di riferimento da cui osserviamo il moto): allora \(\frac{d\vec{r}}{dt}\) coincide con la velocità di P e il prodotto vettoriale si annulla.</li>
+			<li>Nel secondo termine: \(m * \frac{d\vec{v}}{dt} = m * \vec{a}\) 
+			coincide con la forza \(\vec{F}\) applicata al punto P e quindi \(\vec{r} \times \vec{F}\) è il momento della forza rispetto allo stesso polo O. 
+			\[\frac{d\vec{L}}{dt} = \vec{M} = \vec{r} \times \vec{F}\]
+			</li>
+		</ul>
+	</section>
+
+		<section>
+		<h2>Teorema del momento angolare 3/3</h2>
+		<ul>
+			<li>
+			La derivata temporale del momento angolare \(\vec{L}\) per un punto materiale è uguale al momento della forza \(\vec{F}\) se entrambi i momenti sono riferiti allo stesso polo fisso di un sistema inerziale.
+			\[\frac{d\vec{L}}{dt} = \vec{M} = \vec{r} \times \vec{F}\]
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Conservazione del momento angolare</h2>
+		<ul>
+			<li>Il momento angolare di un punto materiale rimane costante nel tempo (si conserva) se il momento delle forze è nullo:
+			\[\frac{d\vec{L}}{dt} = 0 \Rightarrow \vec{L} = costante\]</li>
+		</ul>
+	</section>
+
+</section>
+			</div>
+
+		</div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+		<div class="share-reveal reveal-back"></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>
