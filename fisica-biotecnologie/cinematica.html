@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="../cache.manifest">
+<html lang="en">
 
 	<head>
 		<meta charset="utf-8">
@@ -108,12 +108,12 @@ x = x(t) \ legge \ oraria\ del\ moto
 	\frac {\Delta \vec{s}}{\Delta t} = \frac{\vec{s}(t + \Delta t) - \vec{s}(t)}{\Delta t}
 	\]
 		</li>
-		<li>Facciamo tendere a zero l'incremento Δt del tempo:
+		<li><del>Facciamo tendere a zero l'incremento Δt del tempo:</del>
 \[
 \lim_{\Delta t \to 0} \frac{\vec{s}(t + \Delta t) - \vec{s}(t)}{\Delta t}
 \]
 		</li>
-		<li>Si definisce <u>velocità istantanea</u> la derivata dello spazio rispetto al tempo:
+		<li><del>Si definisce <u>velocità istantanea</u> la derivata dello spazio rispetto al tempo:</del>
 \[
 \vec{v} = \lim_{\Delta t \to 0} \frac{\Delta \vec{s}} {\Delta t} = \frac{d\vec{s}}{dt} = \vec{s}^{'}
 \]
@@ -136,7 +136,7 @@ x = x(t) \ legge \ oraria\ del\ moto
 \frac {\Delta \vec{v}}{\Delta t} = \frac{\vec{v}(t + \Delta t) - \vec{v}(t)}{\Delta t}
 \]
 </li>
-<li>Si definisce <u>accelerazione istantanea</u> la derivata della velocità rispetto al tempo:
+<li><del>Si definisce <u>accelerazione istantanea</u> la derivata della velocità rispetto al tempo:</del>
 \[
 \vec{a} = \lim_{\Delta t \to 0} \frac{\Delta \vec{v}} {\Delta t} = \frac{d\vec{v}}{dt} = \vec{v}^{'}
 \]
@@ -148,9 +148,9 @@ x = x(t) \ legge \ oraria\ del\ moto
 		<h2>Accelerazione 2/2</h2>
 		<ul>
 		<li>
-			L'accelerazione istantanea è la derivata della velocità 
+			<del>L'accelerazione istantanea è la derivata della velocità 
 rispetto al tempo e quindi è la derivata seconda dello spazio percorso rispetto al 
-tempo.
+tempo.</del>
 		</li>
 \[
 \vec{a}(t) = \frac{d \vec{v}(t)}{dt} = \frac{d}{dt} \frac{d \vec{s}}{dt} = \frac{d^2 \vec{s}(t)}{dt^2} = \vec{s}^{''}(t)
@@ -166,11 +166,17 @@ tempo.
 			<li>Un corpo si muove di <u>moto rettilineo e uniforme</u> se mantiene una velocità costante in modulo, direzione e verso. </li>
 			<li><u>Legge oraria</u> del moto rettilineo e uniforme:
 \[
+\vec{s} = \vec{s_0} + \vec{v} * t
+\]
+			</li>
+			<li><del>Dimostrazione della legge oraria:</del>
+\[
 \vec{v} = \frac{d\vec{s}}{dt} \Rightarrow d\vec{s} = \vec{v} dt \Rightarrow \int_{s_0}^s d\vec{s} = \int_{t_0}^t \vec{v} dt
 \]
 \[
 t_0 = 0 \Rightarrow \vec{s} - \vec{s_0} = \vec{v} * t \Rightarrow \vec{s} = \vec{s_0} + \vec{v} * t
 \]
+			</li>
 		</ul>
 	</section>
 	<section>
@@ -187,10 +193,21 @@ t_0 = 0 \Rightarrow \vec{s} - \vec{s_0} = \vec{v} * t \Rightarrow \vec{s} = \vec
 
 <section>
 <section>
-	<h2>Moto rettilineo uniformemente accelerato 1/2</h2>
+	<h2>Moto rettilineo uniformemente accelerato 1/3</h2>
 	<ul>
 			<li>Un corpo si muove di <u>moto rettilineo uniformemente accelerato</u> se mantiene una accelerazione costante in modulo, direzione e verso.</li>
-			<li class="small"><u>Legge oraria</u> del moto rettilineo uniformemente accelerato:
+			<li><u>Legge oraria</u> del moto rettilineo uniformemente accelerato:
+\[
+\vec{s} = \vec{s_0} + \vec{v_0} t + \frac{1}{2}\vec{a} t^2
+\]
+			</li>
+	</ul>
+</section>
+<section>
+	<h2>Moto rettilineo uniformemente accelerato 2/3</h2>
+	<p>
+		<ul>
+			<li class="small"><del>Dimostrazione della <u>legge oraria</u> del moto rettilineo uniformemente accelerato:</del>
 \[
 \vec{a} = \frac{d\vec{v}}{dt} \Rightarrow d\vec{v} = 
 \vec{a} \thinspace dt \Rightarrow \int_{v_0}^v d\vec{v} = 
@@ -208,10 +225,12 @@ d\vec{s} = \vec{v_0} dt + \vec{a} \thinspace t dt
 \Rightarrow 
 \vec{s} = \vec{s_0} + \vec{v_0} t + \frac{1}{2}\vec{a} t^2
 \]
-	</ul>
+			</li>
+		</ul>
+	</p>
 </section>
 <section>
-	<h2>Moto rettilineo uniformemente accelerato 2/2</h2>
+	<h2>Moto rettilineo uniformemente accelerato 3/3</h2>
 		<center>
 	    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="900" height="480">
 	      <param name="movie" value="../src/swf/constant_acceleration2.swf">
@@ -247,7 +266,7 @@ d\vec{s} = \vec{v_0} dt + \vec{a} \thinspace t dt
 			</li>
 			<li>Le leggi orarie dei moti lungo gli assi x e y sono:
 \[
-x(t) = v_0 cos(\theta), \quad y(t) = v_0 sin(\theta) t - \frac{1}{2} g t^2
+x(t) = v_0 cos(\theta) * t, \quad y(t) = v_0 sin(\theta) * t - \frac{1}{2} * g * t^2
 \]
 			</li>
 			<li>Esplicitando il parametro t dalla legge oraria x(t) e sostituendo in y(t) si ottiene una parabola con concavità rivolta verso il basso:
@@ -297,7 +316,13 @@ y = x * tang\theta - \frac{g}{2v_0^2cos^2(\theta)} * x^2
 	<section>
 		<h2>Moto circolare uniforme</h2>
 		<ul>
-			<li>Un corpo si muove di moto circolare uniforme se mantiene una velocità angolare costante in modulo, direzione e verso.
+			<li>Un corpo si muove di moto circolare uniforme se mantiene una velocità angolare costante in modulo, direzione e verso.</li>
+			<li>Legge oraria del moto circolare uniforme:
+\[
+\theta = \theta_0 +  \omega * t
+\]
+			</li>
+			<li><del>Dimostrazione della legge oraria:</del>
 \[
 \vec{\omega} = \frac{d\vec{\theta}}{dt} = costante \Rightarrow  d\vec{\theta} = \vec{\omega} * dt
 \]
@@ -373,7 +398,7 @@ T = \frac{2\pi}{\omega}
 	<section>
 		<h2>Moto Armonico 2/2</h2>
 		<ul>
-			<li>La velocità e l'accelerazione sono rispettivamente la derivata prima e seconda della legge oraria, ovvero:
+			<li><del>La velocità e l'accelerazione sono rispettivamente la derivata prima e seconda della legge oraria, ovvero:</del>
 \[
 v(t) = \frac{d x(t)}{dt} = \omega A cos (\omega t + \phi);
 \]
