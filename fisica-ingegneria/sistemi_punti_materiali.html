@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Fisica 1 meccanica dei sistemi di punti materiali</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/night.css" id="theme">
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+<!-- *********************** Dinamica del punto *********************** -->
+<section>
+	<h2>Meccanica dei sistemi di punti materiali</h2>
+	<ul>
+		<li>Centro di massa</li>
+		<li>Conservazione della quantità di moto</li>
+		<li>Teorema del momento angolare</li>
+		<li>Conservazione del momento angolare</li>
+		<li>Teoremi di König</li>
+		<li>Urti</li>
+	</ul>
+	<hr>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<hr>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+
+<section>
+	<section>
+		<h2>Centro di massa</h2>
+		<ul>
+			<li>Dato un sistema di punti materiali,</li>
+			<li>dato un particolare sistema di riferimento,</li>
+			<li>si definisce centro di massa il punto geometrico la cui posizione è individuata dal raggio vettore:
+\[
+\vec{r}_{cm} = \frac{\sum\limits_{i=1}^n m_i * \vec{r_i}}{\sum\limits_{i=1}^n m_i}
+\]
+			</li>
+			<li>La posizione del centro di massa non dipende dal particolare sistema di riferimento, mentre le sue coordinate dipendono dal sistema di riferimento prescelto.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Velocità del centro di massa</h2>
+		<ul>
+			<li>Supponendo di avere n punti in movimento, la posizione del centro di massa varierà:
+\[
+\vec{v}_{cm} = \frac{d\vec{r}_{cm}}{dt} = 
+\frac{\sum\limits_{i=1}^n \frac{m_i * d\vec{r}_i}{dt}}{\sum\limits_{i=1}^n m_i} =
+\frac{\sum\limits_{i=1}^n m_i * \vec{v}_i}{\sum\limits_{i=1}^n m_i} =
+\frac{\vec{P}}{M}
+\]
+			</li>
+			<li>Vediamo quindi che \(\vec{P}\) coincide con la quantità di moto \(M * \vec{v}_{cm}\) del centro di massa, considerato come un punto materiale avente massa pari alla massa M totale del sistema.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Teorema del moto del centro di massa 1/2</h2>
+		<ul>
+			<li>Ricaviamo l'accelerazione del centro di massa: 
+\[
+\vec{a}_{cm} = \frac{d\vec{v}_{cm}}{dt} =
+\frac{\sum\limits_{i=1}^n m_i * \frac{d\vec{v}_i}{dt}}{\sum\limits_{i=1}^n m_i} = 
+\frac{\sum\limits_{i=1}^n m_i * \vec{a}_i}{\sum\limits_{i=1}^n m_i} =
+\frac{\sum\limits_{i=1}^n m_i * \vec{a}_i}{M}
+\]
+
+\[
+M\vec{a}_{cm} = \sum\limits_{i=1}^n m_i * \vec{a}_i =
+ \sum\limits_{i=1}^n (\vec{F}_i^{(E)} + \vec{F}_i^{(I)})) = 
+ \vec{R}^{(E)} + \vec{R}^{(I)} = \vec{R}^{(E)}
+\]
+			</li>
+			<li>
+				Il centro di massa si muove come un punto materiale in cui è concentrata tutta la massa del sistema e a cui è applicata la risultante delle forze esterne.
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Teorema del moto del centro di massa 2/2</h2>
+\[
+\vec{R}^{(E)} = M * \vec{a}_{cm} = M * \frac{d\vec{v}_{cm}}{dt} = 
+\frac{d}{dt} (M * \vec{v}_{cm}) = \frac{d\vec{P}}{dt}
+\]
+		<ul>
+			<li>La risultante delle forze esterne è uguale alla derivata rispetto al tempo della quantità di moto totale del sistema.</li>
+			<li>Il moto del centro di massa è determinato solo dalle forze esterne.</li>
+			<li>Il moto di ciascun punto dipende dall'azione delle forze esterne e interne agenti su di esso.</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Teoremi di König</h2>
+		<ul>
+			<li>I teoremi di König stabiliscono le relazioni tra i momenti angolari e le energie cinetiche di un sistema di punti materiali, valutati rispetto a un sistema di riferimento inerziale e al sistema di riferimento del centro di massa.</li>
+		</ul>
+	</section>
+
+	<section>
+	<h2>Primo teorema di König</h2>
+		<ul>
+			<li>Il primo teorema di König o teorema di König per il momento angolare afferma che:</li>
+			<ul>
+			<li>Il momento angolare del sistema si può scrivere, nel sistema di riferimento inerziale, come somma del momento angolare dovuto 
+al moto del centro di massa, \(\vec{L_{cm}}\), e di quello del sistema rispetto al centro di massa \(L^{'}\).</li>
+<li>In formula:
+\[
+\vec{L} = \vec{L^{'}} + \vec{r_{cm}} \times M\vec{v_{cm}} = \vec{L^{'}} + \vec{L_{cm}}
+\]
+			</li>
+			</ul>
+		</ul>
+	</section>
+
+	<section>
+	<h2>Secondo teorema di König</h2>
+		<ul>
+			<li>Il secondo teorema di König o teorema di König per l'energia cinetica afferma che:</li>
+			<ul>
+			<li>L'energia cinetica del sistema di punti si può scrivere, nel sistema di riferimento inerziale, come la somma dell'energia cinetica dovuta al moto del centro di massa e di quella del sistema rispetto al centro di massa.</li>
+<li>In formula:
+\[
+E_{cinetica} = E_{cinetica}^{'} + \frac{1}{2}M * v_{cm}^2
+\]
+			</li>
+			</ul>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Dimostrazione dei teoremi di König 1/2</h2>
+		<ul>
+			<li>Per la dimostrazione dei teoremi di König definiamo il sistema del centro di massa rispetto al sistema inerziale.
+			<li>Il sistema del centro di massa ha le seguenti caratteristiche:</li>
+<ol>
+	<li>origine nel centro di massa,</li>
+	<li>gli assi hanno la stessa direzione del sistema inerziale,</li>
+	<li>è inerziale solo se \(\vec{R^{(E)}} = 0\) perchè implica che \(\vec{a_{cm}} = 0\).</li>
+</ol>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Dimostrazione dei teoremi di König 2/2</h2>
+		<ul>
+		<li>Indicando con gli apici le grandezze relative al sistema del centro di massa, abbiamo:
+			\[\vec{r_i} = \vec{r_{cm}} + \vec{r_i}^{'}\]
+			\[\vec{v_i} = \vec{v_{cm}} + \vec{v_i}^{'}\]
+		</li>
+		<li>Quando si assume il centro di massa come sistema riferimento si ha:
+\[\vec{r_{cm}}^{'} = 0\]
+\[\vec{v_{cm}}^{'} = 0\]
+		</li>
+		</ul>
+	</section>
+
+</section>
+
+
+<section>
+	<section>
+		<h2>Urti tra due punti materiali</h2>
+		<ul>
+			<li>Si definisce urto tra due punti materiali un'interazione che avviene in un intervallo di tempo trascurabile rispetto al tempo di osservazione del sistema.</li>
+			<li>Le forze che si manifestano durante l'urto sono forze interne al sistema.</li>
+			<li>In assenza di forze esterne si verifica la conservazione della quantità di moto.</li>
+			<li>In assenza di momento di forze esterne si verifica la conservazione del momento angolare.</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Urto completamente anaelastico</h2>
+		<ul>
+			<li>Un urto si dice completamente anaelastico quando i due punti restano attaccati dopo l'urto formando un unico corpo puntiforme di massa \( m_1 + m_2\)<hr>
+<img src="../src/images/Inelastischer_sto.gif">
+			</li>
+			<li>se \(\vec{v_1}\) e \(\vec{v_2}\) sono le velocità dei due punti nell'istante prima dell'urto e \(\vec{v}^{'}\) la velocità comune immediatamente dopo l'urto, si ha:
+\[
+m_1 * \vec{v_1} + m_2 * \vec{v_2} = (m1 + m2) \vec{v}^{'} = (m1 + m2) \vec{v_{cm}}
+\]</li>
+<li>Subito dopo l'urto i punti si muovono con la stessa velocità che aveva il centro di massa.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Energia nell'urto completamente anaelastico</h2>
+		<ul>
+			<li>Calcoliamo l'energia cinetica prima e dopo l'urto applicando il secondo teorema di König:
+\[
+E_{cinetica, iniziale} = \frac{1}{2} * m v_1^2 + \frac{1}{2} * m v_2^2 = E_{k}^{'} + \frac{1}{2} (m_1 + m_2) * v_{cm}^2
+\]
+\[
+E_{cinetica, finale} = \frac{1}{2} (m_1 + m_2) * v_{cm}^2
+\]
+			</li>
+			<li>Nell'urto completamente anaelastico viene assorbita l'energia \(E_{k}^{'}\) (l'energia cinetica rispetto al centro di massa prima dell'urto). Infatti, dopo l'urto non c'è moto rispetto al centro di massa.</li>
+		</ul>
+	</section>
+	
+</section>
+
+<section>
+	<h2>Urto elastico</h2>
+	<ul>
+		<li>Si definisce urto elastico un urto durante il quale si conserva l'energia interna del sistema.</li>
+		<li>Nell'urto elastico possiamo utilizzare le equazioni:
+\[
+\vec{P}_{iniziale} = \vec{P}_{finale}
+\]
+\[
+{E_{cinetica,iniziale}} = {E_{cinetica,finale}}
+\]
+		</li>
+		<li>I due corpi che si urtano subiscono durante l'urto delle deformazioni elastiche, 
+riprendendo la configurazione iniziale subito dopo l'urto.<hr>
+<img src="../src/images/Elastischer_sto.gif">
+</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Urto anaelastico</h2>
+	<ul>
+		<li>Si definisce urto anaelastico un urto in cui:
+		<ul>
+			<li>dopo l'urto i punti restano separati,</li>
+			<li>la quantità di moto del sistema si conserva,</li>
+			<li>l'energia cinetica non si conserva.</li>
+		</ul></li>
+	</ul>
+</section>
+
+<section>
+	
+
+
+	<section>
+		<h2>Esempio di urto anaelastico</h2>
+		<ul>
+			<li>Un proiettile di massa (m1) 50 g e con velocità (v) 40 m/s si conficca in un blocco di massa (m2) 400 g.<br> Il proiettile si muove orizzontalmente e il blocco si trova inizialmente in quiete. 
+			<li>Determinare:
+			<ol>
+				<li>la velocità del sistema dopo l'urto (v'),</li>
+				<li>la percentuale di energia dissipata dopo l'urto.</li>
+			</ol>
+			</li>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Soluzione</h2>
+		<ul>
+			<li>Imponiamo la conservazione della quantità di moto prima e dopo l'urto:
+\[
+m_1 v = m_1 v^{'} +  m_2v^{'} = (m_1 + m_2) v^{'}
+\]
+\[
+v^{'} = \frac{m_1}{m_1+m_2} v = 4,44 m/s
+\]
+			</li>
+			<li>Calcoliamo ora la percentuale (P) di energia dissipata:
+\[
+P = \frac{T - T^{'}}{T}, \quad T^{'} = \frac{1}{2}(m_1 + m_2) v^{'2} \Rightarrow P = 0.88
+\]
+			</li>
+		</ul>
+	</section>
+
+</section>
+
+			</div>
+
+		</div>
+		<div class="share-reveal reveal-back"></div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

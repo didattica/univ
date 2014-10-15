@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Fisica 1 - Secondo principio della Termodinamica</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/default.css" id="beige">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+<section>
+	<h2>Secondo principio della Termodinamica</h2>
+	<ul>
+		<li>Enunciato di Kelvin</li>
+		<li>Enunciato di Clausius</li>
+		<li>Ciclo di Carnot</li>
+		<li>Entropia</li>
+<!-- 		<li>Entalpia</li>
+		<li>Il teorema di Nernst</li> -->
+	</ul>
+	<hr>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<hr>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+
+<section>
+	<section>
+		<h2>Perpetuum mobile</h2>
+		<ul>
+			<li>Nelle trasformazioni cicliche lo stato finale coincide con quello iniziale, dunque:
+\[
+dU = 0 \Rightarrow dW = dQ
+\]
+			</li>
+		
+			<li>Se ciò fosse  vero, sarebbe  possibile costruire una macchina che assorbendo calore lo trasforma completamente in lavoro meccanico.</li></ul>
+			<div class="media">
+				<img class="pull-right media-object" src="../src/images/perpetuum_mobile_black_box.jpg" width="50%">
+				<div class="media-body">
+				<ul>
+					<li>Una simile macchina potrebbe continuare a produrre lavoro indefinitamente ed è per questo che si chiama perpetuum mobile.</li>
+				</ul>
+				</div>
+			</div>
+
+	</section>
+</section>
+
+<section>
+	<h2>L'enunciato di Kelvin</h2>
+	<ul>
+		<li>&Egrave; impossibile realizzare una trasformazione termodinamica il cui unico
+risultato sia una trasformazione completa di calore in lavoro, quando il calore è assorbito da una sorgente a temperatura uniforme.</li>
+		<ul class="list-sub">
+			<li>Se ciò non fosse vero si potrebbe costruire una macchina termica che produce lavoro estraendo esclusivamente energia dall'esterno sotto forma di calore (cioè avendo come unico risultato quello di raffreddare l'ambinete esterno). </li>
+		</ul>
+	</ul>
+</section>
+
+<section>
+	<h2>L'enunciato di Clausius</h2>
+	<ul>
+		<li>&Egrave; impossibile realizzare una trasformazione termodinamica il cui unico
+risultato sia un passaggio di calore da un corpo ad una data temperatura ad un altro a temperatura più elevata.</li>
+		<ul class="list-sub"><li>Se ciò non fosse vero potremmo raffreddare un corpo (le nostre abitazioni oppure gli alimenti) con una macchina capace di trasferire calore all'esterno senza bisogno di spendere lavoro (energia elettrica ecc.), a spese cioè soltanto di un riscaldamento dell'ambiente esterno.</li></ul>
+		
+	</ul>
+</section>
+
+<section>
+	<section>
+		<h2>Considerazioni</h2>
+		<ul>
+			<li>Si può affermare che il calore è una forma di energia a una scala gerarchica inferiore rispetto al lavoro. </li>
+			<li>Esso rappresenta, in un certo senso, una forma degradata di energia, perchè non tutto il calore può essere ritrasformato in lavoro, mentre è vero il contrario.</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Il ciclo di Carnot 1/4</h2>
+			<div class="media">
+				<img class="pull-right media-object" src="../src/images/Carnot_cycle_p-V_diagram.svg" width="53%">
+				<div class="media-body">
+					<ul>
+						<li>Col ciclo di Carnot si dimostra come sia possibile trasformare in lavoro il calore assorbito da due sorgenti termiche a differenti temperature \(T_1\) e \(T_2\) (\(T_1> T_2\)).</li>
+						<li>Viene usato come ciclo di riferimento per applicazioni reali come, ad esempio, pompe di calore e frigoriferi.</li>
+					</ul>
+				</div>
+			</div>
+	</section>
+
+	<section>
+		<h2>Il ciclo di Carnot 2/4</h2>
+		<center>
+			<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="900" height="315">
+                <param name="movie" value="../src/swf/carnot.swf">
+                <param name="quality" value="high">
+                <embed src="../src/swf/carnot.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="900" height="655"></embed>
+	  	      </object>
+		</center>
+	</section>
+
+	<section>
+		<h2>Il ciclo di Carnot 3/4</h2>
+			Il ciclo è costituito da 4 trasformazioni reversibili:
+			<ol class="list-sub">
+				<li>Espansione isotermica (1-2) alla temperatura \(T_1\). <br>
+				&Egrave; un'espansione con dU = 0 quindi:
+\[
+dU = dq - dW \Rightarrow W_{12} = Q_{12} > 0
+\]
+				</li>
+				<li>Espansione adiabatica (2-3) dQ = 0.
+				&Egrave; ancora un'espansione (dW>0) quindi:
+\[
+dU = dq - dW \Rightarrow U_3 - U_2 = -W_{23} &lt; 0
+\]
+				</li>
+			</ol>
+	</section>
+
+	<section>
+		<h2>Il ciclo di Carnot 4/4</h2>
+		<ol class="list-sub">
+			<li value="3">Compressione isotermica (3-4) alla temperatura \(T_2\). <br>
+			&Egrave; una compressione (dW &lt; 0) con dU = 0 , cioè:
+\[
+dU = dq - dW \Rightarrow W_{34} = Q_{34} &lt; 0
+\]
+			 </li>
+			 <li>Compressione adiabatica (4-1) dQ = 0. &Egrave; una compressione (dW &lt; 0) e quindi:
+\[
+dU = dq - dW \Rightarrow U_{1} - U_{4} = -W_{14} > 0
+\]
+cioè l'energia interna aumenta portando il sistema dalla tempertura \(T_1\) alla temperatura \(T_2\)
+			 </li>
+		</ol>
+	</section>
+
+	<section>
+		<h2>Rendimento di un ciclo di Carnot</h2>
+		<ul>
+			<li>Il rendimento di una macchina termica è, in generale, il rapporto tra il lavoro utile che la macchina riesce a compiere e il calore totale assorbito dal sistema:
+\[
+\eta = \frac{W}{Q_{assorbito}}
+\]
+			</li>
+			<li>Per il ciclo di Carnot:
+\[
+\eta = \frac{Q_1 - Q_2}{Q_1} = 1- \frac{Q_2}{Q_1} = 1 - \frac{T_2}{T_1}, \quad \text{(T in Kelvin)}
+\]
+			</li>
+			<li>Si vede subito che il rendimento è massimo solo per \(T_2 = 0K\) (temperatura irraggiungibile per qualsiasi corpo)</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Dimostrazione del rendimento</h2>
+		<ul>
+		<li class="small">
+		Il lavoro totale lungo un ciclo completo:
+\[
+W = W_{12} + W_{23} + W_{34} + W_{41} = R T_1 ln(\frac{V_2}{V_1}) - R T_2 ln(\frac{V_3}{V4})
+\]
+</li>
+	<li>Per una trasformazione adiabatica vale \(P V ^{\gamma} = K\)
+\[
+\begin{cases}
+P_2 V_2^{\gamma} = P_3 V_3^{\gamma} = k_1
+\\
+P_4 V_4^{\gamma} = P_1 V_1^{\gamma} = k_2
+\end{cases}
+\]</li>
+<li>Per la legge dei gas perfetti (\(P V = n R T\)): 
+\[
+\frac{P_2 V_2 V_2^{\gamma-1}}{P_1 V_1 V_1^{\gamma-1}} = \frac{K_2}{K_1} \Rightarrow 
+\frac{V_2}{V_1} = \sqrt[1 - \gamma]{\frac{K_2}{K_1}} =\frac{V_3}{V_4}\]</li>
+</ul>
+
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>1° teorema di Clausius 1/3</h2>
+		<ul>
+			<li>Consideriamo il ciclo di Carnot di un gas perfetto:
+	\[
+	dQ = dW \Rightarrow W_{12} = \int_{1}^{2} \frac{nRT}{V}dV \Rightarrow Q_{1} = RT_{1}ln(\frac{V_2}{V_1})
+	\]</li>
+	<li>Analogamente, per la seconda isoterma:
+	\[
+	Q_{2} = - RT_{2}ln(\frac{V_3}{V_4})
+	\]
+	</li>
+	<li>
+		Avendo già dimostrato che in un ciclo di Carnot:
+		\[
+	\frac{V_2}{V_1} = \frac{V_3}{V_4} \Rightarrow \frac{Q_1}{T_1} -  \frac{Q_2}{T_2} = 0
+		\]
+	</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>1° teorema di Clausius 2/3</h2>
+		<ul>
+			<li>In generale per una qualsiasi trasformazione reversibile, se poniamo un sistema S a contatto con n sorgenti alle temperature \(T_1, T_2, .. T_n\), si ha:
+\[
+\sum_{i=1}^n \frac{Q_i}{T_i} = 0
+\]
+dove \(Q_i\) è da intendersi positivo se il calore è assorbito dal sistema e negativo nel caso opposto.
+			</li>
+			<li>
+Si può anche dimostrare che l'equazione precedente per cicli irreversibili diventa:
+
+\[
+\sum_{i=1}^n \frac{Q_i}{T_i} < 0
+\] 
+
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>1° teorema di Clausius 3/3</h2>
+		<ul>
+			<li>Se lo scambio di calore avviene con una serie infinita di sorgenti, detto dQ il calore scambiato con la sorgente a temperatura T:
+\[
+\oint \frac{dQ}{T} \leq 0
+\]
+dove l'integrale è da intendersi calcolato lungo una qualsiasi trasformazione ciclica e l'uguaglianza è vera solo per cicli reversibili. 
+			</li>
+		</ul>
+	</section>
+
+</section>
+
+<section>
+	
+
+	<section>
+		<h2>L'entropia 1/3</h2>
+		<ul>
+			<li>Il 1° teorema di Clausius permette di definire una nuova funzione di stato, l'entropia, per i sistemi termodinamici il cui significato più profondo è connesso con la probabilità che lo stato stesso si manifesti.</li>
+			<li>Vogliamo ora definire l'entropia mediante la quantità di calore scambiato e la temperatura alla quale avviene lo scambio.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>L'entropia 2/3</h2>
+			<div class="media">
+				<img class="pull-right media-object" src="../src/images/Entropia.png" width="50%">
+				<div class="media-body">
+				<ul>
+					<li>Consideriamo due trasformazioni reversibili \(\Gamma_1\) e \(\Gamma_2\) mediante le quali il sistema passa dallo stato iniziale A allo stato finale B.</li>
+					<li>Applicando il 1° teorema di Clausius al ciclo \(\Gamma = \Gamma_1 - \Gamma_2\) otteniamo:</li>
+				</ul>
+				</div>
+			</div>
+\[
+\oint_{\Gamma} \frac{dQ}{T} = \int_{\Gamma_1} \frac{dQ}{T} + \int_{-\Gamma_2} \frac{dQ}{T} = 0
+\Rightarrow \int_{\Gamma_1} \frac{dQ}{T} = \int_{\Gamma_2} \frac{dQ}{T}
+\]
+	</section>
+
+	<section>
+		<h2>L'entropia 3/3</h2>
+		<ul>
+			<li>Poichè tale proprietà è vera per qualsiasi trasformazione reversibile, possiamo definire una funzione S che dipende solo dallo stato iniziale e quello finale:
+			\[
+			dS = (\frac{dQ}{T})_{reversibile}
+			\]
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Calcolo dell'entropia per un gas ideale</h2>
+		<ul>
+			<li>Utilizzando il primo principio della Termodinamica e la definizione di lavoro:
+\[
+dU = dQ - dW \Rightarrow dQ = nC_V dT + PdV  
+\]
+
+			</li>
+			<li class="very-small">
+				Utilizzando l'equazione dei gas ideali:
+\[
+\int\frac{dQ}{T} = n C_V \int\frac{dT}{T} + \int\frac{pdV}{T} = n C_V \int\frac{dT}{T} + \int\frac{n R dV}{V}
+\]
+\[
+\int\frac{dQ}{T} = n C_V ln(T) + n R ln(V) + S_0 = n ln(T^{C_V} * V^{R}) + S_0
+\]
+
+			</li>
+		</ul>
+	</section>
+</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+
+		<!-- Everything below this point is unrelated to the slideshow -->
+
+		<div class="share-reveal reveal-back"></div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Calcolo delle probabilità</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/beige.css" id="beige">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+<section>
+	<h2>Calcolo delle probabilità</h2>
+	<ul>
+		<li>Permutazioni semplici/con ripetizione</li>
+		<li>Disposizioni semplici/con ripetizione</li>
+		<li>Combinazioni semplici/con ripetizione</li>
+	</ul>
+	<hr>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<hr>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+<section>
+	<section>
+		<h2>Permutazioni semplici - esempio 1/2</h2>
+        <ul>
+        	<li>Quanti numeri diversi di 5 cifre posso formare con le cifre 1, 2, 3, 4, 5?</li>
+        	<li>Nel numero che potrò fare la cifra 1 potrà essere al 1° posto, oppure al 2° posto, oppure al 3° posto, oppure al 4° posto, oppure al 5° posto; cioè per la cifra 1 ho 5 possibilità</li>
+        	<li>Per la cifra 2 (avendo già messo la cifra 1) invece ho solo 4 possibilità perchè un posto è già occupato dalla cifra 1</li>
+        	<li>Per la cifra 5 ho solo una possibilità perchè quattro posti sono già occupati dalle cifre 1, 2, 3 e 4 e il 5 va nel posto che resta vuoto.</li>
+        </ul>
+	</section>
+	<section>
+		<h2>Permutazioni semplici - esempio 2/2</h2>
+		<table class="table">
+			<tr><td>per la cifra 1</td><td>5 possibilità</td></tr>
+			<tr><td>per la cifra 2</td><td>4 possibilità</td></tr>
+			<tr><td>per la cifra 3</td><td>3 possibilità</td></tr>
+			<tr><td>per la cifra 4</td><td>2 possibilità</td></tr>
+			<tr><td>per la cifra 5</td><td>1 possibilità</td></tr>
+		</table>
+		<ul>
+			<li>Possibilità = 5·4·3·2·1 = 120</li>
+			<li>Con le 5 cifre posso scrivere 120 numeri diversi</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Permutazioni semplici</h2>
+		<ul>
+			<li>Il numero di permutazioni semplici su n oggetti \(P_n\) è dato dal prodotto del numero n per tutti i suoi antecedenti:
+\[
+P_n = n * (n-1) * (n-2) * .....  * 3 * 2 * 1
+\]
+			</li>
+			<li>Per antecedenti di un numero si intendono i numeri che lo precedono nella successione naturale:
+			ad esempio gli antecedenti di 6 sono i numeri 1, 2, 3, 4, 5</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Problema</h2>
+		<ul>
+			<li>Quanti anagrammi (anche senza significato) posso fare con le lettere della parola cane?</li>
+			<li>Sono 4 oggetti quindi:
+\[
+P_4 = 4 * 3 * 2 * 1
+\]
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Fattoriale di un numero</h2>
+		<ul>
+			<li>Abbiamo bisogno di scrivere in modo più compatto un insieme di prodotti del tipo:
+\[
+10 * 9 * 7 * 6 * 5 * 4 * 3 * 2 * 1
+\]
+			</li>
+			<li>Useremo la notazione 10 * 9 * 7 * 6 * 5 * 4 * 3 * 2 * 1 = 10!</li>
+			<li>Quindi nella formula per calcolare le permutazioni semplici su n oggetti potremo scrivere:
+\[
+P_n = n!
+\]
+			</li>
+			<li>Per convenzione si pone 0! = 1</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Permutazioni con ripetizione - esempio 1/2</h2>
+        <div class="media">
+            <img class="pull-right media-object" src="../src/images/probabilità-permutazioni.png">
+            <div class="media-body">
+				<ul>
+					<li>Vediamo cosa succede quando alcuni degli oggetti su cui dobbiamo fare le permutazioni sono uguali;</li>
+					<li>Facciamo un esempio con 4 oggetti di cui 3 uguali: a   b   b   b </li>
+				</ul>
+            </div>
+        </div>
+        <ul>
+			<li>Se fossero oggetti diversi le permutazioni sarebbero: \(P_4 = 4! = 24\)</li>
+			<li>Per fartelo vedere bene coloro diversamente le lettere b.</li>
+        </ul>
+	</section>
+
+	<section>
+		<h2>Permutazioni con ripetizione - esempio 2/2</h2>
+		<ul>
+			<li>Ma ssenza colori le lettere b sarebbero indistinguibili tra loro e pertanto ogni colonna diventerebbe un termine singolo
+\[
+a b b b   \  \   b a b b   \ \   b b a b    \ \   b b b a
+\]
+			</li>
+			<li>Allora per avere le permutazioni su 4 oggetti di cui 3 identici dovrò fare le permutazioni su 4 oggetti e dividerle per le permutazioni su tre oggetti:
+\[
+P_{4;3} = \frac{P_4}{P_3} = \frac {4!}{3!} = 4
+\]
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Permutazioni con ripetizione</h2>
+		<ul>
+			<li>Dato un insieme formato da "n" oggetti</li>
+			<li>Siano "\(n_1\)" gli oggetti di un tipo, "\(n_2\)"  di un altro tipo, etc. fino a "\(n_k\)" , con \(n=n_1+n_2+\cdots + n_k\),</li>
+			<li>il numero di risultati distinti è:
+\[
+\binom {n} {n_1, \cdots, n_k} = \frac{n!}{n_1! * \cdots  * n_k!}
+\]
+			</li>
+			che viene detto coefficiente multinomiale (estensione del coefficiente binomiale).
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Disposizioni semplici - esempio 1</h2>
+		<ul>
+			<li>Considero cinque oggetti:
+\[
+a_1, a_2, a_3, a_4, a_5
+\]
+			</li>
+			<li>Se considero gli elementi uno ad uno allora ho 5 possibilità:
+\[
+a_1 \ \ a_2 \ \ a_3 \ \ a_4 \ \ a_5 \\
+D_{5;1} = 5
+\]
+			</li>
+		</ul>
+        <div class="media">
+            <img class="pull-right media-object" src="../src/images/disposizioni-semplici_d5-2.png">
+            <div class="media-body">
+				<ul>
+					<li>Se considero le coppie ordinate, allora ad ogni elemento precedente ne devo aggiungere 4 (uno alla volta) cioè: 
+\[
+D_{5:2} = 5 * 4 = 20
+\]
+					</li>
+				</ul>
+            </div>
+        </div>
+
+	</section>
+
+	<section>
+		<h2>Disposizioni semplici - esempio 2</h2>
+		<ul>
+			<li>Considero una gara di atletica in cui ci sono 10 partecipanti</li>
+			<li>Verranno premiati solo i primi tre.</li>
+			<li>Quanti sono i possibili podi?</li>
+			<li>Quante sequenze ordinate di tre elementi posso ottenre da un insieme di dieci elementi?
+\[
+E_{10:3} = 10 * 9 * 8 = 720
+\]
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Disposizioni semplici</h2>
+		<ul>
+			<li>Le disposizioni semplici su n oggetti sono i numeri delle coppie ordinate \(D_{n;2}\), terne ordinate \(D_{n;3}\), ...., k-uple ordinate \(D_{n;k}\) che posso formare con n oggetti; </li>
+			<li>Il numero delle disposizioni semplici di n oggetti presi k a k e' uguale al prodotto di tutti i numeri naturali compresi fra n ed (n-k+1)
+\[
+D_{n;k} = n * (n - 1) * .... * (n - k + 1) = \frac{n!}{(n-k)!}
+\]
+			</li>
+			<li>Per k = n ricado nel caso delle "permutazioni".</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Disposizioni con ripetizione 1/2</h2>
+		<ul>
+			<li>Le disposizioni con ripetizione su n oggetti sono i numeri delle coppie ordinate D^{'}_{n;k}, terne ordinate D^{'}_{n;3}, ..., k-uple ordinate D^{'}_{n;k} che posso formare con n oggetti, considerando che tali oggetti possono anche essere ripetuti.</li>
+			<li>Equivale al problema di estrarre un numero da un sacchetto e, prima di procedere alla seconda estrazione, rimettere il numero nel sacchetto in modo da poterlo riestrarre.</li>
+			<li>Ad esempio le disposizioni con ripetizione di classe 2 su 3 oggetti, cioe' le coppie che posso formare con i 3 oggetti 1, 2, 3 saranno: 
+\[
+1 1   \ \   1 2  \ \   1 3  \\
+2 1   \ \   2 2  \ \   2 3  \\
+3 1   \ \   3 2  \ \   3 3  \\
+\]
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Disposizioni con ripetizione 2/2</h2>
+		<ul>
+			<li>In generale le disposizioni con ripetizione di n oggetti di classe k saranno:
+\[
+D^{'}_{n;k} = n^k
+\]
+			</li>
+			<li>Come esercizio calcoliamo il numero di colonne che dovrei giocare per essere sicuro di vincere nella schedina del totocalcio.</li>
+			<li>Sono disposizioni con ripetizione di 3 oggetti (1,x,2) presi 13 a 13:
+\[
+D^{'}_{3;13} = 3^{13} = 1594323
+\]
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Quante targhe possiamo creare?</h2>
+		<ul>
+			<li>Il sistema attuale prevede quattro lettere e tre numeri:
+\[
+A A \ \ 0 0 0 \ B B
+\]
+			</li>
+			<li>Sapendo che l'alfabeto è costituito da 26 lettere:
+\[
+D^{'}_{25,2} \ * \ D^{'}_{10,3}  \ * \ D^{'}_{25,2} = 25^2 * 10^3 * 25^2 = 390 625 000
+\]
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Combinazioni</h2>
+		<ul>
+			<li>Nel calcolo combinatorio, se n e k sono due interi positivi, si definisce combinazione di n elementi presi k alla volta (oppure di n elementi di classe k) ogni sottoinsieme di k oggetti estratti da un insieme di n oggetti.</li>
+			<li>Se si impone la condizione che una combinazione non può avere un elemento ripetuto si parla di combinazioni semplici, altrimenti di combinazioni con ripetizione. </li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Combinazioni semplici 1/2</h2>
+		<ul>
+			<li>Le due caratteristiche principali delle combinazioni semplici sono:
+				<ul>
+					<li>l'ordine degli elementi in ciascun raggruppamento non ha importanza</li>
+					<li>ogni elemento può comparire, in ogni gruppo, al massimo una volta, ovvero gli elementi di ogni raggruppamento sono distinti</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Combinazioni semplici 2/2</h2>
+		<ul>
+			<li>Dato un insieme A di cardinalità n, il numero dei sottoinsiemi di A di cardinalità k ≤ n si ottiene calcolando:</li>
+			<ul>
+				<li>prima il numero delle funzioni da un generico sottoinsieme di cardinalità k in A, che è il numero delle disposizioni di n elementi di classe k</li>
+				<li>poi, dal momento che si prescinde dall'ordine, si divide tale numero per quello delle permutazioni di k elementi:
+\[
+C_{n,k} = \frac{D_{n,k}}{P_k} = \frac{n!}{(n - k)! * k!} = \binom {n}{k}
+\]
+				</li>
+			</ul>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Combinazioni con ripetizione 1/2</h2>
+		<ul>
+			<li>Sia dato un insieme di n elementi distinti e sia k un numero naturale. Tutti i raggruppamenti che si possono formare con k degli n elementi in modo che:
+				<ul>
+					<li>ogni raggruppamento contenga esattamente k elementi;</li>
+					<li>ogni elemento può essere ripetuto fino a k volte in ogni raggruppamento;</li>
+					<li>ogni raggruppamento differisca dagli altri per almeno un elemento e non per l'ordine</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Combinazioni con ripetizione 2/2</h2>
+		<ul>
+			<li>Si dicono combinazioni con ripetizione di classe k e si indicano con \(C^{'}_{n;k}\) dove n indica il numero totale degli elementi dell'insieme di partenza e k il numero degli elementi che dovrà contenere ogni ragruppamento</li>
+			<li>Il numero delle combinazioni con ripetizione è dato da:
+\[
+C^{'}_{n;k} = \binom{n + k - 1}{k} = \frac{(n + k  - 1)!}{k!(n - 1)!}
+\]
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<h2>Conclusione</h2>
+	<table class="table table-hover">
+		<tr>
+			<td>Permutazioni semplici</td><td>\(P_n = n!\)</td>
+		</tr>
+		<tr>
+			<td>Permutazioni con ripetizioni</td><td>\(P^{'}_{n} = \binom {n} {n_1, \cdots, n_k} = \frac{n!}{n_1! * \cdots  * n_k!}\)</td>
+		</tr>
+		<tr>
+			<td>Distribuzioni semplici</td><td>\(D_{n;k} = n (n-1)  ....  (n-k+1) = \frac{n!}{(n-k)!}\)</td>
+		</tr>
+		<tr>
+			<td>Distribuzioni con ripetizioni</td><td>\(D^{'}_{n;k} = n^k\)</td>
+		</tr>
+		<tr>
+			<td>Combinazioni semplici</td><td>\(C_{n,k} = \frac{D_{n,k}}{P_k} = \frac{n!}{(n - k)! * k!} = \binom {n}{k}\)</td>
+		</tr>
+	</table>
+</section>
+			</div>
+
+		</div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+		<div class="share-reveal reveal-back"></div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Informatica e E-Learning - CSS</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/serif.css" id="theme">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+<section>
+	<h2>CSS</h2>
+	<ul>
+		<li>What is CSS?</li>
+		<li>CSS syntax</li>
+		<li>CSS example</li>
+	</ul>
+	<hr>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<hr>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+
+<section>
+	
+	<section>
+		<h2>What is CSS?</h2>
+		<ul>
+			<li>CSS stands for Cascading Style Sheets</li>
+			<li>It is  a style sheet language used for describing the look and formatting of a document written in HTML</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>CSS syntax</h2>
+		<ul>
+			<li>CSS has a simple syntax and uses a number of English keywords to specify the names of various style properties.</li>
+			<li>A style sheet consists of a list of rules. Each rule or rule-set consists of one or more <a href="#selectors">selectors</a>, and a <a href="#declaration-block">declaration block.</a></li>
+		</ul>
+	</section>
+
+	<section id="selectors">
+		<h2>CSS selectors</h2>
+		<ul>
+			<li>In CSS, selectors are used to declare which part of the markup a style applies to.</li>
+			<li>Selectors may apply to:
+				<ul>
+					<li>all elements of a specific type, e.g. the paragraph p</li>
+					<li>to elements specified by attribute, in particular:
+						<ul>
+							<li>id: an identifier unique to the document</li>
+							<li>class</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section id="declaration-block">
+		<h2>Declaration block</h2>
+		<ul>
+			<li>A declaration block consists of a list of declarations in braces. </li>
+			<li>Each declaration itself consists of a property, a colon (:), and a value.</li>
+			<li>If there are multiple declarations in a block, a semi-colon (;) must be inserted to separate each declaration<sup><a href="#/reference">[1]</a></sup>.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>CSS example</h2>
+		<pre><code>&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;meta charset="utf-8" />
+    &lt;style type="text/css">
+      #my-id { color: red }
+      .my-class { color: blue }
+    &lt;/style>
+  &lt;/head>
+  &lt;body>
+    &lt;p id="my-id"> To demonstrate specificity&lt;/p>
+    &lt;p class="my-class">To demonstrate specificity&lt;/p>
+  &lt;/body>
+ &lt;/html></code></pre>
+	</section>
+	
+</section>
+
+<section>
+	<section>
+		<h2>Three kinds of ways to attach style rule</h2>
+		<ul>
+			<li>Adding in-line CSS to HTML tags</li>
+			<li>embedding CSS into the HTML</li>
+			<li>external files</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Adding in-line CSS to HTML tags</h2>
+		<ul>
+			<li>Style rules can be added directly to any HTML element.<pre><code>
+&lt;p style="color:red; background:black;"&gt;
+    This is a red paragraph with a black background
+&lt;/p&gt;
+			</code></pre></li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>External CSS</h2>
+		<ul>
+			<li>An external style sheet is ideal when the style is applied to many pages.</li>
+			<li>With an external style sheet, you can change the look of an entire Web site by changing one file.</li>
+			<li>Each page must link to the style sheet using the &lt;link> tag.</li>
+			<li>The &lt;link> tag goes inside the head section:</li>
+		</ul>
+	</section>
+	<section>
+		<h2>External CSS in detail</h2>
+		<ul>
+			<li>Your style sheet should be saved with a .css extension.</li>
+			<li>An example of a style sheet file is shown below:<pre><code>body {
+  background-image: url("images/background.gif");
+  color: red;
+}
+p {
+  margin-left:20px;
+}
+</code></pre></li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>How to position text around an image</h2>
+		<ul>
+			<li>The "float" property is used for positioning and layout on web pages.</li>
+			<li>Here is an example of that:<img src="http://css-tricks.com/wp-content/csstricks-uploads/print-layout.png"></li>
+		</ul>
+	</section>
+	
+	<section>
+		<h2>HTML code</h2>
+		<pre><code>&lt;body>
+  &lt;img src="sunset.gif" class="float-left">
+  &lt;p>The images are contained with...&lt;/p>
+
+  &lt;img src="sunset.gif" class="float-right">
+  &lt;p>This second paragraph has an...&lt;/p>
+&lt;/body></code></pre>
+	</section>
+
+	<section>
+		<h2>CSS code</h2>
+		<pre><code>.float-left { 
+    float: left; 
+    margin: 4px; 
+}
+.float-right { 
+    float: right; 
+    margin: 4px; 
+}</code></pre>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>HTML Block Elements</h2>
+		<ul>
+			<li>Most HTML elements are defined as "block level" elements or as "in line" elements</li>
+			<li>block level elements normally start (and end) with a new line when displayed in a browser</li>
+			<li>examples: &lt;h1&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;table&gt;</li>
+			<li>"in-line" elements are normally displayed without starting a new line</li>
+			<li>examples: &lt;b&gt;, &lt;td&gt;, &lt;a&gt;, &lt;img&gt;</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>How to write both &lt;h1&gt; and &lt;h2&gt; in the same line?</h2>
+		<ul>
+			<li>&lt;h1&gt; and &lt;h2&gt; are native "display: block" elements</li>
+			<li>you need to make them "display: inline" so they behave like normal text.</li>
+		</ul>
+	</section>
+</section>
+
+
+<section>
+	<h2>Acronymous</h2>
+	<ul>
+		<li>CSS: Cascading Style Sheets</li>
+	</ul>
+</section>
+
+<section id="reference">
+	<h2>References</h2>
+	<ol>
+		<li><a href="http://www.w3.org/TR/CSS21/syndata.html#q10">W3C CSS2.1 specification for rule sets, declaration blocks, and selectors.</a></li>
+		<li><a href="http://css-tricks.com/almanac/properties/f/float/">CSS-TRICKS float</a></li>
+		<li><a href="http://matthewjamestaylor.com/blog/adding-css-to-html-with-link-embed-inline-and-import">Four methods of adding CSS to HTML</a></li>
+	</ol>
+
+</section>
+			</div>
+
+		</div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+		<div class="share-reveal reveal-back"></div>
+		<script src="../app/bower_components/reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+$(document).ready(function() {
+  $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+});
+		</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

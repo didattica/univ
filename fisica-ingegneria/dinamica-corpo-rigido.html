@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" manifest="../cache.manifest">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Fisica 1 - dinamica del corpo rigido</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/night.css" id="theme">
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+<!-- *********************** Dinamica del punto *********************** -->
+<section>
+	<h2>Dinamica del corpo rigido</h2>
+	<ul>
+		<li>Definizione di corpo rigido</li>
+		<li>Moto di un corpo rigido</li>
+		<li>Densità</li>
+		<li>Momento angolare</li>
+		<li>Momento d'inerzia</li>
+	</ul>
+	<hr>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<hr>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+<section>
+	<section>
+	<h2>Definizione di corpo rigido</h2>
+	<ul>
+		<li>Un corpo rigido è un sistema di punti materiali in cui le distanze tra tutte le possibili coppie di punti non possono variare.</li>
+		<li>Quanti parametri occorrono per descrivere il moto di un corpo rigido?</li>
+	</ul>
+	</section>
+
+	<section>
+		<h2>Gradi di libertà di un sistema</h2>
+		<ul>
+			<li>Il numero di parametri necessari per descrive il moto di un sistema si chiama numero di gradi di libertà del sistema.</li>
+			<li>Un punto materiale ha tre gradi di libertà (le tre coordinate x, y, z).</li>
+			<li>N punti materiali indipendenti hanno 3*N gradi di libertà.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Gradi di libertà di un corpo rigido</h2>
+		<ul>
+			<li>Nel caso di un corpo rigido la condizione che le distanze tra tutte le possibili coppie di punti siano costanti, riduce i gradi di libertà del sistema da 3N (dove N è il numero di particelle) a 6. 
+\[
+\forall i,j | i \neq j : (x_i - x_j)^2 + (y_i - y_j)^2 + (z_i - z_j)^2 - d_{ij}^2 = 0 
+\]
+			</li>
+			<li>Infatti, definita la "forma" del corpo rigido, a ogni istante la sua posizione è individuabile da sei valori: tre coordinate di un punto, tre coseni direttori di rotazione intorno agli assi x, y, z solidali al corpo.</li>
+			<li>I coseni direttori sono proprio i coseni che la direzione della retta forma con gli assi cartesiani.</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Moto di un corpo rigido</h2>
+		<ul>
+			<li>Moto di traslazione: tutti i punti si muovono con la stessa velocità \(\vec{v}\) che coicide con \(\vec{v_{cm}}\)
+				<ul>
+					<li>L'equazione del moto sarà: \(\vec{R} = M * \vec{a_{cm}}\)</li>
+				</ul>
+			</li>
+			<li>Moto di rotazione: tutti i punti descrivono un moto circolare con velocità angolare \(\omega\)
+				<ul>
+					<li>L'equazione del moto sarà: \(\vec{M} = \frac{d\vec{L}}{dt}\)</li>
+				</ul>
+			</li>
+			<li>La combinazione dei due moti è definita come moto di rototraslazione.</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<h2>Corpo continuo</h2>
+	<ul>
+		<li>Supponiamo che il corpo abbia una struttura continua (non consideriamo il livello atomico).</li>
+		<li>Consideriamo un elemento di volume infinitesimo dV del corpo e sia dm la massa contenuta in tale volume.</li>
+		<li>Si definisce densità del corpo la quantità \(\rho = \frac{dm}{dV}\) (dove il volume dV è abbastanza piccolo affinché le proprietà del corpo siano uniformi).</li>
+		<li>La massa del corpo sarà: \[m = \int_{V} \rho dV =  \int_{V} \rho(x,y,z) dx dy dz\]</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Centro di massa di un corpo continuo</h2>
+	<ul>
+		<li>Se ora vogliamo calcolare la posizione del centro di massa di un corpo continuo, dobbiamo semplicemente dividerlo in parti infinitesime e effettuarne la media pesata. Quindi: 
+\[
+\vec{r_{cm}} = \frac{\int_V \vec{r} * dm}{M} = \frac{\int_V \vec{r} * \rho * dV}{M}
+\]
+		</li>
+	</ul>
+</section>
+
+<section>
+	<section>
+		<h2>Momento d'inerzia per un sistema di n punti materiali</h2>
+		<ul>
+			<li>Sia l'asse z, l'asse di rotazione di un corpo rigido formato da n punti materiali.
+	\[
+	\vec{L} = \sum_{n=1}^{n}\vec{L_i} 
+	= (\sum_{n=1}^{n} \vec{r_i} \times {m_i \vec{v_i}}) 
+	= (\sum_{n=1}^{n} m_i r_i^2) \vec{\omega} 
+	= I_z  \vec{\omega}
+	\]
+			</li>
+			<li>Il coefficiente \(I_z\) si chiama momento d'inerzia del corpo rispetto all'asse z.
+	\[
+	I_z = \sum_{n=1}^{n} m_i r_i^2 = \sum_{n=1}^{n} m_i (x_i^2 + y_i^2)
+	\]
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Momento d'inerzia per un corpo continuo</h2>
+		<ul style="width:70%">
+			<li>Il momento d'inerzia per un corpo continuo si deduce da quello di un sistema rigido formato da n punti materiali:
+			</li>
+		</ul>
+		<span style='float:right'><img src="../src/images/momento_inerzia_asse_z.png"></span>
+\[
+I_z = \sum_{n=1}^{n} m_i R_i^2 \Rightarrow I_z 
+= \int_V R^2 dm = \int_V \rho R^2dV = \int_V \rho (x^2+y^2) dV
+\]
+	</section>
+	<section>
+		<h2>Esempi di corpi con densità di massa lineare</h2>
+		<ol>
+			<li>Calcolo del momento d'inerzia di un anello di densità lineare \(\lambda = \frac{m}{2 \pi R}\):
+\[
+I = \int R^2 dm = \int \lambda R^2dl = \lambda R^2 \int dl = \lambda R^2 2\pi R = m R^2
+\]
+			</li>
+			<li>Calcolo del momento d'inerzia di una sbarra omogenea di densità lineare \(\lambda = \frac{m}{L}\)
+\[
+I = \int x^2 dm = \int_{-L/2}^{L/2} x^2 \lambda dx = \lambda [\frac{x^3}{3}]_{-L/2}^{L/2} = \frac{1}{12} m L^2
+\]
+			</li>
+		</ol>
+	</section>
+	<section>
+		<h2>Esempi di corpi con densità di massa superficiale</h2>
+		<ul>
+			<li>Momento d'inerzia di una sfera avente densità superficiale \(\sigma\):
+\[
+\sigma = \frac{m}{4 \pi R^2} \quad r = R \sin{\theta} \quad dl = R d\theta 
+\quad \int_0^\pi (\sin{\theta})^3 d\theta =\frac{4}{3}
+\]
+\[
+I = \int r^2 dm = \sigma \int_S r^2 dS = 
+\sigma \int_0^\pi R^2 \sin{\theta}^2 2 \pi R \sin{\theta} R d\theta = \frac{2}{3} M R^2
+\]
+			</li>
+		</ul>
+		<img src="../src/images/momento_inerzia_guscio.png">
+	</section>
+	<section>
+		<h2>Esempi di corpi con densità di massa volumetrica</h2>
+		<ol>
+			<li>Momento d'inerzia di un cilindro di densità \(\rho  = \frac{m}{\pi R^2 h} \):
+\[
+I = \int r^2 dm = \int_0^R r^2 \rho \pi h r dr = \frac{1}{2}mR^2
+\]
+			</li>
+			<li>
+				Momento d'inerzia di una sfera piena di densità \(\rho\):<br>
+ se si scompone un solido in parti di qualunque forma, il momento d'inerzia totale rispetto a un asse dato è la somma dei momenti d'inerzia delle singole parti rispetto allo stesso asse.
+ \[
+ I = \int dI = \int_0^M \frac {2}{3}r^2dm  \quad \rho = \frac {m}{\frac{4}{3}\pi R^3} dV = 4 \pi r^2 dr
+ \]
+\[
+I = \int dI = \frac {2}{3} \rho \int_0^R r^2 4 \pi r^2 dr = \frac{2}{5} M R^2
+\]
+			</li>
+		</ol>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Teorema di Huygens-Steiner</h2>
+		<ul>
+			<li>Nei precedenti esempi, per il calcolo dei momenti d'inerzia, abbiamo scelto particolari assi (passanti per il centro di massa) che ci hanno permesso di semplificare il calcolo.
+			</li>
+			<li>
+			Il teorema di Huygens-Steiner stabilisce che il momento d'inerzia di un corpo di massa m rispetto a un asse che si trova a una distanza d dal centro di massa del corpo è dato da 
+			\[
+			I = I_{cm} + m d^2
+			\]
+			</li>
+			<li>
+			\(I_{cm}\) è il momento d'inerzia del corpo rispetto a un asse parallelo al primo e passante per il centro di massa.
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Dimostrazione del teorema di Huygens-Steiner</h2>
+		<ul>
+			<li>Per dimostrare il teorema consideriamo due assi z e \(z^{'}\), tra loro paralleli, distanti "a" e con asse \(z^{'}\) passante per il centro di massa.
+<img src="../src/images/teorema_di_steiner.png" style='float:right'>
+			</li>
+			<li>Per un generico punto \(P_i\), il momento d'inerzia rispetto all'asse z sarà:
+\[
+m_i(x_i^2 + y_i^2), \quad x=x^{'}, \quad y=y^{'} + a, \quad z=z^{'}
+\]
+			</li>
+			<li>Se sommiamo i momenti d'inerzia di tutti i punti:
+\[
+I = \sum_i m_i(x_i^2 + y_i^2) = \sum_i (x_i^{'2} + (y_i^{'} + a)^2) \Rightarrow
+\]
+\[
+I =\sum_i (x_i^{'2} + y_i^{'2}) + \sum_i m_i a^2 + 2 a \sum_i m_i y_i^{'} = I_{z^{'}} + m a^2
+\]
+\[
+\text{Sapendo che} \quad 2 a \sum_i m_i y_i^{'} = m y_{cm}^{'} = 0
+\]
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Momenti d'inerzia rispetto ad assi passanti per il bordo</h2>
+\[
+\text{Anello di raggio r} \Rightarrow I_{cm} = m r^2 \Rightarrow I_{bordo} = 2mr^2
+\]	
+\[
+\text{Disco di raggio r} \Rightarrow I_{cm} = \frac{1}{2}m r^2 \Rightarrow I_{bordo} = \frac{3}{2}m r^2
+\]	
+\[
+\text{Sfera di raggio r} \Rightarrow I_{cm} = \frac{2}{5}m r^2 \Rightarrow I_{bordo} = \frac{7}{2}m r^2
+\]	
+\[
+\text{Asta lunga d} \Rightarrow I_{cm} = \frac{1}{12}m d^2 \Rightarrow I_{bordo} = \frac{1}{3}m d^2
+\]
+	</section>	
+</section>
+</div>
+
+		</div>
+		<div class="share-reveal reveal-back"></div>
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

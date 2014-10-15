@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Fisica 1 - Onde</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/default.css" id="beige">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+<section>
+	<h2>Onde</h2>
+	<ul>
+		<li>Video Introduzione</li>
+		<li>Onde trasversali e onde longitudinali.</li>
+		<li>Lunghezza d'onda e frequenza.</li>
+		<li>Interferenza fra onde.</li>
+		<li>Battimenti.</li>
+		<li>Moto armonico smorzato e forzato</li>
+	</ul>
+	<hr>
+	<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<hr>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+
+<section>
+	<section>
+		<h2>Video Introduzione 1/3</h2>
+		<iframe width="860" height="580" src="//www.youtube.com/embed/pPOgrXOZIZk" frameborder="0" allowfullscreen></iframe>
+	</section>
+	<section>
+		<h2>Video Introduzione 2/3</h2>
+		<iframe width="860" height="580" src="//www.youtube.com/embed/Chep3H_i0X4?list=PLAA69F9A1EFE3B882" frameborder="0" allowfullscreen></iframe>
+	</section>
+	<section>
+		<h2>Video Introduzione 3/3</h2>
+		<iframe width="860" height="580" src="//www.youtube.com/embed/Qgtp58K8ye8?list=PLAA69F9A1EFE3B882" frameborder="0" allowfullscreen></iframe>
+	</section>
+</section>
+
+
+<section>
+	<section>
+		<h2>Onda - definizione e classificazione</h2>
+		<ul>
+			<li>Un'onda è una perturbazione che si propaga nello spazio, trasportando energia e quantità di moto, ma non materia.</li>
+			<li>Le onde si possono dividere in onde:
+				<ul>
+					<li>Longitudinali</li>
+					<li>Trasversali</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Onde longitudinali</h2>
+		<ul>
+			<li>Le onde si dicono <u>longitudinali</u> quando la direzione della perturbazione è la stessa dello spostamento dell'onda.</li>
+		</ul>
+		<img src="../src/images/onda_longitudinale.gif">
+	</section>
+	<section>
+		<h2>Onde trasversali</h2>
+		<ul>
+			<li>Le onde si dicono <u>trasversali</u> quando la direzione della perturbazione è 
+perpendicolare a quella dello spostamento dell'onda.</li>
+		</ul>
+		<img src="../src/images/onda_trasversale.gif">
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Grandezze caratteristiche delle onde</h2>
+		<ul>
+			<li>Le grandezze caratteristiche delle onde sono:
+				<ul>
+					<li>Ampiezza.</li>
+					<li>Periodo, frequenza e pulsazione.</li>
+					<li>Lunghezza d’onda.</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Ampiezza</h2>
+		<ul>
+			<li>L'ampiezza dell'onda è lo spostamento 
+massimo rispetto al valore di equilibrio. </li>
+			<li>Dato che lo spostamento può essere sia positivo che 
+negativo, la massima variazione totale di questa grandezza è due volte l'ampiezza. 
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Periodo, frequenza e pulsazione</h2>
+		<ul>
+			<li>La periodicità nel tempo dell'onda è determinata dal periodo T, il cui reciproco è la frequenza:
+\[
+\nu = \frac{1}{T} = \frac{\omega}{2\pi}
+\]
+			</li>
+			<li>La costante \(\omega\) rappresenta la pulsazione o frequenza angolare dell'onda. </li>
+			<li>Le grandezze T, \(\nu\) e 
+\(\omega\) hanno lo stesso significato discusso trattando il moto armonico.</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Lunghezza d’onda</h2>
+		<ul>
+			<li>La periodicità nello spazio dell'onda è determinata dalla lunghezza 
+d’onda \(\lambda\), che rappresenta lo spazio percorso dall'onda durante un periodo di oscillazione:
+\[
+\lambda = v * T = \frac{v}{\nu} 
+\]
+</li>
+<li>&Egrave; importante osservare che la lunghezza d'onda dipende sia dalla frequenza, che è fissata 
+dalla sorgente dell'onda, sia dalle proprietà del mezzo in cui essa viaggia, cioè la velocità di 
+propagazione.
+</li>
+		</ul>
+	</section>
+</section>
+
+
+<section>
+	<section>
+		<h2>Equazione delle onde</h2>
+		<ul>
+			<li>Data una funzione scalare \(\psi(x, y, z, t)\) si definisce equazione d'onda la seguente equazione differenziale:
+\[
+\nabla^2 \psi(x, y, z, t)\ = \frac{1}{v^2} \frac{\partial^2 \psi(x, y, z, t)}{\partial t^2} 
+\]
+			</li>
+			<li>In una dimensione questa equazione si riduce a:
+\[
+\frac{\partial^2 \psi(x, y, z, t)}{\partial x^2}  = \frac{1}{v^2} \frac{\partial^2 \psi(x, y, z, t)}{\partial t^2}
+\]
+			</li>
+		</ul>
+	</section>
+	<section><h2>Equazione delle onde: dimostrazione</h2>
+	<ul>
+		<li>L'equazione delle onde può essere ricavata per una dimensione dalla legge di Hooke e dalla seconda legge della dinamica.
+		</li>
+		<img src="../src/images/legge_hooke_eq_onde.png">
+		<li>Sia u(x, t) la distanza dalla posizione di equilibrio di un punto di massa m.
+\[
+\sum_{i = 1}^{n} \vec{F}_{Hooke, i} = m \frac{\partial^2}{\partial t^2} u(x + h, t)
+\]
+		</li>
+		<li> Facendo tendere a zero la distanza h e a \(\infty\) il numero di punti:
+		\[
+\frac{\partial^2 u(x, t)}{\partial x^2}  = \frac{1}{v ^ 2} \frac{\partial^2 u(x, t)}{\partial t^2}
+		\]
+		</li>
+<!-- 
+\Rightarrow \lim_{h\to 0} \thinspace m \frac{\partial^2 u(x + h, t)}{\partial t^2} 
+=
+\lim_{n \to \infty}  \sum_{i = 1}^{n} \vec{F}_{Hooke, i} -->
+	</ul>
+	</section>
+	<section>
+		<h2>Teorema di Fourier</h2>
+		<ul>
+			<li>Si può dimostrare che una qualunque funzione matematica periodica si può sviluppare in quella che viene definita <u>Serie di Fourier</u>:
+\[
+f(x) = \sum_{n=1}^{N} a_n sin (n \omega x + \phi_n) + \sum_{m=1}^{M} b_m cos (m \omega x + \phi_m)
+\]
+			</li>
+			<li>Tale teorema è molto utile in quanto ci permette di trattare le onde nella loro forma più semplice: quella sinusoidale. Onde di forma più complessa possono essere sempre immaginate come la somma di tante onde sinusoidali. </li>
+		</ul>
+	</section>
+	<section>
+		<h2>Soluzione dell'equazione differenziale.</h2>
+		<ul>
+			<li>Si può dimostrare che la soluzione dell'equazione differenziale deve dipendere dalla posizione x, dal tempo t e dalla velocità \(\vec{v}\). 
+			Si potrà scrivere quindi come: 
+\[
+\psi = \psi_0 sin (k x - \omega t)
+\]
+dove \(\psi_0\) rappresenta l'ampiezza massima dell'oscillazione. Il termine \(k\) si chiama numero d'onda ed è uguale a \(k = \frac{2\pi}{\lambda}\) 
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Rappresentazione grafica di un'onda 1/2</h2>
+		<center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="900" height="315">
+                <param name="movie" value="../src/swf/clock_waveforms_1.swf">
+                <param name="quality" value="high">
+                <embed src="../src/swf/clock_waveforms_1.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="900" height="315"></embed>
+	  	      </object>
+</center>
+	</section>
+
+	<section>
+		<h2>Rappresentazione grafica di un'onda 2/2</h2>
+		<center>
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="900" height="480">
+          <param name="movie" value="../src/swf/waves_snapshots_3Dsin.swf">
+          <param name="quality" value="high">
+          <embed src="../src/swf/waves_snapshots_3Dsin.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="900" height="480"></embed>
+        </object>
+      </center>
+
+	</section>
+</section>
+
+<section>
+		<section>
+		<h2>Fronte d'onda</h2>
+		<ul>
+			<li>Data un'onda che si propaga nello spazio, si definisce fronte d'onda l'insieme dei punti che vibrano concordemente, in modo tale che per ciascuno di essi lo spostamento dalla posizione di equilibrio assuma lo stesso valore in ogni istante.</li>
+		</ul>
+		<img src="../src/images/Plane_wave_wavefronts_3D.svg">
+	</section>
+
+	<section>
+		<h2>Onda piana</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/onda_piana.gif">
+			<div class="media-body">
+			<ul>
+				<li>Un'onda piana è un'onda i cui fronti d'onda sono infiniti piani paralleli perpendicolari alla direzione di propagazione.</li>
+				<li>Le onde piane soddisfano l'equazione delle onde in una dimensione:
+\[
+\frac{\partial^2 f}{\partial x^2} - \frac{1}{v^2} \frac{\partial^2 f}{\partial t^2} = 0
+\]
+				</li>
+			</ul>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2>Onda sferica</h2>
+		<div class="media">
+			<img class="pull-right media-object" src="../src/images/Spherical_wave2.gif">
+			<div class="media-body">
+			<ul>
+				<li>Un'onda è sferica se il suo fronte d'onda è una sfera.</li>
+				<li>Le onde sferiche soddisfano l'equazione delle onde in tre dimensioni:
+\[
+\nabla ^2 f - \frac{1}{v^2} \frac{\partial^2 f}{\partial t^2} = 0
+\]
+				</li>
+			</ul>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2>Equazione delle onde elettromagnetiche</h2>
+		<ul>
+			<li>L'equazione che descrive la propagazione di un'onda elettromagnetica è l'equazione delle onde, che può essere scritta a partire dai campi elettrico e magnetico:
+\[
+\nabla ^2 \vec{E} - \epsilon\mu \frac{\partial^2 \vec{E}}{\partial t^2} = 0
+\]
+\[
+\nabla ^2 \vec{B} - \epsilon\mu \frac{\partial^2 \vec{B}}{\partial t^2} = 0
+\]
+			</li>
+			<li>
+				Nel vuoto v diventa la velocità della luce:
+\[
+v = \sqrt{\frac{1}{\epsilon\mu}}, \quad c = \sqrt{\frac{1}{\epsilon_0\mu_0}}
+\]
+
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Interferenza 1/3</h2>
+			<center>
+				<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="780" height="460">
+				<param name="movie" value="../src/swf/waves_superposition.swf">
+				<param name="quality" value="high">
+				<embed src="../src/swf/waves_superposition.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="780" height="460"></embed>
+				</object>
+         	 </center>
+	</section>
+	<section>
+		<h2>Interferenza 2/3</h2>
+		<ul>
+			<li>Consideriamo due onde aventi la stessa ampiezza e velocità ma sfasate di \(\phi\):
+	\[
+	\psi_1 = \psi_0 sin (k x - \omega t), \quad \psi_2 = \psi_0 sin (k x - \omega t + \phi)
+	\]
+			</li>
+			<li>L'onda risultante sarà:
+	\[
+	\psi = \psi_1 + \psi_2 = \psi_0 sin (k x - \omega t) + \psi_0 sin (k x - \omega t + \phi)
+	\]
+			</li>
+			<li>Ricordiamo ora le formule di prostaferesi:
+	\[
+	sin(\alpha) + sin \beta = 2 sin(\frac{\alpha + \beta}{2}) cos(\frac{\alpha - \beta}{2})
+	\]
+	\[
+	\psi = 2\psi_0 cos (\frac{\phi}{2}) sin (kx - \omega t + \frac{\phi}{2})
+	\]
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Interferenza 2/3</h2>
+		<ul>
+			<li>Osserviamo che l'ampiezza dell'onda è rappresentata dal termine:
+\[
+2\psi_0 cos (\frac{\phi}{2}) 
+\]
+	<li>Due onde sono in fase se: 
+	\[
+	\frac{\phi}{2} + n \pi = 0 \Rightarrow 2\psi_0 cos (\frac{\phi}{2}) = 2\psi_0 
+	\]
+	</li>
+
+	<li>Due onde sono in opposizione di fase se:
+	\[
+	\frac{\phi}{2} + m \pi = \frac{\pi}{2} \Rightarrow 2\psi_0 cos (\frac{\phi}{2}) = 0 
+	\]
+	</li>
+
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<h2>Principio di Huygens</h2>
+	<ul>
+		<li>Ogni elemento dΣ di un fronte d'onda Σ si può considerare come una sorgente secondaria di onde sferiche in fase con la primaria e di ampiezza proporzionale a quella dell'onda primaria e all'area dΣ. </li>
+		<center>
+			<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="900" height="315">
+                <param name="movie" value="../src/swf/principe_huyghens.swf">
+                <param name="quality" value="high">
+                <embed src="../src/swf/principe_huyghens.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="600" height="455"></embed>
+	  	      </object>
+		</center>
+	</ul>
+</section>
+
+<section>
+	<section>
+		<h2>Moto armonico smorzato</h2>
+			<center>
+				<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="900" height="315">
+	                <param name="movie" value="../src/swf/DampedHarmonicOscillator.swf">
+	                <param name="quality" value="high">
+	                <embed src="../src/swf/DampedHarmonicOscillator.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="900" height="655"></embed>
+		  	      </object>
+			</center>
+	</section>
+	<section>
+		<h2>Equazione del moto armonico smorzato</h2>
+		<ul>
+			<li>Si dimostra che l'equazione del moto armonico smorzato è la seguente:
+\[
+x(t) = X_0 e^{-\gamma t} sin (\omega t + \phi_0)
+\]
+			</li>
+			<li>Nello studio di fenomeni fisici reali i corpi in movimento sono di solito soggetti ad attriti, di solito direttamente proporzionali alla velocità:
+\[
+R = -kx - b v = m a_x \Rightarrow
+\]
+\[
+\frac{d^2 x}{dt^2} + \frac{b}{m}\frac{dx}{dt} + \frac{k}{m} x = 0
+\]
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Ricerca soluzioni del moto armonico smorzato 1/4</h2>
+			<ul>
+				<li>Per semplificare i calcoli si definisce:
+\[
+\gamma = \frac{b}{2m}, \quad \omega_0^2 = \frac{k}{m} \Rightarrow
+\frac{d^2 x}{dt^2} + 2 \gamma \frac{dx}{dt} + \omega_0^2 x = 0
+\]
+				</li>
+				<li>Impongo \(x(t) = e ^{\alpha t }\) con \(\alpha \in \mathbb{C} \) soluzione dell'equazione differenziale:
+\[
+\alpha^2 e^{\alpha t} + 2 \gamma \alpha e^{\alpha t} + \omega_0^2 e^{\alpha t} = 0
+\Rightarrow e^{\alpha t} (\alpha^2 + 2 \gamma \alpha + \omega_0^2) = 0
+\]
+				</li>
+				<li>Ricerco le soluzioni dell'equazione omgenea associata:
+\[
+\frac{\Delta}{4} = \gamma^2 - \omega_0^2 = \omega^2
+\]
+				 </li>
+			</ul>
+		</h2>
+	</section>
+	<section>
+		<h2>Ricerca soluzioni del moto armonico smorzato 2/4</h2>
+		<ul>
+			<li>Se il discriminante è maggiore o uguale di zero esistono due soluzioni reali</li>
+			<li>Se il discriminante è minore di zero esistono due soluzioni immaginarie:
+\[
+\alpha_{1} = -\gamma + i \omega, \quad \alpha_{2} = -\gamma -i \omega
+\]
+			</li>
+			<li>L'equazione differenziale per il principio di sovrapposizione ammette una combinazione lineare delle due soluzioni:
+\[
+x(t) = A x_1(t) + B x_2(t) = A e^{(-\gamma + i \omega) t } + 
+B e^{(-\gamma - i \omega) t }
+\]
+\[
+x(t) = e^{-\gamma t} [A e^{i \omega t} + B e^{- i \omega t}]
+\]
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Ricerca soluzioni del moto armonico smorzato 3/4</h2>
+		<ul>
+			<li>Per la formula di Eulero posso riscrivere la funzione esponenziale complessa come combinazione di seno e coseno:
+\[
+x(t) = e^{-\gamma t } [A [ cos(\omega t) + i sen(\omega t) ] + B [ cos(\omega t) - i sen(\omega t)]] 
+\]
+\[
+x(t) = e^{-\gamma t } [ (A + B) cos(\omega t) + i (A - B) sen(\omega t)]
+\]
+<!-- TODO -->
+			</li>
+			<li>x(t) sarà una funzione reale solo se A e B saranno complessi coniugati:
+\[
+A = a + i b, \quad B = a - i b \Rightarrow A + B = 2 a, \quad A - B = 2ib
+\]
+\[
+x(t) = e^{-\gamma t } [ 2a cos(\omega t) -2b sen(\omega t)]
+\]
+
+
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Ricerca soluzioni del moto armonico smorzato 4/4</h2>
+		<ul>
+			<li>Esprimo le costanti a e b in questo modo:
+\[
+2 a = X_0 sin(\Phi),\quad 2 b =  - X_0 cos(\Phi) \Rightarrow tg(\Phi) = -\frac{a}{b}
+\]
+			</li>
+			<li>
+				Applicondo la formula della somma degli angoli:
+		\[
+sin(\alpha + \beta) = sin(\alpha) cos(\beta) + cos(\alpha) sin(\beta)
+		\]
+		<br>
+\[
+x(t) = e^{-\gamma t } [ X_0 sin(\Phi) cos(\omega t) + 2 X_0 cos(\Phi) sen(\omega t)]
+\]	
+<br>
+				\[
+				x(t) =  X_0 e^{-\gamma t } sin (\omega t + \Phi)
+				\]
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Moto armonico forzato smorzato (risonanza)</h2>
+		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="900" height="315">
+            <param name="movie" value="../src/swf/resonance.swf">
+            <param name="quality" value="high">
+            <embed src="../src/swf/resonance.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="900" height="655"></embed>
+  	      </object>
+	</section>
+	<section>
+		<h2>Risonanza</h2>
+		<ul>
+			<li>La risonanza è una condizione fisica che si verifica quando un sistema oscillante forzato viene sottoposto a sollecitazione periodica di frequenza pari all'oscillazione propria del sistema stesso:
+\[
+F_{elastica} + F_{attrito\_viscoso} + F_{esterna} = ma
+\]
+\[
+- k x - b \frac{dx}{dt} + F_e cos(\omega_e t) = m \frac{d^2 x}{dt^2}
+\]
+			</li>
+			<li>Un fenomeno di risonanza provoca un aumento significativo dell'ampiezza delle oscillazioni.</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Risonanza - dimostrazione 1/3</h2>
+		<ul>
+			<li>Definendo, il  coefficiente di  smorzamento e la pulsazione propria rispettivamente:
+\[
+\gamma = \frac{b}{2m}, \omega_0 = \sqrt{\frac{k}{m}}
+\]
+</li>
+<li>
+	L'equazione differenziale dell'oscillatore armonico forzato diventa:
+\[
+\frac{d^2 x}{dt^2} + 2 \gamma \frac{dx}{dt} + \omega_0 ^ 2 x = \frac{F_e}{m} cos(\omega_e t)
+\]
+
+</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Risonanza - dimostrazione 2/3</h2>
+		<ul>
+			<li>La  soluzione  generale dell'equazione differenziale è una combinazione lineare tra la soluzione dell'omogenea associata
+			\[
+			x_{Omogenea}(t) = A_0 e^{-\gamma t} sin(\omega t + \Phi)
+			\]
+			e la soluzione particolare:
+			\[
+				x_{Particolare}(t) = A^{'} sin (\omega_e t + \Phi^{'})
+			\]
+			avendo posto:
+			\[
+			A^{'} =  \frac {F_e} {m} \frac{1} {\sqrt{(\omega_0 ^2 - \omega_e ^2)^2 + 4 \gamma ^2 \omega_e  ^ 2}},
+			tg(\Phi{'}) = \frac{2\gamma \omega_e}{\omega_0 ^2 - \omega_e ^2}
+			\]
+
+			</li>
+	
+		</ul>
+
+	</section>
+	<section>
+		<h2>Risonanza - dimostrazione 3/3</h2>
+		<ul>
+			<li>La soluzione particolare rappresenta quindi la soluzione a regime, infatti la  soluzione della omogenea associata è destinata a diventare nulla dopo un tempo ragionevole:
+			\[
+x_{Regime}(t) = A^{'} sin (\omega_e t + \Phi^{'})
+			\]
+</li>
+			<li>Se la pulsazione propria del sistema \(\omega_0\) ha un valore che tende alla pulsazione della forza esterna \(\omega_e\) si verifica il fenomeno della risonanza.</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Battimenti</h2>
+		<img src="../src/images/Battimenti_non_dispers.gif" width="76%">
+	</section>
+	<section>
+		<h2>Il battimento in acustica</h2>
+		<ul>
+			<li>In acustica il battimento è la frequenza (di battimento) risultante dalla sovrapposizione di grandezze periodiche, in genere oscillazioni sinusoidali aventi frequenze poco diverse</li>
+			<li>L'effetto è un rafforzamento seguito da un indebolimento del suono a seconda che le frequenze siano in concordanza o in discordanza di fase.</li>
+		</ul>
+		<video src="../src/audio/Beat.ogg" controls>
+		  Your browser does not support the <code>video</code> element.
+		</video>
+	</section>
+
+	<section>
+		<h2>Il battimento - Approccio matematico 1/2</h2>
+		<ul>
+			<li>Rappresento due suoni con due onde sinusoidali di uguale ampiezza A:
+\[
+\xi_1 = A sin(\omega_1 t ),\quad \xi_2 = A sin(\omega_2 t ) 
+\]
+</li>
+<li>Faccio la somma applicando le formule di prostaferesi:
+\[
+\xi = \xi_1 + \xi_2 = 2 A cos(\frac{\omega_1-\omega_2}{2} t ) * sin(\frac{\omega_1+\omega_2}{2} t )
+\]
+			</li>
+	</section>
+	<section>
+		<h2>Il battimento - Approccio matematico 2/2</h2>
+		<ul>
+			<li>Pongo:
+\[
+\omega = \frac{\omega_1+\omega_2}{2}, \quad \Omega = \frac{\omega_1-\omega_2}{2}
+\]
+
+\[
+\Rightarrow 
+\xi = \xi_1 + \xi_2 = 2 A cos(\Omega t) sin (\omega t)
+\]
+			</li>
+			<li>Se \(\Omega\ << \omega\), cioè se \(\omega_1\) e \(\omega_2\) sono vicine, si può esprimere la somma dei due suoni come un suono di frequenza intermedia, pari a \(\omega\), la cui frequenza sia modulata alla frequenza molto più bassa \(\Omega\). </li>
+		</ul>
+		</ul>
+	</section>
+</section>
+
+			</div>
+
+		</div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+
+		<!-- Everything below this point is unrelated to the slideshow -->
+
+		<div class="share-reveal reveal-back"></div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

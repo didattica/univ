@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Geometria dello spazio</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/beige.css" id="beige">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+	<section>
+		<h2>Geometria dello spazio</h2>
+		<ul>
+			<li>...</li>
+		</ul>
+		<hr>
+		<p>Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+		<hr>
+		<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+	</section>
+
+<section>
+	<section>
+		<h2>Relazioni fra rette nello spazio 1/2</h2>
+		<ul>
+			<li>Due rette nello spazio possono essere:
+				<ul>
+					<li><b>Complanari</b>: cioè giacciono su uno stesso piano</li>
+					<li><b>Sghembe</b>: cioè non giacciono sullo stesso piano</li>
+				</ul>
+			</li>
+			<li>In figura la retta rossa e la retta blu sono tra loro sghembe.</li>
+		</ul>
+		<img src="../src/images/geometria-rette-sghembe.png">
+	</section>
+	<section>
+		<h2>Relazioni fra rette nello spazio 2/2</h2>
+        <div class="media">
+            <img class="pull-right media-object" src="../src/images/geometria-rette-spazio.png">
+            <div class="media-body">
+				<ul>
+					<li>Una <u>retta nello spazio rispetto ad un piano</u> può essere:
+						<ul>
+							<li><b>Secante</b>: in tal caso ha un solo punto in comune con il piano</li>
+							<li><b>Parallela</b> ad una retta del piano: in tal caso non ha nessun punto in comune con il piano</li>
+							<li><b>Giacente sul piano</b>: in tal caso ha tutti i punti in comune con il piano.</li>
+						</ul>
+					</li>
+					<li>Nella figura: la retta "a" giace sul piano, la retta "b" è secante il piano, la retta "c" è sopra il piano e parallela alla retta "a"</li>
+				</ul>
+            </div>
+        </div>
+	</section>
+</section>
+
+<section>
+
+	<section>
+		<h2>Angoloidi</h2>
+	        <div class="media">
+	            <img class="pull-right media-object" src="../src/images/geometria-angoloide.png">
+	            <div class="media-body">
+					<ul>
+						<li>Consideriamo un poligono ed un punto esterno al piano su cui giace il poligono:</li>
+						<li>Definiremo <b>angoloide</b> lo spazio limitato da tutte le semirette uscenti dal punto dato e passanti per i punti del poligono (perimetro del poligono)</li>
+						<li>Il punto P è chiamato vertice dell'angoloide.</li>
+					</ul>
+	            </div>
+	        </div>
+	</section>
+
+	<section>
+		<h2>Triedri</h2>
+	        <div class="media">
+	            <img class="pull-right media-object" src="../src/images/geometria-triedri.png">
+	            <div class="media-body">
+					<ul>
+						<li>Se il poligono "generatore" è un triangolo otteniamo l'angoloide più semplice che chiameremo Triedro</li>
+						<li>Il triedro è lo spazio limitato da tutte le semirette uscenti dal punto dato, non giacente sul piano di un triangolo, e passanti per i punti dei lati del triangolo</li>
+						<li>Il punto P è chiamato vertice del triedro</li>
+					</ul>
+	            </div>
+	        </div>
+	</section>
+
+</section>
+
+<section>
+	<section>
+		<h2>Poliedro</h2>
+	        <div class="media">
+	            <img class="pull-right media-object" src="../src/images/geometria-poliedro.png">
+	            <div class="media-body">
+					<ul>
+						<li>Il poliedro è la parte di spazio limitata da un numero finito di poligoni, giacenti su piani diversi ed aventi, due a due, un lato in comune</li>
+						<li>Ogni poligono si chiama Faccia</li>
+						<li>L'insieme delle facce si chiama Superficie poliedrica</li>
+					</ul>
+	            </div>
+	        </div>
+		<ul>
+
+			<li>La parte di spazio limitata dalla superficie poliedrica si chiama Volume del poliedro</li>
+			<li>I lati dei poligoni si chiamano <b>spigoli</b> del poliedro</li>
+			<li>I vertici dei poligoni si chiamano <b>vertici</b> del poliedro</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Tipo di poliedro</h2>
+		<ul>
+			<li>Il tipo di poliedro è individuato dal numero di facce della superficie poliedrica:
+				<ul>
+					<li>Tetraedro: poliedro con 4 facce</li>
+					<li>Pentaedro: poliedro con 5 facce (esempio: piramide)</li>
+					<li>Esaedro: poliedro con 6 facce (esempio: cubo)</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Prisma indefinito</h2>
+	        <div class="media">
+	            <img class="pull-right media-object" src="../src/images/geometria-prisma-indefinito.png">
+	            <div class="media-body">
+					<ul>
+						<li>Consideriamo un poligono qualunque sul piano \(\alpha\) e consideriamo un poligono congruente ad esso sul un altro piano \(\beta\) parallelo ad \(\alpha\)</li>
+						<li>Consideriamo poi le congiungenti i punti corrispondenti dei perimetri dei due poligoni congruenti: in tal modo l'insieme di tali rette definiscono una "superficie prismatica" indefinita.</li>
+						<li>La parte di spazio circondata dalla superficie prismatica è chiamata "prisma indefinito"</li>
+					</ul>
+	            </div>
+	        </div>
+	</section>
+
+	<section>
+		<h2>Prisma 1/2</h2>
+	        <div class="media">
+	            <img class="pull-right media-object" src="../src/images/geometria-prisma.png">
+	            <div class="media-body">
+					<ul>
+						<li>Si dice prisma la parte di spazio racchiusa da un prisma indefinito compresa fra due sezioni parallele.</li>
+						<li>Le sezioni parallele sono chiamate <b>basi del prisma</b>.</li>
+						<li>Le altre facce diverse dalle basi sono chiamate <b>facce laterali</b> (sono sempre parallelogrammi).</li>
+						<li>Se gli spigoli laterali sono perpendicolari alle basi avremo un <b>prisma retto</b>; il prisma in figura, invece, è obliquo.</li>
+					</ul>
+	            </div>
+	        </div>
+	</section>
+
+	<section>
+		<h2>Prisma 2/2</h2>
+			<ul>
+				<li>Se i poligoni di base del <b>prisma retto</b> sono poligoni regolari diremo che il prisma è <b>regolare</b></li>
+			</ul>
+			<img src="../src/images/geometria-regolare.png">
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Concetto di volume</h2>
+        <div class="media">
+            <img class="pull-right media-object" src="../src/images/geometria-concetto-volume.png">
+            <div class="media-body">
+				<ul>
+					<li>Il volume è inteso come spazio racchiuso entro la superficie di un solido.</li>
+					<li>Siccome per misurare dobbiamo usare una unità che sia dello stesso tipo dell'oggetto misurato useremo uno dei solidi più semplici: il cubo.</li>
+					<li>Come unità di misura nello spazio useremo il cubo unitario, cioè il cubo con lato l'unità di misura lineare.</li>
+				</ul>
+            </div>
+        </div>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Volume del parallelepipedo rettangolo</h2>
+		<ul>
+			<li>Il volume del parallelepipedo rettangolo si misura con il prodotto delle sue tre dimensioni:
+\[
+V = a * b * h
+\]
+			</li>
+			<li>Il cubo che può essere visto come un parallelepipedo rettangolo con le tre dimensioni uguali:
+\[
+V = l * l * l = l^3
+\]
+			</li>
+		</ul>
+		<img src="../src/images/geometria-parallelepipedo-rettangolo-volume.png">
+	</section>
+
+	<section>
+		<h2>Volume del parallelepipedo retto</h2>
+        <div class="media">
+            <img class="pull-right media-object" src="../src/images/geometria-parallel-retto.png">
+            <div class="media-body">
+				<ul>
+					<li>Consideriamo il parallelepipedo retto (ABCDGHIL) (figura in blu) esso ha come base un parallelogramma. </li>
+					</li>
+					<li>In rosso il rettangolo equivalente che diventa la base di un parallelepipedo rettangolo (ABEFGHMN)</li>
+				</ul>
+            </div>
+        </div>
+        <ul>
+        	<li>Il volume del parallelepipedo retto si trova moltiplicando l'area di base per la misura dell'altezza:
+\[
+Volume = A_{superficie\ di\ base} * h
+\]
+			</li>
+        </ul>
+	</section>
+
+	<section>
+		<h2>Volume del prisma retto</h2>
+        <div class="media">
+            <img class="pull-right media-object" src="../src/images/geometria-prisma-retto-volume.png">
+            <div class="media-body">
+				<ul>
+					<li>Considerando un qualunque prisma retto (la base sarà un poligono con n lati)</li>
+					<li>Il volume del prisma retto si trova moltiplicando l'area del poligono di base per la misura dell'altezza
+		\[
+			Volume = A_{superficie\ di\ base} * h
+		\]
+					</li>
+				</ul>
+            </div>
+        </div>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Piramide</h2>
+		<ul>
+			<li>Si definisce piramide la parte di spazio racchiusa da un angoloide ed un piano non passante per il vertice dell'angoloide e che ne intersechi tutti gli spigoli.</li>
+			<li>Chiameremo:
+				<ul>
+					<li>il poligono base della piramide</li>
+					<li>i triangoli dell'angoloide facce laterali</li>
+					<li>la distanza fra il punto V ed il piano altezza h della piramide</li>
+				</ul>
+			</li>
+		</ul>
+		<img src="../src/images/geometria-piramide-volume.png">
+	</section>
+
+	<section>
+		<h2>Piramide retta</h2>
+        <div class="media">
+            <img class="pull-right media-object" src="../src/images/geometria-piramide-retta.png">
+            <div class="media-body">
+				<ul>
+					<li>Consideriamo l'insieme dei poligoni circoscritti ad una circonferenza</li>
+					<li>se la nostra piramide ha come base uno di tali poligoni e la perpendicolare dal vertice cade esattamente nel centro del cerchio inscritto nel poligono allora diremo che tale piramide è retta</li>
+					<li>Diremo infine regolare una piramide retta che abbia come base un poligono regolare</li>
+				</ul>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section>
+	<section>
+		<h2>Area della superficie della piramide retta</h2>
+        <div class="media">
+            <img class="pull-right media-object" src="../src/images/geometria-piramide-area.png">
+            <div class="media-body">
+				<ul>
+					<li>Se la piramide è retta, le altezze di tutte le facce sono congruenti e si chiamano apotema.</li>
+					<li>L'area della superficie laterale di una piramide retta si ottiene moltiplicando la lunghezza del perimetro di base per quella dell'apotema e dividendo il prodotto per 2.
+		\[
+		A_{laterale} = \frac {p * a}{2}
+		\]
+					</li>
+				</ul>
+            </div>
+        </div>
+        <ul>
+			<li>Se all'area della superficie laterale si aggiunge l'area della figura di base si ottiene l'area della superficie totale.
+\[
+A_{totale} = A_{laterale} + A_{base}
+\]
+			</li>
+        </ul>
+	</section>
+	<section>
+		<h2>Volume della piramide retta</h2>
+        <div class="media">
+            <img class="pull-right media-object" src="../src/images/geometria-piramide-area.png">
+            <div class="media-body">
+				<ul>
+					<li>Poichè una piramide è equivalente alla treza parte di un prisma avente la base equivalente a quella della piramide e per altezza la stessa altezza il volume della piramide è un terzo di quello del prisma suddetto.</li>
+					<li>Il volume di una piramide si ottiene moltiplicando l'area di base per la lunghezza dell'altezza e dividendo il prodotto per 3.
+\[
+	V = \frac{A_{base} * h}{3}
+\]
+					</li>
+				</ul>
+            </div>
+        </div>
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Definizione di cilindro</h2>
+        <div class="media">
+            <img class="pull-right media-object" src="../src/images/geometria-cilindro.png">
+            <div class="media-body">
+				<ul>
+					<li>Definiamo cilindro la parte di spazio percorsa da un rettangolo quando compie una rotazione completa attorno ad un suo lato </li>
+					<li>AB = CD è il raggio del cilindro</li>
+					<li>BC e' l'altezza del cilindro</li>
+				</ul>
+            </div>
+        </div>
+	</section>
+	<section>
+		<h2>Area della superficie del cilindro</h2>
+		<ul>
+			<li>Sviluppando la superficie del cilindro su un piano otteniamo 2 cerchi (le basi) ed un rettangolo che è la superficie laterale.</li>
+			<li>Essendo la base un cerchio il perimetro di base corrisponde alla lunghezza della circonferenza, quindi supponendo di conoscere il raggio di base r avremo che il perimetro di base vale: \(2 * \pi * r\)</li>
+			<li>Se poi vogliamo calcolare l'area della superficie totale Ast dovremo sommare alla superficie laterale le aree delle due basi che corrispondono al doppio dell'area di un cerchio:
+\[
+A_{superficie\ totale} = A_{sl} + 2 A_{sb} = 2 \pi r h + 2 \pi r^2 = 2 \pi r(h + r)
+\]
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Volume del cilindro</h2>
+		<ul>
+			<li>Il volume di un cilindro si ottiene moltiplicando l'area di base per la lunghezza dell'altezza:
+\[
+V = \pi r^2 h
+\]
+			</li>
+		</ul>
+		<img src="../src/images/geometria-cilindro-volume.png">
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Definizione di cono</h2>
+        <div class="media">
+            <img class="pull-right media-object" src="../src/images/geometria-cono.png">
+            <div class="media-body">
+				<ul>
+					<li>Definiamo cono la parte di spazio percorsa da un triangolo rettangolo quando compie una rotazione completa attorno ad un suo cateto</li>
+					<li>AB è il raggio = r del cono</li>
+					<li>BC è l'altezza = h del cono</li>
+					<li>AC è l'apotema = a del cono</li>
+				</ul>
+            </div>
+        </div>
+	</section>
+
+	<section>
+		<h2>Area della superficie del cono</h2>
+        <div class="media">
+            <img class="pull-right media-object" src="../src/images/geometria-cono-area.png">
+            <div class="media-body">
+				<ul>
+					<li>Sviluppando la superficie del cono su un piano otteniamo la figura a destra.</li>
+					<li>L'area del settore circolare si ottiene moltiplicando l'arco di base per l'apotema e dividendo il risultato per due.
+\[
+A_{sl} = 2 \frac{\pi r a}{2} = \pi r a
+\]
+					</li>
+				</ul>
+            </div>
+        </div>
+		<ul>
+			<li>l'area della superficie totale \(A_{st}\) è la somma della superficie laterale e l'area di base che corrisponde all'area del cerchio:
+\[
+A_{superficie\ totale} = A_{sl} + A_{sb} = \pi r a + \pi r^2 = \pi r (a + r)
+\]
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Volume del cono</h2>
+		<ul>
+			<li>Il volume di un cono si ottiene moltiplicando l’area di base per la misura dell'altezza e dividendo tale prodotto per tre::
+\[
+V = \frac{A_{sb} * h}{3} = \frac{\pi r^2 h}{3}
+\]
+			</li>
+		</ul>
+		<img src="../src/images/geometria-cono-volume.png">
+	</section>
+</section>
+
+<section>
+	<section>
+		<h2>Sfera</h2>
+        <div class="media">
+            <img class="pull-right media-object" src="../src/images/geometria-sfera.png">
+            <div class="media-body">
+				<ul>
+					<li>Si definisce superficie sferica la zona dei punti dello spazio equidistanti da un punto fisso detto centro</li>
+					<li>Si definisce sfera lo spazio limitato da una superficie sferica.</li>
+				</ul>
+            </div>
+        </div>
+		<ul>
+			<li>Possiamo anche definire la sfera come solido di rotazione: area spazzata da una semicirconferenza in una rotazione completa attorno ad un suo diametro</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Area e volume della sfera</h2>
+		<ul>
+			<li>L'area della superficie di una sfera equivale a 4 volte l'area del suo cerchio massimo:
+\[
+A_{sfera} = 4 \pi r^2
+\]
+			</li>
+			<li>Il volume della sfera:
+\[
+V = \frac{4}{3} \pi r^3
+\]
+			</li>
+		</ul>
+		<small>Una volta, piu' di un secolo fa, esisteva un metodo mnemonico per ricordare la formula: bastava ricordare la filastrocca: <b>Per la patria, l'Italia ed il re <br>quattro terzi pigreco erre tre</b></small>
+	</section>
+</section>
+
+<section>
+	<h2>Conclusione</h2>
+	<ul>
+		<li>....<li>
+	</ul>
+</section>
+			</div>
+
+		</div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+		<div class="share-reveal reveal-back"></div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>
