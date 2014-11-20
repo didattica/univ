@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Fisica 1 - Energia meccanica</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="../app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="../app/bower_components/reveal.js/css/theme/sky.css" id="theme">
+		<link rel="stylesheet" type="text/css" href="../src/css/main.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+<!-- *********************** Dinamica del punto *********************** -->
+<section>
+	<h2>Energia meccanica</h2>
+	<hr>
+	<ul>
+		<li>Lavoro</li>
+		<li>Energia meccanica</li>
+		<li>Concetto di campo in Fisica</li>
+	</ul>
+	<hr>
+	<p class="reveal">Antonio Pierro <a href="https://twitter.com/antonio_pierro_">@antonio_pierro_</a></p>
+	<p class="reveal"><small>Per consigli, suggerimenti, eventuali errori o altro potete scrivere una email a antonio.pierro[at]gmail.com</small></p>
+</section>
+<section>
+	<section><h2>Lavoro (1/2)</h2>
+		<ul>
+			<li>Dato un punto materiale che si muove lungo una traiettoria curvilinea sotto l'azione di una forza \(\vec F\), <br>
+	si definisce <em>lavoro della forza \(\vec F\)</em>, compiuto durante lo spostamento del punto dalla posizione A a B, la quantità scalare:</li>
+				<div style="font-size: 85%;">
+\[
+				W = \int_{A}^{B} \vec F * d\vec s = \int_{A}^{B} F * \cos{\theta} * ds = \int_{A}^{B} F_{tangente} * s
+\]
+</div>
+			<li>Si definisce lavoro infinitesimo la quantità:
+<div style="font-size: 85%;">
+\[
+				dW = \vec F * d\vec s = F * \cos{\theta} * ds = F_{tangente} * s
+\]</div>
+			</li>
+			<li>Il lavoro si misura in Newton * metro che equivale ad un Joule.</li>
+		</ul>
+	</section>
+	<section><h2>Lavoro (2/2)</h2>
+		<ul>
+			<li>Se sul punto P agiscono <strong>n</strong> forze, per ciascuna si può calcolare il corrispondente lavoro e risulta:
+<div style="font-size: 85%;">
+\[
+	W = \sum_{i=1}^n W_i = \int_{A}^{B} \vec F_1 * d \vec s + .. + \int_{A}^{B} \vec F_n * d \vec s = W_1 + .. + W_n
+\]</div>
+			</li>
+		</ul>
+	</section>
+</section>
+
+
+<section><h2>Potenza</h2>
+<ul>
+	<li>Si definisce <em>potenza istantanea</em> il lavoro per unità di tempo:
+\[\begin{aligned}
+P = \frac{dW}{dt}
+\end{aligned} \]
+	</li>
+	<li>Si definisce <em>potenza media</em> il rapporto tra il lavoro totale e l'intervallo di tempo in cui il lavoro è stato svolto: \(\begin{aligned}P = \frac{W}{\Delta t} \end{aligned}\)
+
+	</li>
+	<li>A parità di lavoro svolto, ha maggior potenza quella macchina che lo eroga in minor tempo.</li>
+	<li>L'unità di misura della potenza è il Watt, simbolo W (\(\frac{N * m}{s}\))</li>
+</ul></section>
+
+<section>
+<section><h2>Energia cinetica</h2>
+	<ul>
+		<li>Si chiama energia cinetica del punto materiale m la quantità:
+\[\begin{aligned}
+K = \frac{1}{2} * m * v^2
+\end{aligned} \]
+		</li>
+		<li>L'unità di misura dell'energia cientica, come di ogni altra forma di energia, è il Newton * metro ed è espressa dal simbolo J (Joule)</li>
+		<li>Si dimostra che il lavoro fatto dalla forza è uguale alla variazione dell'energia cinetica:
+\[\begin{aligned}
+W = \Delta K
+\end{aligned} \]</li>
+	</ul>
+</section>
+
+<section><h2><del>Dimostrazione del teorema dell'energia cinetica</del></h2>
+	<ul>
+		<li class="small">Considero il lavoro associato ad uno spostamento infinitesimo \(d\vec s\) di una forza \(\vec F\) tangente allo spostamento:
+\[
+dW = F \thinspace ds = m \thinspace a \thinspace ds 
+= m \thinspace \frac{dv}{dt} \thinspace ds = m \frac {ds}{dt} dv = m v dv
+\]
+		</li>
+		<li>Integro lungo un percorso finito che va da un punto A ad un punto B
+		<div style="font-size: 95%; width: 110%; margin-left: -40px">
+\[\begin{aligned}
+W = \int_{A}^{B} m v * dv = \frac{1}{2} * m * {v_B}^2 - \frac{1}{2} * m * {v_A}^2 = \Delta K
+\end{aligned} \]
+</div>
+		</li>
+		<li>Il simbolo \(\Delta\) indica la differenza tra il valore finale e il valore iniziale.</li>
+	</ul>
+</section>
+</section>
+
+<section>
+	<section><h2>Campo</h2>
+	<ul>
+	<li>Un <em>campo</em> è un modello matematico che permette di associare ai punti di una certa regione di spazio una particolare proprietà. </li>
+	<li>Un <em>campo scalare</em> è una funzione che associa uno scalare a ogni punto dello spazio.</li>
+	<li>Un <em>campo vettoriale</em> è una funzione che associa un vettore a ogni punto dello spazio.</li>
+	<li>Esempi di campi scalari sono:  la distribuzione della temperatura nello spazio o quella della pressione atmosferica.</li>
+	<li>Esempi di campi vettoriali sono: campo elettromagnetico e campo gravitazionale.</li>
+</ul></section>
+
+<section><h2>Circuitazione</h2>
+<ul>
+	<li>Detto \(\vec v\) il vettore di un campo vettoriale, detto P un generico punto e detto \(d\vec s\) lo spostamento elementare di P, <br>si chiama circuitazione di \(\vec v\) l'integrale del prodotto scalare "\(\vec v * d\vec s\)" lungo una linea chiusa.</li>
+	<li>Per questo tipo di integrale lungo una linea chiusa si usa il simbolo: 
+\[\begin{aligned}
+	\oint_C
+\end{aligned} \]
+dove C rappresenta il percorso (linea chiusa).
+	</li>
+	<li>Il simbolo \(\oint_C\)  sta ad indicare l’integrale (somma di tutti i prodotti \(\vec v * d\vec s\))  esteso alla linea chiusa scelta C. </li>
+</ul></section>
+
+	<section><h2>Campo conservativo</h2>
+	<ul>
+		<li>Un campo vettoriale si dice conservativo se 
+		l'integrale del vettore \(\vec v\) del campo
+		lungo lo spostamento \(d\vec s\)
+non dipende dal particolare cammino,
+ma dipende soltanto dalla posizione dei due punti A (posizione iniziale) e B (posizione finale).</li>
+<li>Poiché l'integrale dipende soltanto dalla posizione iniziale e da quella finale, 
+l'integrale lungo una linea chiusa (circuitazione \(\oint_C\) ) deve essere necessariamente nullo 
+\[\begin{aligned}
+     \oint_C\ \vec v * d\vec s = 0
+\end{aligned} \]
+</li>
+	</ul>
+	</section>
+
+<section><h2>Circuitazione della forza peso</h2>
+	<ul>
+		<li>Si dimostra che il lavoro della 
+		forza peso non dipende dal particolare spostamento 
+		ma soltanto dalla posizione iniziale e quella finale.</li>
+		<li>Per dimostrarlo basta verificare 
+		che l'integrale della forza peso lungo un percorso chiuso sia nullo
+\[\begin{aligned}
+	\oint_C \vec P * d\vec s = 0
+\end{aligned} \]
+		</li>
+		<li>Quindi il campo vettoriale associato alla forza peso è un campo conservativo. 
+		La forza peso viene detta forza conservativa.</li>
+	</ul>
+</section>
+
+<section><h2>Circuitazione della forza d'attrito</h2>
+	<ul>
+		<li>Si dimostra che il lavoro della 
+		forza d'attrito dipende dal particolare spostamento 
+		dalla posizione iniziale e quella finale.</li>
+		<li>Per dimostrarlo basta verificare 
+		che l'integrale della forza d'attrito lungo un percorso chiuso non sia nullo
+\[\begin{aligned}
+	\oint_C \vec P * d\vec s \ne 0
+\end{aligned} \]
+		</li>
+		<li>Quindi la forza d'attrito non è una forza conservativa.</li>
+	</ul>
+</section>
+
+</section>
+
+			</div>
+
+		</div>
+		<div class="share-reveal reveal-back"></div>
+
+		<script src="../app/bower_components/reveal.js/lib/js/head.min.js"></script>
+		<script src="../app/bower_components/reveal.js/js/reveal.min.js"></script>
+		<script src="../app/bower_components/jquery/jquery.min.js"></script>
+		<script src="../src/js/reveal.conf.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44780602-1', 'altervista.org');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>
